@@ -223,6 +223,7 @@
     /*max-height: 400px;*/
     width: 320px;
     margin-top: -1px;
+    border-bottom-left-radius: 5px;
 }
 
 #prof_zak div *,

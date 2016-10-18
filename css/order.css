@@ -200,7 +200,7 @@
         border: none;
     }
 
-    .order .panel:first-child {
+    .order .panel:first-of-type {
         border-top-left-radius: 5px !important;
         border-top-right-radius: 5px !important;
     }

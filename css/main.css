@@ -208,7 +208,7 @@
         }
 
             .nav_main li a:hover {
-                color: #f89b2f;
+                color: #cbcbcb;
                 background-color: transparent;
             }
 
@@ -380,7 +380,7 @@
         }
 
 .dropdown a:hover {
-    color: #f89b2f;
+    color: #cbcbcb;
 }
 
 .mob_nav_menu_btn {
