@@ -48,17 +48,17 @@
         margin: 0 3px;
         transition: background-color 0.2s;
         border: 2px solid;
-        border-color: #512c15;
+        border-color: #1c4174;
         width: 16px;
         height: 16px;
     }
 
         .slideshow > nav span:hover {
-            background-color: #512c15;
+            background-color: #1c4174;
         }
 
         .slideshow > nav span.current {
-            background-color: #f89b2f;
+            background-color: #2477a3;
         }
 
 .description {

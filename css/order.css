@@ -2,7 +2,7 @@
     padding: 8px 15px;
     /*border-top-left-radius: 5px;
     border-top-right-radius: 5px;*/
-    background-color: #eeeee3;
+    background-color: #d3d7da;
     /*overflow: scroll;*/
     min-width: 760px;
 }
@@ -35,6 +35,7 @@
         /*width: 33%;*/
         text-align: end;
         /*padding: 0 5px;*/
+        overflow-wrap: break-word;
     }
 
 .order_title {
@@ -182,7 +183,7 @@
 .order .panel {
     /*border: none;*/
     background: none;
-    border-bottom-color: #d0d0bf !important;
+    border-bottom-color: #babec0 !important;
     border-left: none;
     border-right: none;
     border-top: none;
@@ -190,12 +191,19 @@
     border-bottom-right-radius: 0px !important;
     border-top-left-radius: 0px !important;
     border-top-right-radius: 0px !important;
+    margin: 0 !important;
 }
 
-.order .panel:first-child {
-    border-top-left-radius: 5px !important;
-    border-top-right-radius: 5px !important;
-}
+    .order .panel:last-child {
+        border-bottom-left-radius: 5px !important;
+        border-bottom-right-radius: 5px !important;
+        border: none;
+    }
+
+    .order .panel:first-child {
+        border-top-left-radius: 5px !important;
+        border-top-right-radius: 5px !important;
+    }
 
 .order .panel-body {
     border: none !important;
@@ -402,6 +410,7 @@
 
 .vertical_line .table {
     background: #fff;
+    margin-bottom: 0;
 }
 
 .add_files>li>div {

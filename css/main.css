@@ -47,7 +47,7 @@
 }
 
 .orange {
-    color: #7b7d83;
+    color: #3e3e3e;
 }
 
 /*    ---- .head ------ */
@@ -127,6 +127,8 @@
 
 #user_block_in_menu #prof_icon {
     color: #fff;
+    /*color: #1c4174;*/
+    border: none;
 }
 
 #user_block_in_menu .prof_icon {
@@ -136,238 +138,6 @@
 #user_block p, #user_block_in_menu p {
     margin: 0;
 }
-
-/*.user_block_autorise {
-    display: none;
-    border: 1px solid #ecece0;
-    border-radius: 5px;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 10px;
-    background-color: #ffffff;
-    cursor: pointer;
-}
-
-.avatar {
-    border-radius: 50%;
-    width: 45px;
-    height: 45px;
-}
-
-.user_menu {
-    display: none;
-    border: none;
-    background-color: #ffffff;
-}
-
-.user_menu a {
-    display: block;
-    z-index: 100;
-    text-decoration: none;
-    padding: 3px;
-    cursor: pointer;
-}
-
-.user_menu a:hover {
-    color: #59341d;
-}
-
-.user_menu a:last-of-type {
-    margin: 0;
-    text-align: center;
-    background: linear-gradient(#f89b2e, #e8701b);
-    color: #ffffff;
-    padding: 10px 0;
-    border-radius: 0 0 5px 5px;
-    cursor: pointer;
-
-    position: absolute;
-    width: 100%;
-    z-index: 111;
-    box-shadow: 0 7px 8px -4px rgba(0, 0, 0, .4);
-}
-
-.user_menu a:last-of-type:active {
-    background: linear-gradient(#e8701b, #f89b2e);
-}
-
-.alerts, .user_orders, .user_messages, .user_dialog, .user_single_order {
-    display: none;
-    width: 300px;
-    right: 0px;
-    background-color: #ffffff;
-    border-radius: 0 0 5px 5px;
-    z-index: 200;
-    position: absolute;
-    box-shadow: 0 7px 8px -4px rgba(0, 0, 0, .4);
-    padding: 5px;
-}
-
-.alert_icon, .restaurant_icon, .user_icon, .user_single_order_icon {
-    width: 50px;
-    height: 50px;
-    margin: 5px 10px 5px 5px;
-}
-
-.alert_icon img {
-    margin: 7px;
-}
-
-.restaurant_icon img {
-    width: 45px;
-    height: 45px;
-    border-radius: 5px;
-}
-
-.user_single_order_icon img {
-    border-radius: 5px;
-}
-
-.user_icon img {
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    margin-top: 3px;
-}
-
-.alert_icon span {
-
-}
-
-.alert_item, .user_orders_item, .user_messages_item, .user_dialog_item, .user_single_order_item {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #ecece0;
-}
-
-.alerts ul, .user_orders ul, .user_messages ul, .user_dialog ul, .user_single_order ul {
-    padding-left: 0px !important;
-    height: 280px;
-    overflow: auto;
-    margin-bottom: 0px;
-    list-style: none;
-}
-
-.user_messages li, .user_orders li {
-    cursor: pointer;
-}
-
-.alerts_title, .user_orders_title, .user_messages_title, .user_dialog_title, .user_single_order_title {
-    display: flex;
-    justify-content: flex-start;
-    border-bottom: 1px solid #ecece0;
-    align-items: center;
-}
-
-    .alerts_title a, .user_orders_title a, .user_messages_title a, .user_dialog_title a, .user_single_order_title a {
-        cursor: pointer;
-    }
-
-.alerts_title svg, .user_orders_title svg, .user_messages_title svg, .user_dialog_title svg, .user_single_order_title svg {
-    margin: 5px 5px 0 0;
-}
-
-.alert_message, .restaurant_name {
-    margin: 0 20px 0 0;
-    align-self: center;
-    text-align: start;
-}
-
-.user_message_info, .user_dialog_info, .user_single_order_info {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}*/
-
-/*.user_message {
-    width: 150px;
-    white-space: nowrap; 
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.message_date, .dish_price {
-    margin: 0 10px;
-    white-space: nowrap;
-}
-
-.user_message_from_dialog {
-
-}
-
-.message_area {
-    width: 100%;
-    height: 80px;
-    padding: 5px 3px;
-}
-
-.message_area textarea {
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
-    border: 1px solid #e3e3dd;
-    resize: none;
-    outline: none;
-}
-
-.message_btns, .order_result {
-    display: flex;
-    justify-content: space-between;
-    padding: 3px;
-}
-
-.order_result {
-    margin: 10px 0;
-}
-
-#attach, #people, #smile {
-    width: 25px;
-    height: 25px;
-    border-radius: 5px;
-    background: linear-gradient(#7a5e4b, #512c15);
-    border: 1px solid #7a5e4b;
-    padding: 0;
-}
-
-#attach:active, #people:active {
-    background: linear-gradient(#512c15, #7a5e4b);
-}
-
-#smile {
-    background: linear-gradient(#f89b2e, #e8701b) !important;
-    border-color: #f89b2e !important;
-}
-
-#send {
-    height: 24px;
-    border-radius: 5px;
-    color: #fff;
-    background: linear-gradient(#f89b2e, #e8701b);
-    padding: 3px 10px;
-    display: inline;
-}
-
-#smile:active, #send:active {
-    background: linear-gradient(#e8701b, #f89b2e)!important;
-}
-
-.edit_order {
-    display: flex;
-    justify-content: center;
-    color: #fff;
-    background: linear-gradient(#f89b2e, #e8701b);
-    height: 30px;
-    border-radius: 5px;
-    align-items: center;
-    cursor: pointer;
-}
-
-.edit_order:active {
-    background: linear-gradient(#e8701b, #f89b2e);
-}*/
-/*---------------------*/
 
 #delivery_1 {
     display: inline-block;
@@ -415,7 +185,7 @@
     .nav_main li {
         color: #fff;
         border-left: 1px solid;
-        border-color: #86a9c1;
+        border-color: #4b86a5;
         float: left;
         list-style: none;
         width: 180px;
@@ -498,7 +268,7 @@
         right: 0px;
         width: 200px;
         padding: 10px;
-        background: #ecece0;
+        background: #d3d7da;
         border-radius: 5px;
         font-family: Roboto-Regular;
         font-size: 14px;
@@ -512,7 +282,8 @@
         width: 100%;
         padding: 8px;
         border-radius: 5px;
-        background: linear-gradient(#f89b2e, #e8701b);
+        /*background: linear-gradient(#c4ced5, #424447);*/
+        background: linear-gradient(#c4ced5, #424447);
         border: none;
         outline: 0;
     }
@@ -522,7 +293,7 @@
         }
 
         #call_me button:active {
-            background: linear-gradient(#e8701b, #f89b2e);
+            background: linear-gradient(#424447, #c4ced5);
         }
 
     #call_me input {
@@ -562,11 +333,11 @@
 
     .dropbtn:hover, .dropbtn:focus,
     .menu_btn:hover, .menu_btn:focus {
-        background-color: #1c4174; /*color 1*/
+        background-color: #1c4174;
     }
 
     .dropbtn:active, .menu_btn:active {
-        background-color: #2477a3; /*color 2*/
+        background-color: #2477a3;
     }
 
     .menu_btn.close {
@@ -589,7 +360,7 @@
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #255d8b; /*color 4*/
+    background-color: #1F5989;
     min-width: 160px;
     overflow: auto;
     box-shadow: 0 7px 8px -4px rgba(0, 0, 0, .4);
@@ -601,7 +372,7 @@
         color: #f9f9f9;
         padding: 12px 16px;
         text-decoration: none;
-        border-bottom: 1px solid #86a9c1;  /*color menu border*/
+        border-bottom: 1px solid #2477a3;
     }
 
         .dropdown-content a:last-of-type {
@@ -614,14 +385,14 @@
 
 .mob_nav_menu_btn {
     display: none;
-    /*background-color: #5e3c26;*/
-    background-color: rgba(37, 93, 139, .8); /*color 4*/
+    /*background-color: #1F5989;*/
+    background-color: rgba(31, 89, 137, .8);
     padding: 0 1px 0 5px;
     top: 0px;
 }
 
 .menu_mob_btn_container {
-    /*border-left: 1px solid #512c15;*/
+    /*border-left: 1px solid #1c4174;*/
     height: 100%;
     width: 50px;
     padding-right: 5px;
@@ -631,7 +402,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    background-color: #255d8b;
+    background-color: #1F5989;
     padding: 0 5px;
     width: 100%;
     height: 100%;
@@ -650,8 +421,8 @@
     .mobile-menu li {
         /*margin: 15px 0;*/
         list-style: none;
-        border-bottom: 1px solid #86a9c1;
-        border-right: 1px solid #86a9c1;
+        border-bottom: 1px solid #2477a3;
+        border-right: 1px solid #2477a3;
         width: 100%;
         height: 50px;
         display: flex;
@@ -771,7 +542,7 @@ body.mob-act {
     }
 
         .dish .discription:hover {
-            color: #f99b30;
+            color: #3e3e3e;
         }
 
     .dish > h4 > a {
@@ -1018,7 +789,7 @@ footer h3 {
     }
 
         .breadcrumb1 > li + li:before {
-            color: #f99b30;
+            color: #3e3e3e;
             content: " > ";
             padding: 0 5px;
         }
@@ -1073,11 +844,11 @@ a > .glyphicon {
 /* обязательно указать ширину и длину взятые из свойст изображения с логотипом*/
 /* иначе не будет отцентровано */
 .loader {
-    color: #2477a3;
+    color: #603e29;
     font-size: 90px;
     text-indent: -9999em;
-    width: 254px;
-    height: 221px;
+    width: 237px;
+    height: 117px;
     margin: auto;
     position: relative;
     background: url(/img/logo.png) no-repeat;

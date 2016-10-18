@@ -97,7 +97,7 @@
 
     #scroll_alert > div > div.alert_time {
         float: right;
-        color: #f89b2f;
+        color: #1F5989;
     }
 
 .prof_zak, .prof_zak2, .prof_dialog, .prof_mess, .prof_alert {
@@ -145,7 +145,7 @@
 }
 
 #bottom_mark {
-    background-color: #f89b2f;
+    background-color: #1F5989;
     cursor: pointer;
     padding-top: 10px;
     color: #fff;
@@ -230,7 +230,7 @@
 #prof_mess div *,
 #prof_dialog div *,
 #prof_alert  div *{
-    color: #1c4174;
+    /*color: #fff;*/
     font-family: Roboto-Regular;
 }
 
@@ -304,7 +304,7 @@
 
 .last_mess_time {
     font-size: 12px;
-    color: #f99b30 !important;
+    color: #2477a3 !important;
 }
 
 .last_mess {
@@ -329,7 +329,7 @@
 }
 
 .smiles, .submit {
-    background: linear-gradient(#f89b2e, #e8701b);
+    background: linear-gradient(#2477a3, #1c4174);
     padding: 5px;
     border-radius: 5px;
     color: #ffffff !important;
@@ -337,7 +337,7 @@
 }
 
 .smiles:active, .submit:active {
-    background: linear-gradient(#e8701b, #f89b2e);
+    background: linear-gradient(#1c4174, #2477a3);
 }
 
 .peoplb, .sendf {
@@ -468,7 +468,7 @@
 .main-menu-back-button-label {
     /*vertical-align: bottom;*/
     margin-left: 5px;
-    color: #255d8b;
+    color: #1F5989;
     font-size: 14px;
     font-family: Roboto-Regular;
 }
@@ -505,7 +505,7 @@
     .main-menu-back-button-label,
     .prof-main-menu-block>div
     {
-        color: #fff !important;
+        /*color: #fff !important;*/
     }
 
     #prof_info .prof_item,
@@ -518,8 +518,10 @@
     .main-menu-back-button-label,
     .prof-main-menu-block>div,
     .main-menu-back-button {
-        background-color: #255d8b !important;
+        /*background-color: #7a5e4b !important;*/
         /*background-color: rgba(122, 94, 75, .8) !important;*/
+        background-color: #fff !important;
+        color: #1c4174;
     }
 
     .main-menu-back-button{
@@ -537,7 +539,7 @@
     #scroll_mess .name
      {
         /*color: #deb887 !important;*/
-        color: #fff !important;
+        /*color: #fff !important;*/
     }
 
     .work-time,.prof_item .price,
@@ -545,17 +547,17 @@
     #scroll_zak2 .allSum, 
     #scroll_zak2 p.dish-info>span.price,
     .prof_last_item .summ-price{
-        color: #f89b2f !important;
+        color: #1F5989 !important;
     }
 
     #prof_mess textarea,
     #prof_mess textarea:active {
-        border: 1px solid #86a9c1 !important;
+        /*border: 1px solid #deb887 !important;*/
     }
 
     #prof_info .prof_item,
     #prof_info .all-summ,
     .prof-item-notice {
-        border-bottom: 1px solid #86a9c1 !important;
+        /*border-bottom: 1px solid #deb887 !important;*/
     }
 }

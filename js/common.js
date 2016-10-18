@@ -300,12 +300,12 @@ function MobMenuToggle() {
 function BtnGroupResize() {
     var winWidth = $(window).width();
         var btnGroup = $('#delivery_type>div');
-    if (btnGroup.hasClass('btn-group') && winWidth < 480) {
+    if (btnGroup.hasClass('btn-group') && winWidth < 560) {
         console.log('btn-group-vertical');
         btnGroup.toggleClass('btn-group');
         btnGroup.toggleClass('btn-group-vertical');
     }
-    else if (btnGroup.hasClass('btn-group-vertical') && winWidth > 480) {
+    else if (btnGroup.hasClass('btn-group-vertical') && winWidth > 560) {
         console.log('btn-group');
         btnGroup.toggleClass('btn-group-vertical');
         btnGroup.toggleClass('btn-group');

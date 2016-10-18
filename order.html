@@ -11,8 +11,9 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/media.css" />
     <link rel="stylesheet" href="css/fonts.css" />
-    <link rel="stylesheet" href="css/innerdish.css" />
+    <!--<link rel="stylesheet" href="css/innerdish.css" />-->
     <link rel="stylesheet" href="css/order.css" />
+    <link rel="stylesheet" href="css/User_block/user.css" />
 
     <script src="libs/jquery/jquery-2.1.4.min.js"></script>
     <script src="libs/bootstrap/js/bootstrap.min.js"></script>
@@ -21,6 +22,7 @@
 
     <link rel="stylesheet" href="/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.css" />
     <script src="libs/bootstrap-touchspin/jquery.bootstrap-touchspin.js"></script>
+    
 </head>
 <body>
     <div id="page-preloader">
@@ -29,6 +31,731 @@
 
     <div class="mob_nav_menu_btn">
         <button onclick="MobMenuToggle()" class="menu_btn"></button>
+        <div id="user_block_in_menu">
+            <div id="prof" class="prof ">
+                <div id="prof_icon" class="perc100 prof_icon align-items-vertical">
+                    <img src="img/prof/Layer17.png" class="profIMG"><span class="menu-user-name">Мохитова Юлия</span>
+                </div>
+                <div id="prof_info" class="prof_info main-data-menu-opened" style="display: none;">
+                    <div id="prof_main" class="prof_main" style="display: block;">
+                        <div class="prof-main-menu-block">
+                            <div class="prof_main_item" onclick="showItem('prof_main','prof_zak')">Заказы</div>
+                            <div class="prof_main_item" onclick="showItem('prof_main','prof_dialog')">Сообщения (1234)</div>
+                            <div class="prof_main_item" onclick="showItem('prof_main','prof_alert')">Уведомления (2689)</div>
+                        </div>
+                        <div id="bottom_mark" class="prof_exit row row-without-margin text-center">
+                            Выйти
+                        </div>
+                    </div>
+
+                    <div id="prof_zak" class="prof_zak prof_other main-menu-punkt" hidden="true" style="display: none;">
+                        <div class="prof_item main-menu-back-button" onclick="showItem('prof_zak','prof_main')">
+                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                <path fill="#1F5989" d="M7,12L12,7V10H16V14H12V17L7,12M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12Z" />
+                            </svg>
+                            <span class="main-menu-back-button-label">Заказы</span>
+                        </div>
+
+                        <div id="scroll_zak" class="scroll_zak main-menu-body">
+                            <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                <img class="icon" src="img/prof/Layer.png">
+                                <span class="cont cont_zak">
+                                    <p class="institution-name">Очень длинное название заведения в две строки</p>
+                                    <p class="work-time">11:00</p>
+                                </span>
+                            </div>
+                            <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                <img class="icon" src="img/prof/Layer.png">
+                                <span class="cont cont_zak">
+                                    <p class="institution-name">Варадеро</p>
+                                    <p class="work-time">11:00</p>
+                                </span>
+                            </div>
+                            <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                <img class="icon" src="img/prof/Layer.png">
+                                <span class="cont cont_zak">
+                                    <p class="institution-name">Варадеро</p>
+                                    <p class="work-time">11:00</p>
+                                </span>
+                            </div>
+                            <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                <img class="icon" src="img/prof/Layer.png">
+                                <span class="cont cont_zak">
+                                    <p class="institution-name">Варадеро</p>
+                                    <p class="work-time">11:00</p>
+                                </span>
+                            </div>
+                            <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                <img class="icon" src="img/prof/Layer.png">
+                                <span class="cont cont_zak">
+                                    <p class="institution-name">Варадеро</p>
+                                    <p class="work-time">11:00</p>
+                                </span>
+                            </div>
+                            <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                <img class="icon" src="img/prof/Layer.png">
+                                <span class="cont cont_zak">
+                                    <p class="institution-name">Варадеро</p>
+                                    <p class="work-time">11:00</p>
+                                </span>
+                            </div>
+                            <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                <img class="icon" src="img/prof/Layer.png">
+                                <span class="cont cont_zak">
+                                    <p class="institution-name">Варадеро</p>
+                                    <p class="work-time">11:00</p>
+                                </span>
+                            </div>
+                            <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                <img class="icon" src="img/prof/Layer.png">
+                                <span class="cont cont_zak">
+                                    <p class="institution-name">Варадеро</p>
+                                    <p class="work-time">11:00</p>
+                                </span>
+                            </div>
+                            <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                <img class="icon" src="img/prof/Layer.png">
+                                <span class="cont cont_zak">
+                                    <p class="institution-name">Варадеро</p>
+                                    <p class="work-time">11:00</p>
+                                </span>
+                            </div>
+                            <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                <img class="icon" src="img/prof/Layer.png">
+                                <span class="cont cont_zak">
+                                    <p class="institution-name">Варадеро</p>
+                                    <p class="work-time">11:00</p>
+                                </span>
+                            </div>
+                            <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                <img class="icon" src="img/prof/Layer.png">
+                                <span class="cont cont_zak">
+                                    <p class="institution-name">Варадеро</p>
+                                    <p class="work-time">11:00</p>
+                                </span>
+                            </div>
+                            <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                <img class="icon" src="img/prof/Layer.png">
+                                <span class="cont cont_zak">
+                                    <p class="institution-name">Варадеро</p>
+                                    <p class="work-time">11:00</p>
+                                </span>
+                            </div>
+                            <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                <img class="icon" src="img/prof/Layer.png">
+                                <span class="cont cont_zak">
+                                    <p class="institution-name">Варадеро</p>
+                                    <p class="work-time">11:00</p>
+                                </span>
+                            </div>
+                            <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                <img class="icon" src="img/prof/Layer.png">
+                                <span class="cont cont_zak">
+                                    <p class="institution-name">Варадеро</p>
+                                    <p class="work-time">11:00</p>
+                                </span>
+                            </div>
+                            <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                <img class="icon" src="img/prof/Layer.png">
+                                <span class="cont cont_zak">
+                                    <p class="institution-name">Варадеро</p>
+                                    <p class="work-time">11:00</p>
+                                </span>
+                            </div>
+                            <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                <img class="icon" src="img/prof/Layer.png">
+                                <span class="cont cont_zak">
+                                    <p class="institution-name">Варадеро</p>
+                                    <p class="work-time">11:00</p>
+                                </span>
+                            </div>
+                            <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                <img class="icon" src="img/prof/Layer.png">
+                                <span class="cont cont_zak">
+                                    <p class="institution-name">Варадеро</p>
+                                    <p class="work-time">11:00</p>
+                                </span>
+                            </div>
+                            <div class="prof_last_item" onclick="showItem('prof_zak','prof_zak2')">
+                                <img class="icon" src="img/prof/Layer.png">
+                                <span class="cont cont_zak">
+                                    <p class="institution-name">Варадеро</p>
+                                    <p class="work-time">11:00</p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="prof_zak2" class="prof_zak2 prof_other main-menu-punkt" hidden="true" style="display: none;">
+                        <div class="prof_item main-menu-back-button" onclick="showItem('prof_zak2','prof_zak')">
+                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                <path fill="#1F5989" d="M7,12L12,7V10H16V14H12V17L7,12M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12Z" />
+                            </svg>
+                            <p class="main-menu-back-button-label">Заказ (Варадеро) длинное название</p>
+                        </div>
+                        <div id="scroll_zak2" class="main-menu-body">
+                            <div style="position: relative; width: 100%; height: 100%;">
+                                <div class="prof_item">
+                                    <img class="icon" src="img/prof/grill.PNG">
+                                    <span class="cont_zak">
+                                        <p class="dish-name">Овощи на гриле</p>
+                                        <p class="dish-info">
+                                            <span class="price">125грн Х1</span>
+                                            <span class="summ-price" style="float: right;">135грн</span>
+                                        </p>
+                                    </span>
+                                </div>
+                                <div class="prof_item">
+                                    <img class="icon" src="img/prof/grill.PNG">
+                                    <span class="cont_zak">
+                                        <p class="dish-name">Овощи на гриле</p>
+                                        <p class="dish-info">
+                                            <span class="price">125грн Х1</span>
+                                            <span class="summ-price" style="float: right;">125грн</span>
+                                        </p>
+                                    </span>
+                                </div>
+                                <div class="prof_item">
+                                    <img class="icon" src="img/prof/grill.PNG">
+                                    <span class="cont_zak">
+                                        <p class="dish-name">Овощи на гриле</p>
+                                        <p class="dish-info">
+                                            <span class="price">125грн Х1</span>
+                                            <span class="summ-price" style="float: right;">125грн</span>
+                                        </p>
+                                    </span>
+                                </div>
+                                <div class="prof_item">
+                                    <img class="icon" src="img/prof/grill.PNG">
+                                    <span class="cont_zak">
+                                        <p class="dish-name">Овощи на гриле</p>
+                                        <p class="dish-info">
+                                            <span class="price">125грн Х1</span>
+                                            <span class="summ-price" style="float: right;">125грн</span>
+                                        </p>
+                                    </span>
+                                </div>
+                                <div class="prof_item">
+                                    <img class="icon" src="img/prof/grill.PNG">
+                                    <span class="cont_zak">
+                                        <p class="dish-name">Овощи на гриле</p>
+                                        <p class="dish-info">
+                                            <span class="price">125грн Х1</span>
+                                            <span class="summ-price" style="float: right;">125грн</span>
+                                        </p>
+                                    </span>
+                                </div>
+                                <div class="prof_item">
+                                    <img class="icon" src="img/prof/grill.PNG">
+                                    <span class="cont_zak">
+                                        <p class="dish-name">Овощи на гриле</p>
+                                        <p class="dish-info">
+                                            <span class="price">125грн Х1</span>
+                                            <span class="summ-price" style="float: right;">125грн</span>
+                                        </p>
+                                    </span>
+                                </div>
+                                <div class="prof_item">
+                                    <img class="icon" src="img/prof/grill.PNG">
+                                    <span class="cont_zak">
+                                        <p class="dish-name">Овощи на гриле</p>
+                                        <p class="dish-info">
+                                            <span class="price">125грн Х1</span>
+                                            <span class="summ-price" style="float: right;">125грн</span>
+                                        </p>
+                                    </span>
+                                </div>
+                                <div class="prof_item">
+                                    <img class="icon" src="img/prof/grill.PNG">
+                                    <span class="cont_zak">
+                                        <p class="dish-name">Овощи на гриле</p>
+                                        <p class="dish-info">
+                                            <span class="price">125грн Х1</span>
+                                            <span class="summ-price" style="float: right;">125грн</span>
+                                        </p>
+                                    </span>
+                                </div>
+                                <div class="prof_last_item">
+                                    <img class="icon" src="img/prof/grill.PNG">
+                                    <span class="cont_zak">
+                                        <p class="dish-name">Овощи на гриле</p>
+                                        <p class="dish-info">
+                                            <span class="price">125грн Х1</span>
+                                            <span class="summ-price" style="float: right;">125грн</span>
+                                        </p>
+                                    </span>
+                                </div>
+                                <div class="edit_zak">
+                                    <div class="all-summ">
+                                        ИТОГО: <span class="allSum">10000 грн.</span>
+                                    </div>
+                                    <a href="order.html" style="text-decoration: none">
+                                        <div id="bottom_mark" class="row text-center">
+                                            <span>Редактировать</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="prof_dialog" class="prof_dialog prof_other main-menu-punkt" hidden="true" style="display: none;">
+                        <div class="prof_item main-menu-back-button" onclick="showItem('prof_dialog','prof_main')">
+                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                <path fill="#1F5989" d="M7,12L12,7V10H16V14H12V17L7,12M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12Z" />
+                            </svg>
+                            <span class="main-menu-back-button-label">Сообщения</span>
+                        </div>
+                        <div id="scroll_dialog" class="main-menu-body">
+                            <div class="prof_item align-items-vertical" onclick="showItem('prof_dialog','prof_mess')">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь последнее сообщение.
+                                </div>
+                            </div>
+                            <div class="prof_item align-items-vertical" onclick="showItem('prof_dialog','prof_mess')">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь последнее сообщение.
+                                </div>
+                            </div>
+                            <div class="prof_item align-items-vertical" onclick="showItem('prof_dialog','prof_mess')">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь последнее сообщение.
+                                </div>
+                            </div>
+                            <div class="prof_item align-items-vertical" onclick="showItem('prof_dialog','prof_mess')">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь последнее сообщение.
+                                </div>
+                            </div>
+                            <div class="prof_item align-items-vertical" onclick="showItem('prof_dialog','prof_mess')">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь последнее сообщение.
+                                </div>
+                            </div>
+                            <div class="prof_item align-items-vertical" onclick="showItem('prof_dialog','prof_mess')">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь последнее сообщение.
+                                </div>
+                            </div>
+                            <div class="prof_item align-items-vertical" onclick="showItem('prof_dialog','prof_mess')">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь последнее сообщение.
+                                </div>
+                            </div>
+                            <div class="prof_item align-items-vertical" onclick="showItem('prof_dialog','prof_mess')">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь последнее сообщение.
+                                </div>
+                            </div>
+                            <div class="prof_last_item align-items-vertical" onclick="showItem('prof_dialog','prof_mess')">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь последнее сообщение.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="prof_mess" class="prof_mess prof_other main-menu-punkt" hidden="true" style="display: none;">
+                        <div class="prof_item main-menu-back-button" onclick="showItem('prof_mess','prof_dialog')">
+                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                <path fill="#1F5989" d="M7,12L12,7V10H16V14H12V17L7,12M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12Z" />
+                            </svg>
+                            <span class="main-menu-back-button-label">Диалог</span>
+                        </div>
+                        <div id="scroll_mess" class="main-menu-body">
+                            <div class="prof_item align-items-vertical">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь какое-то сообщение.
+                                </div>
+                            </div>
+                            <div class="prof_item align-items-vertical">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь какое-то сообщение.
+                                </div>
+                            </div>
+                            <div class="prof_item align-items-vertical">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь какое-то сообщение.
+                                </div>
+                            </div>
+                            <div class="prof_item align-items-vertical">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь какое-то сообщение.
+                                </div>
+                            </div>
+                            <div class="prof_item align-items-vertical">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь какое-то сообщение.
+                                </div>
+                            </div>
+                            <div class="prof_item align-items-vertical">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь какое-то сообщение.
+                                </div>
+                            </div>
+                            <div class="prof_item align-items-vertical">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь какое-то сообщение.
+                                </div>
+                            </div>
+                            <div class="prof_item align-items-vertical">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь какое-то сообщение.
+                                </div>
+                            </div>
+                            <div class="prof_item align-items-vertical">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь какое-то сообщение.
+                                </div>
+                            </div>
+                            <div class="prof_item align-items-vertical">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь какое-то сообщение.
+                                </div>
+                            </div>
+                            <div class="prof_item align-items-vertical">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь какое-то сообщение.
+                                </div>
+                            </div>
+                            <div class="prof_item align-items-vertical">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь какое-то сообщение.
+                                </div>
+                            </div>
+                            <div class="prof_item align-items-vertical">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь какое-то сообщение.
+                                </div>
+                            </div>
+                            <div class="prof_item align-items-vertical">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь какое-то сообщение.
+                                </div>
+                            </div>
+                            <div class="prof_last_item">
+                                <form action="" method="">
+                                    <textarea rows="3" cols="33" name="text"></textarea>
+                                    <div class="smile-and-button-block">
+                                        <div class="row row-without-margin">
+                                            <div class="col-xs-6 col-lg-6 col-without-padding">
+                                                <span class="peoplb"><img src="img/prof/peoplb.png"></span>
+                                                <span class="sendf"><img src="img/prof/paperclip.png"></span>
+                                            </div>
+                                            <div class="col-xs-6 col-lg-6 col-without-padding text-right">
+                                                <span class="smiles"><img src="img/prof/smiles.png"></span>
+                                                <span class="submit">Отправить</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="prof_alert" class="prof_alert prof_other main-menu-punkt" hidden="true" style="display: none;">
+                        <div class="prof_item main-menu-back-button" onclick="showItem('prof_alert','prof_main')">
+                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                <path fill="#1F5989" d="M7,12L12,7V10H16V14H12V17L7,12M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12Z" />
+                            </svg>
+                            <span class="main-menu-back-button-label">Уведомления</span>
+                        </div>
+                        <div id="scroll_alert" class="main-menu-body">
+                            <div class="prof-item-notice">
+                                <div class="alert_time" align="right">11:00</div>
+                                <div class="row row-without-margin notice-body align-items-vertical">
+                                    <div class="col-md-2 col-sm-2 col-xs-2">
+                                        <img src="img/prof/kalendar.png">
+                                    </div>
+                                    <div class="col-md-10 col-sm-10 col-xs-10">
+                                        <div class="alert_msg">Вас пригласили на мероприятие в ресторан</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="prof-item-notice">
+                                <div class="alert_time" align="right">11:00</div>
+                                <div class="row row-without-margin notice-body align-items-vertical">
+                                    <div class="col-md-2 col-sm-2 col-xs-2">
+                                        <img src="img/prof/zvonok.png">
+                                    </div>
+                                    <div class="col-md-10 col-sm-10 col-xs-10">
+                                        <div class="alert_msg">Ваш заказ успешно подтвержден.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="prof-item-notice">
+                                <div class="alert_time" align="right">11:00</div>
+                                <div class="row row-without-margin notice-body align-items-vertical">
+                                    <div class="col-md-2 col-sm-2 col-xs-2">
+                                        <img src="img/prof/kniga.png">
+                                    </div>
+                                    <div class="col-md-10 col-sm-10 col-xs-10">
+                                        <div class="alert_msg">Запрос на добавление в контакты.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="prof-item-notice">
+                                <div class="alert_time" align="right">11:00</div>
+                                <div class="row row-without-margin notice-body align-items-vertical">
+                                    <div class="col-md-2 col-sm-2 col-xs-2">
+                                        <img src="img/prof/kolokol.png">
+                                    </div>
+                                    <div class="col-md-10 col-sm-10 col-xs-10">
+                                        <div class="alert_msg">День рождения у Светы!</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="prof-item-notice">
+                                <div class="alert_time" align="right">11:00</div>
+                                <div class="row row-without-margin notice-body align-items-vertical">
+                                    <div class="col-md-2 col-sm-2 col-xs-2">
+                                        <img src="img/prof/kniga.png">
+                                    </div>
+                                    <div class="col-md-10 col-sm-10 col-xs-10">
+                                        <div class="alert_msg">Запрос на добавление в контакты.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="prof-item-notice">
+                                <div class="alert_time" align="right">11:00</div>
+                                <div class="row row-without-margin notice-body align-items-vertical">
+                                    <div class="col-md-2 col-sm-2 col-xs-2">
+                                        <img src="img/prof/kolokol.png">
+                                    </div>
+                                    <div class="col-md-10 col-sm-10 col-xs-10">
+                                        <div class="alert_msg">День рождения у Светы!</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="prof-item-notice">
+                                <div class="alert_time" align="right">11:00</div>
+                                <div class="row row-without-margin notice-body align-items-vertical">
+                                    <div class="col-md-2 col-sm-2 col-xs-2">
+                                        <img src="img/prof/kniga.png">
+                                    </div>
+                                    <div class="col-md-10 col-sm-10 col-xs-10">
+                                        <div class="alert_msg">Запрос на добавление в контакты.</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="prof-item-notice">
+                                <div class="alert_time" align="right">11:00</div>
+                                <div class="row row-without-margin notice-body align-items-vertical">
+                                    <div class="col-md-2 col-sm-2 col-xs-2">
+                                        <img src="img/prof/kniga.png">
+                                    </div>
+                                    <div class="col-md-10 col-sm-10 col-xs-10">
+                                        <div class="alert_msg">Запрос на добавление в контакты.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="prof-item-notice">
+                                <div class="alert_time" align="right">11:00</div>
+                                <div class="row row-without-margin notice-body align-items-vertical">
+                                    <div class="col-md-2 col-sm-2 col-xs-2">
+                                        <img src="img/prof/kolokol.png">
+                                    </div>
+                                    <div class="col-md-10 col-sm-10 col-xs-10">
+                                        <div class="alert_msg">День рождения у Светы!</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="prof-item-notice">
+                                <div class="alert_time" align="right">11:00</div>
+                                <div class="row row-without-margin notice-body align-items-vertical">
+                                    <div class="col-md-2 col-sm-2 col-xs-2">
+                                        <img src="img/prof/kniga.png">
+                                    </div>
+                                    <div class="col-md-10 col-sm-10 col-xs-10">
+                                        <div class="alert_msg">Запрос на добавление в контакты.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="prof-item-notice">
+                                <div class="alert_time" align="right">11:00</div>
+                                <div class="row row-without-margin notice-body align-items-vertical">
+                                    <div class="col-md-2 col-sm-2 col-xs-2">
+                                        <img src="img/prof/kniga.png">
+                                    </div>
+                                    <div class="col-md-10 col-sm-10 col-xs-10">
+                                        <div class="alert_msg">Запрос на добавление в контакты.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="prof-item-notice">
+                                <div class="alert_time" align="right">11:00</div>
+                                <div class="row row-without-margin notice-body align-items-vertical">
+                                    <div class="col-md-2 col-sm-2 col-xs-2">
+                                        <img src="img/prof/kolokol.png">
+                                    </div>
+                                    <div class="col-md-10 col-sm-10 col-xs-10">
+                                        <div class="alert_msg">День рождения у Светы!</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="prof-item-notice">
+                                <div class="alert_time" align="right">11:00</div>
+                                <div class="row row-without-margin notice-body align-items-vertical">
+                                    <div class="col-md-2 col-sm-2 col-xs-2">
+                                        <img src="img/prof/kniga.png">
+                                    </div>
+                                    <div class="col-md-10 col-sm-10 col-xs-10">
+                                        <div class="alert_msg">Запрос на добавление в контакты.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="prof-last-item-notice">
+                                <div class="alert_time" align="right">11:00</div>
+                                <div class="row row-without-margin notice-body align-items-vertical">
+                                    <div class="col-md-2 col-sm-2 col-xs-2">
+                                        <img src="img/prof/kolokol.png">
+                                    </div>
+                                    <div class="col-md-10 col-sm-10 col-xs-10">
+                                        <div class="alert_msg">День рождения у Светы!</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="mobile-menu">
         <ul>
@@ -52,7 +779,8 @@
             </li>
         </ul>
         <div class="menu_mob_btn_container">
-            <div onclick="MobMenuToggle()" class="menu_btn close"></div>
+            <div onclick="MobMenuToggle()" class="menu_btn close">
+            </div>
         </div>
     </div>
 
@@ -60,16 +788,16 @@
         <!-- header 2 -->
         <div class="head">
             <div class="head_item" id="logo">
-                <h1 class="text-hide" style="margin-bottom: -130px; position: absolute;">Ресторан "Кебаб"</h1>
+                <h1 class="text-hide" style="margin-bottom: -130px; position: absolute;">logostics "FROST"</h1>
                 <a href="index.html">
-                    <img class="img-responsive" src="img/logo.png" alt="logo" />
+                    <img class="img-responsive lazy" src="img/logo.png" alt="logo" />
                 </a>
             </div>
             <div class="container container-fluid" id="head_info">
                 <div class="row">
                     <div class="col-md-6 col-sm-6 col-xs-12 head_info_item two_item">
                         <svg class="head_icon" style="width:21px;height:21px" viewBox="0 0 24 24">
-                            <path fill="#f99b30" d="M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C6.47,22 2,17.5 2,12A10,10 0 0,1 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z" />
+                            <path fill="#1F5989" d="M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C6.47,22 2,17.5 2,12A10,10 0 0,1 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z" />
                         </svg>
                         <div class="opening_hours">
                             <div class="header_text">
@@ -83,9 +811,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-sm-12 col-xs-12 head_info_item two_item padding-right-100p">
+                    <div class="col-md-6 col-sm-12 col-xs-12 head_info_item two_item">
                         <svg class="head_icon" style="width:21px;height:21px" viewBox="0 0 24 24">
-                            <path fill="#f99b30" d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z" />
+                            <path fill="#1F5989" d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z" />
                         </svg>
                         <div class="callback">
                             <div class="header_text">
@@ -115,19 +843,742 @@
                 </div>
             </div>
             <div class="head_item" id="user_block">
-                <div class="user_block">
-
-                    <a class="p14 brown bold">
+                <div class="user_block" style="display: none">
+                    <a class="p14 brown bold" onclick="Login()">
                         <svg class="user_icon" style="width:21px;height:21px" viewBox="0 0 24 24">
-                            <path fill="#f99b30" d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z" />
+                            <path fill="#1F5989" d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z" />
                         </svg>Войти
-                    </a> / <a class="p14 brown bold">Регистрация</a>
+                    </a> / <a class="p14 brown bold" href="order.html">Регистрация</a>
                 </div>
+
+                <div id="prof" class="prof ">
+                    <div id="prof_icon" class="perc100 prof_icon align-items-vertical">
+                        <img src="img/prof/Layer17.png" class="profIMG"><span class="menu-user-name">Мохитова Юлия</span>
+                    </div>
+                    <div id="prof_info" class="prof_info main-data-menu-opened" style="display: none;">
+                        <div id="prof_main" class="prof_main" style="display: block;">
+                            <div class="prof-main-menu-block">
+                                <div class="prof_main_item" onclick="showItem('prof_main','prof_zak')">Заказы</div>
+                                <div class="prof_main_item" onclick="showItem('prof_main','prof_dialog')">Сообщения (1234)</div>
+                                <div class="prof_main_item" onclick="showItem('prof_main','prof_alert')">Уведомления (2689)</div>
+                            </div>
+                            <div id="bottom_mark" class="prof_exit row row-without-margin text-center">
+                                Выйти
+                            </div>
+                        </div>
+
+                        <div id="prof_zak" class="prof_zak prof_other main-menu-punkt" hidden="true" style="display: none;">
+                            <div class="prof_item main-menu-back-button" onclick="showItem('prof_zak','prof_main')">
+                                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                    <path fill="#1F5989" d="M7,12L12,7V10H16V14H12V17L7,12M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12Z" />
+                                </svg>
+                                <span class="main-menu-back-button-label">Заказы</span>
+                            </div>
+
+                            <div id="scroll_zak" class="scroll_zak main-menu-body">
+                                <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                    <img class="icon" src="img/prof/Layer.png">
+                                    <span class="cont cont_zak">
+                                        <p class="institution-name">Очень длинное название заведения в две строки</p>
+                                        <p class="work-time">11:00</p>
+                                    </span>
+                                </div>
+                                <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                    <img class="icon" src="img/prof/Layer.png">
+                                    <span class="cont cont_zak">
+                                        <p class="institution-name">Варадеро</p>
+                                        <p class="work-time">11:00</p>
+                                    </span>
+                                </div>
+                                <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                    <img class="icon" src="img/prof/Layer.png">
+                                    <span class="cont cont_zak">
+                                        <p class="institution-name">Варадеро</p>
+                                        <p class="work-time">11:00</p>
+                                    </span>
+                                </div>
+                                <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                    <img class="icon" src="img/prof/Layer.png">
+                                    <span class="cont cont_zak">
+                                        <p class="institution-name">Варадеро</p>
+                                        <p class="work-time">11:00</p>
+                                    </span>
+                                </div>
+                                <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                    <img class="icon" src="img/prof/Layer.png">
+                                    <span class="cont cont_zak">
+                                        <p class="institution-name">Варадеро</p>
+                                        <p class="work-time">11:00</p>
+                                    </span>
+                                </div>
+                                <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                    <img class="icon" src="img/prof/Layer.png">
+                                    <span class="cont cont_zak">
+                                        <p class="institution-name">Варадеро</p>
+                                        <p class="work-time">11:00</p>
+                                    </span>
+                                </div>
+                                <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                    <img class="icon" src="img/prof/Layer.png">
+                                    <span class="cont cont_zak">
+                                        <p class="institution-name">Варадеро</p>
+                                        <p class="work-time">11:00</p>
+                                    </span>
+                                </div>
+                                <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                    <img class="icon" src="img/prof/Layer.png">
+                                    <span class="cont cont_zak">
+                                        <p class="institution-name">Варадеро</p>
+                                        <p class="work-time">11:00</p>
+                                    </span>
+                                </div>
+                                <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                    <img class="icon" src="img/prof/Layer.png">
+                                    <span class="cont cont_zak">
+                                        <p class="institution-name">Варадеро</p>
+                                        <p class="work-time">11:00</p>
+                                    </span>
+                                </div>
+                                <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                    <img class="icon" src="img/prof/Layer.png">
+                                    <span class="cont cont_zak">
+                                        <p class="institution-name">Варадеро</p>
+                                        <p class="work-time">11:00</p>
+                                    </span>
+                                </div>
+                                <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                    <img class="icon" src="img/prof/Layer.png">
+                                    <span class="cont cont_zak">
+                                        <p class="institution-name">Варадеро</p>
+                                        <p class="work-time">11:00</p>
+                                    </span>
+                                </div>
+                                <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                    <img class="icon" src="img/prof/Layer.png">
+                                    <span class="cont cont_zak">
+                                        <p class="institution-name">Варадеро</p>
+                                        <p class="work-time">11:00</p>
+                                    </span>
+                                </div>
+                                <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                    <img class="icon" src="img/prof/Layer.png">
+                                    <span class="cont cont_zak">
+                                        <p class="institution-name">Варадеро</p>
+                                        <p class="work-time">11:00</p>
+                                    </span>
+                                </div>
+                                <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                    <img class="icon" src="img/prof/Layer.png">
+                                    <span class="cont cont_zak">
+                                        <p class="institution-name">Варадеро</p>
+                                        <p class="work-time">11:00</p>
+                                    </span>
+                                </div>
+                                <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                    <img class="icon" src="img/prof/Layer.png">
+                                    <span class="cont cont_zak">
+                                        <p class="institution-name">Варадеро</p>
+                                        <p class="work-time">11:00</p>
+                                    </span>
+                                </div>
+                                <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                    <img class="icon" src="img/prof/Layer.png">
+                                    <span class="cont cont_zak">
+                                        <p class="institution-name">Варадеро</p>
+                                        <p class="work-time">11:00</p>
+                                    </span>
+                                </div>
+                                <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
+                                    <img class="icon" src="img/prof/Layer.png">
+                                    <span class="cont cont_zak">
+                                        <p class="institution-name">Варадеро</p>
+                                        <p class="work-time">11:00</p>
+                                    </span>
+                                </div>
+                                <div class="prof_last_item" onclick="showItem('prof_zak','prof_zak2')">
+                                    <img class="icon" src="img/prof/Layer.png">
+                                    <span class="cont cont_zak">
+                                        <p class="institution-name">Варадеро</p>
+                                        <p class="work-time">11:00</p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="prof_zak2" class="prof_zak2 prof_other main-menu-punkt" hidden="true" style="display: none;">
+                            <div class="prof_item main-menu-back-button" onclick="showItem('prof_zak2','prof_zak')">
+                                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                    <path fill="#1F5989" d="M7,12L12,7V10H16V14H12V17L7,12M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12Z" />
+                                </svg>
+                                <p class="main-menu-back-button-label">Заказ (Варадеро) длинное название</p>
+                            </div>
+                            <div id="scroll_zak2" class="main-menu-body">
+                                <div style="position: relative; width: 100%; height: 100%;">
+                                    <div class="prof_item">
+                                        <img class="icon" src="img/prof/grill.PNG">
+                                        <span class="cont_zak">
+                                            <p class="dish-name">Овощи на гриле</p>
+                                            <p class="dish-info">
+                                                <span class="price">125грн Х1</span>
+                                                <span class="summ-price" style="float: right;">135грн</span>
+                                            </p>
+                                        </span>
+                                    </div>
+                                    <div class="prof_item">
+                                        <img class="icon" src="img/prof/grill.PNG">
+                                        <span class="cont_zak">
+                                            <p class="dish-name">Овощи на гриле</p>
+                                            <p class="dish-info">
+                                                <span class="price">125грн Х1</span>
+                                                <span class="summ-price" style="float: right;">125грн</span>
+                                            </p>
+                                        </span>
+                                    </div>
+                                    <div class="prof_item">
+                                        <img class="icon" src="img/prof/grill.PNG">
+                                        <span class="cont_zak">
+                                            <p class="dish-name">Овощи на гриле</p>
+                                            <p class="dish-info">
+                                                <span class="price">125грн Х1</span>
+                                                <span class="summ-price" style="float: right;">125грн</span>
+                                            </p>
+                                        </span>
+                                    </div>
+                                    <div class="prof_item">
+                                        <img class="icon" src="img/prof/grill.PNG">
+                                        <span class="cont_zak">
+                                            <p class="dish-name">Овощи на гриле</p>
+                                            <p class="dish-info">
+                                                <span class="price">125грн Х1</span>
+                                                <span class="summ-price" style="float: right;">125грн</span>
+                                            </p>
+                                        </span>
+                                    </div>
+                                    <div class="prof_item">
+                                        <img class="icon" src="img/prof/grill.PNG">
+                                        <span class="cont_zak">
+                                            <p class="dish-name">Овощи на гриле</p>
+                                            <p class="dish-info">
+                                                <span class="price">125грн Х1</span>
+                                                <span class="summ-price" style="float: right;">125грн</span>
+                                            </p>
+                                        </span>
+                                    </div>
+                                    <div class="prof_item">
+                                        <img class="icon" src="img/prof/grill.PNG">
+                                        <span class="cont_zak">
+                                            <p class="dish-name">Овощи на гриле</p>
+                                            <p class="dish-info">
+                                                <span class="price">125грн Х1</span>
+                                                <span class="summ-price" style="float: right;">125грн</span>
+                                            </p>
+                                        </span>
+                                    </div>
+                                    <div class="prof_item">
+                                        <img class="icon" src="img/prof/grill.PNG">
+                                        <span class="cont_zak">
+                                            <p class="dish-name">Овощи на гриле</p>
+                                            <p class="dish-info">
+                                                <span class="price">125грн Х1</span>
+                                                <span class="summ-price" style="float: right;">125грн</span>
+                                            </p>
+                                        </span>
+                                    </div>
+                                    <div class="prof_item">
+                                        <img class="icon" src="img/prof/grill.PNG">
+                                        <span class="cont_zak">
+                                            <p class="dish-name">Овощи на гриле</p>
+                                            <p class="dish-info">
+                                                <span class="price">125грн Х1</span>
+                                                <span class="summ-price" style="float: right;">125грн</span>
+                                            </p>
+                                        </span>
+                                    </div>
+                                    <div class="prof_last_item">
+                                        <img class="icon" src="img/prof/grill.PNG">
+                                        <span class="cont_zak">
+                                            <p class="dish-name">Овощи на гриле</p>
+                                            <p class="dish-info">
+                                                <span class="price">125грн Х1</span>
+                                                <span class="summ-price" style="float: right;">125грн</span>
+                                            </p>
+                                        </span>
+                                    </div>
+                                    <div class="edit_zak">
+                                        <div class="all-summ">
+                                            ИТОГО: <span class="allSum">10000 грн.</span>
+                                        </div>
+                                        <a href="order.html" style="text-decoration: none">
+                                            <div id="bottom_mark" class="row text-center">
+                                                <span>Редактировать</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="prof_dialog" class="prof_dialog prof_other main-menu-punkt" hidden="true" style="display: none;">
+                            <div class="prof_item main-menu-back-button" onclick="showItem('prof_dialog','prof_main')">
+                                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                    <path fill="#1F5989" d="M7,12L12,7V10H16V14H12V17L7,12M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12Z" />
+                                </svg>
+                                <span class="main-menu-back-button-label">Сообщения</span>
+                            </div>
+                            <div id="scroll_dialog" class="main-menu-body">
+                                <div class="prof_item align-items-vertical" onclick="showItem('prof_dialog','prof_mess')">
+                                    <img class="profIMG" src="img/prof/face2.png">
+                                    <div class="cont messages-cont">
+                                        <p class="family">Фамилия</p>
+                                        <p class="name">Имя</p>
+                                        <p class="last_mess_time">16:00</p>
+                                    </div>
+                                    <div class="last_mess">
+                                        Здесь последнее сообщение.
+                                    </div>
+                                </div>
+                                <div class="prof_item align-items-vertical" onclick="showItem('prof_dialog','prof_mess')">
+                                    <img class="profIMG" src="img/prof/face2.png">
+                                    <div class="cont messages-cont">
+                                        <p class="family">Фамилия</p>
+                                        <p class="name">Имя</p>
+                                        <p class="last_mess_time">16:00</p>
+                                    </div>
+                                    <div class="last_mess">
+                                        Здесь последнее сообщение.
+                                    </div>
+                                </div>
+                                <div class="prof_item align-items-vertical" onclick="showItem('prof_dialog','prof_mess')">
+                                    <img class="profIMG" src="img/prof/face2.png">
+                                    <div class="cont messages-cont">
+                                        <p class="family">Фамилия</p>
+                                        <p class="name">Имя</p>
+                                        <p class="last_mess_time">16:00</p>
+                                    </div>
+                                    <div class="last_mess">
+                                        Здесь последнее сообщение.
+                                    </div>
+                                </div>
+                                <div class="prof_item align-items-vertical" onclick="showItem('prof_dialog','prof_mess')">
+                                    <img class="profIMG" src="img/prof/face2.png">
+                                    <div class="cont messages-cont">
+                                        <p class="family">Фамилия</p>
+                                        <p class="name">Имя</p>
+                                        <p class="last_mess_time">16:00</p>
+                                    </div>
+                                    <div class="last_mess">
+                                        Здесь последнее сообщение.
+                                    </div>
+                                </div>
+                                <div class="prof_item align-items-vertical" onclick="showItem('prof_dialog','prof_mess')">
+                                    <img class="profIMG" src="img/prof/face2.png">
+                                    <div class="cont messages-cont">
+                                        <p class="family">Фамилия</p>
+                                        <p class="name">Имя</p>
+                                        <p class="last_mess_time">16:00</p>
+                                    </div>
+                                    <div class="last_mess">
+                                        Здесь последнее сообщение.
+                                    </div>
+                                </div>
+                                <div class="prof_item align-items-vertical" onclick="showItem('prof_dialog','prof_mess')">
+                                    <img class="profIMG" src="img/prof/face2.png">
+                                    <div class="cont messages-cont">
+                                        <p class="family">Фамилия</p>
+                                        <p class="name">Имя</p>
+                                        <p class="last_mess_time">16:00</p>
+                                    </div>
+                                    <div class="last_mess">
+                                        Здесь последнее сообщение.
+                                    </div>
+                                </div>
+                                <div class="prof_item align-items-vertical" onclick="showItem('prof_dialog','prof_mess')">
+                                    <img class="profIMG" src="img/prof/face2.png">
+                                    <div class="cont messages-cont">
+                                        <p class="family">Фамилия</p>
+                                        <p class="name">Имя</p>
+                                        <p class="last_mess_time">16:00</p>
+                                    </div>
+                                    <div class="last_mess">
+                                        Здесь последнее сообщение.
+                                    </div>
+                                </div>
+                                <div class="prof_item align-items-vertical" onclick="showItem('prof_dialog','prof_mess')">
+                                    <img class="profIMG" src="img/prof/face2.png">
+                                    <div class="cont messages-cont">
+                                        <p class="family">Фамилия</p>
+                                        <p class="name">Имя</p>
+                                        <p class="last_mess_time">16:00</p>
+                                    </div>
+                                    <div class="last_mess">
+                                        Здесь последнее сообщение.
+                                    </div>
+                                </div>
+                                <div class="prof_last_item align-items-vertical" onclick="showItem('prof_dialog','prof_mess')">
+                                    <img class="profIMG" src="img/prof/face2.png">
+                                    <div class="cont messages-cont">
+                                        <p class="family">Фамилия</p>
+                                        <p class="name">Имя</p>
+                                        <p class="last_mess_time">16:00</p>
+                                    </div>
+                                    <div class="last_mess">
+                                        Здесь последнее сообщение.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="prof_mess" class="prof_mess prof_other main-menu-punkt" hidden="true" style="display: none;">
+                            <div class="prof_item main-menu-back-button" onclick="showItem('prof_mess','prof_dialog')">
+                                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                    <path fill="#1F5989" d="M7,12L12,7V10H16V14H12V17L7,12M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12Z" />
+                                </svg>
+                                <span class="main-menu-back-button-label">Диалог</span>
+                            </div>
+                            <div id="scroll_mess" class="main-menu-body">
+                                <div class="prof_item align-items-vertical">
+                                    <img class="profIMG" src="img/prof/face2.png">
+                                    <div class="cont messages-cont">
+                                        <p class="family">Фамилия</p>
+                                        <p class="name">Имя</p>
+                                        <p class="last_mess_time">16:00</p>
+                                    </div>
+                                    <div class="last_mess">
+                                        Здесь какое-то сообщение.
+                                    </div>
+                                </div>
+                                <div class="prof_item align-items-vertical">
+                                    <img class="profIMG" src="img/prof/face2.png">
+                                    <div class="cont messages-cont">
+                                        <p class="family">Фамилия</p>
+                                        <p class="name">Имя</p>
+                                        <p class="last_mess_time">16:00</p>
+                                    </div>
+                                    <div class="last_mess">
+                                        Здесь какое-то сообщение.
+                                    </div>
+                                </div>
+                                <div class="prof_item align-items-vertical">
+                                    <img class="profIMG" src="img/prof/face2.png">
+                                    <div class="cont messages-cont">
+                                        <p class="family">Фамилия</p>
+                                        <p class="name">Имя</p>
+                                        <p class="last_mess_time">16:00</p>
+                                    </div>
+                                    <div class="last_mess">
+                                        Здесь какое-то сообщение.
+                                    </div>
+                                </div>
+                                <div class="prof_item align-items-vertical">
+                                    <img class="profIMG" src="img/prof/face2.png">
+                                    <div class="cont messages-cont">
+                                        <p class="family">Фамилия</p>
+                                        <p class="name">Имя</p>
+                                        <p class="last_mess_time">16:00</p>
+                                    </div>
+                                    <div class="last_mess">
+                                        Здесь какое-то сообщение.
+                                    </div>
+                                </div>
+                                <div class="prof_item align-items-vertical">
+                                    <img class="profIMG" src="img/prof/face2.png">
+                                    <div class="cont messages-cont">
+                                        <p class="family">Фамилия</p>
+                                        <p class="name">Имя</p>
+                                        <p class="last_mess_time">16:00</p>
+                                    </div>
+                                    <div class="last_mess">
+                                        Здесь какое-то сообщение.
+                                    </div>
+                                </div>
+                                <div class="prof_item align-items-vertical">
+                                    <img class="profIMG" src="img/prof/face2.png">
+                                    <div class="cont messages-cont">
+                                        <p class="family">Фамилия</p>
+                                        <p class="name">Имя</p>
+                                        <p class="last_mess_time">16:00</p>
+                                    </div>
+                                    <div class="last_mess">
+                                        Здесь какое-то сообщение.
+                                    </div>
+                                </div>
+                                <div class="prof_item align-items-vertical">
+                                    <img class="profIMG" src="img/prof/face2.png">
+                                    <div class="cont messages-cont">
+                                        <p class="family">Фамилия</p>
+                                        <p class="name">Имя</p>
+                                        <p class="last_mess_time">16:00</p>
+                                    </div>
+                                    <div class="last_mess">
+                                        Здесь какое-то сообщение.
+                                    </div>
+                                </div>
+                                <div class="prof_item align-items-vertical">
+                                    <img class="profIMG" src="img/prof/face2.png">
+                                    <div class="cont messages-cont">
+                                        <p class="family">Фамилия</p>
+                                        <p class="name">Имя</p>
+                                        <p class="last_mess_time">16:00</p>
+                                    </div>
+                                    <div class="last_mess">
+                                        Здесь какое-то сообщение.
+                                    </div>
+                                </div>
+                                <div class="prof_item align-items-vertical">
+                                    <img class="profIMG" src="img/prof/face2.png">
+                                    <div class="cont messages-cont">
+                                        <p class="family">Фамилия</p>
+                                        <p class="name">Имя</p>
+                                        <p class="last_mess_time">16:00</p>
+                                    </div>
+                                    <div class="last_mess">
+                                        Здесь какое-то сообщение.
+                                    </div>
+                                </div>
+                                <div class="prof_item align-items-vertical">
+                                    <img class="profIMG" src="img/prof/face2.png">
+                                    <div class="cont messages-cont">
+                                        <p class="family">Фамилия</p>
+                                        <p class="name">Имя</p>
+                                        <p class="last_mess_time">16:00</p>
+                                    </div>
+                                    <div class="last_mess">
+                                        Здесь какое-то сообщение.
+                                    </div>
+                                </div>
+                                <div class="prof_item align-items-vertical">
+                                    <img class="profIMG" src="img/prof/face2.png">
+                                    <div class="cont messages-cont">
+                                        <p class="family">Фамилия</p>
+                                        <p class="name">Имя</p>
+                                        <p class="last_mess_time">16:00</p>
+                                    </div>
+                                    <div class="last_mess">
+                                        Здесь какое-то сообщение.
+                                    </div>
+                                </div>
+                                <div class="prof_item align-items-vertical">
+                                    <img class="profIMG" src="img/prof/face2.png">
+                                    <div class="cont messages-cont">
+                                        <p class="family">Фамилия</p>
+                                        <p class="name">Имя</p>
+                                        <p class="last_mess_time">16:00</p>
+                                    </div>
+                                    <div class="last_mess">
+                                        Здесь какое-то сообщение.
+                                    </div>
+                                </div>
+                                <div class="prof_item align-items-vertical">
+                                    <img class="profIMG" src="img/prof/face2.png">
+                                    <div class="cont messages-cont">
+                                        <p class="family">Фамилия</p>
+                                        <p class="name">Имя</p>
+                                        <p class="last_mess_time">16:00</p>
+                                    </div>
+                                    <div class="last_mess">
+                                        Здесь какое-то сообщение.
+                                    </div>
+                                </div>
+                                <div class="prof_item align-items-vertical">
+                                    <img class="profIMG" src="img/prof/face2.png">
+                                    <div class="cont messages-cont">
+                                        <p class="family">Фамилия</p>
+                                        <p class="name">Имя</p>
+                                        <p class="last_mess_time">16:00</p>
+                                    </div>
+                                    <div class="last_mess">
+                                        Здесь какое-то сообщение.
+                                    </div>
+                                </div>
+                                <div class="prof_last_item">
+                                    <form action="" method="">
+                                        <textarea rows="3" cols="33" name="text"></textarea>
+                                        <div class="smile-and-button-block">
+                                            <div class="row row-without-margin">
+                                                <div class="col-xs-6 col-lg-6 col-without-padding">
+                                                    <span class="peoplb"><img src="img/prof/peoplb.png"></span>
+                                                    <span class="sendf"><img src="img/prof/paperclip.png"></span>
+                                                </div>
+                                                <div class="col-xs-6 col-lg-6 col-without-padding text-right">
+                                                    <span class="smiles"><img src="img/prof/smiles.png"></span>
+                                                    <span class="submit">Отправить</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="prof_alert" class="prof_alert prof_other main-menu-punkt" hidden="true" style="display: none;">
+                            <div class="prof_item main-menu-back-button" onclick="showItem('prof_alert','prof_main')">
+                                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                    <path fill="#1F5989" d="M7,12L12,7V10H16V14H12V17L7,12M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12Z" />
+                                </svg>
+                                <span class="main-menu-back-button-label">Уведомления</span>
+                            </div>
+                            <div id="scroll_alert" class="main-menu-body">
+                                <div class="prof-item-notice">
+                                    <div class="alert_time" align="right">11:00</div>
+                                    <div class="row row-without-margin notice-body align-items-vertical">
+                                        <div class="col-md-2 col-sm-2 col-xs-2">
+                                            <img src="img/prof/kalendar.png">
+                                        </div>
+                                        <div class="col-md-10 col-sm-10 col-xs-10">
+                                            <div class="alert_msg">Вас пригласили на мероприятие в ресторан</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="prof-item-notice">
+                                    <div class="alert_time" align="right">11:00</div>
+                                    <div class="row row-without-margin notice-body align-items-vertical">
+                                        <div class="col-md-2 col-sm-2 col-xs-2">
+                                            <img src="img/prof/zvonok.png">
+                                        </div>
+                                        <div class="col-md-10 col-sm-10 col-xs-10">
+                                            <div class="alert_msg">Ваш заказ успешно подтвержден.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="prof-item-notice">
+                                    <div class="alert_time" align="right">11:00</div>
+                                    <div class="row row-without-margin notice-body align-items-vertical">
+                                        <div class="col-md-2 col-sm-2 col-xs-2">
+                                            <img src="img/prof/kniga.png">
+                                        </div>
+                                        <div class="col-md-10 col-sm-10 col-xs-10">
+                                            <div class="alert_msg">Запрос на добавление в контакты.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="prof-item-notice">
+                                    <div class="alert_time" align="right">11:00</div>
+                                    <div class="row row-without-margin notice-body align-items-vertical">
+                                        <div class="col-md-2 col-sm-2 col-xs-2">
+                                            <img src="img/prof/kolokol.png">
+                                        </div>
+                                        <div class="col-md-10 col-sm-10 col-xs-10">
+                                            <div class="alert_msg">День рождения у Светы!</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="prof-item-notice">
+                                    <div class="alert_time" align="right">11:00</div>
+                                    <div class="row row-without-margin notice-body align-items-vertical">
+                                        <div class="col-md-2 col-sm-2 col-xs-2">
+                                            <img src="img/prof/kniga.png">
+                                        </div>
+                                        <div class="col-md-10 col-sm-10 col-xs-10">
+                                            <div class="alert_msg">Запрос на добавление в контакты.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="prof-item-notice">
+                                    <div class="alert_time" align="right">11:00</div>
+                                    <div class="row row-without-margin notice-body align-items-vertical">
+                                        <div class="col-md-2 col-sm-2 col-xs-2">
+                                            <img src="img/prof/kolokol.png">
+                                        </div>
+                                        <div class="col-md-10 col-sm-10 col-xs-10">
+                                            <div class="alert_msg">День рождения у Светы!</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="prof-item-notice">
+                                    <div class="alert_time" align="right">11:00</div>
+                                    <div class="row row-without-margin notice-body align-items-vertical">
+                                        <div class="col-md-2 col-sm-2 col-xs-2">
+                                            <img src="img/prof/kniga.png">
+                                        </div>
+                                        <div class="col-md-10 col-sm-10 col-xs-10">
+                                            <div class="alert_msg">Запрос на добавление в контакты.</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="prof-item-notice">
+                                    <div class="alert_time" align="right">11:00</div>
+                                    <div class="row row-without-margin notice-body align-items-vertical">
+                                        <div class="col-md-2 col-sm-2 col-xs-2">
+                                            <img src="img/prof/kniga.png">
+                                        </div>
+                                        <div class="col-md-10 col-sm-10 col-xs-10">
+                                            <div class="alert_msg">Запрос на добавление в контакты.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="prof-item-notice">
+                                    <div class="alert_time" align="right">11:00</div>
+                                    <div class="row row-without-margin notice-body align-items-vertical">
+                                        <div class="col-md-2 col-sm-2 col-xs-2">
+                                            <img src="img/prof/kolokol.png">
+                                        </div>
+                                        <div class="col-md-10 col-sm-10 col-xs-10">
+                                            <div class="alert_msg">День рождения у Светы!</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="prof-item-notice">
+                                    <div class="alert_time" align="right">11:00</div>
+                                    <div class="row row-without-margin notice-body align-items-vertical">
+                                        <div class="col-md-2 col-sm-2 col-xs-2">
+                                            <img src="img/prof/kniga.png">
+                                        </div>
+                                        <div class="col-md-10 col-sm-10 col-xs-10">
+                                            <div class="alert_msg">Запрос на добавление в контакты.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="prof-item-notice">
+                                    <div class="alert_time" align="right">11:00</div>
+                                    <div class="row row-without-margin notice-body align-items-vertical">
+                                        <div class="col-md-2 col-sm-2 col-xs-2">
+                                            <img src="img/prof/kniga.png">
+                                        </div>
+                                        <div class="col-md-10 col-sm-10 col-xs-10">
+                                            <div class="alert_msg">Запрос на добавление в контакты.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="prof-item-notice">
+                                    <div class="alert_time" align="right">11:00</div>
+                                    <div class="row row-without-margin notice-body align-items-vertical">
+                                        <div class="col-md-2 col-sm-2 col-xs-2">
+                                            <img src="img/prof/kolokol.png">
+                                        </div>
+                                        <div class="col-md-10 col-sm-10 col-xs-10">
+                                            <div class="alert_msg">День рождения у Светы!</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="prof-item-notice">
+                                    <div class="alert_time" align="right">11:00</div>
+                                    <div class="row row-without-margin notice-body align-items-vertical">
+                                        <div class="col-md-2 col-sm-2 col-xs-2">
+                                            <img src="img/prof/kniga.png">
+                                        </div>
+                                        <div class="col-md-10 col-sm-10 col-xs-10">
+                                            <div class="alert_msg">Запрос на добавление в контакты.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="prof-last-item-notice">
+                                    <div class="alert_time" align="right">11:00</div>
+                                    <div class="row row-without-margin notice-body align-items-vertical">
+                                        <div class="col-md-2 col-sm-2 col-xs-2">
+                                            <img src="img/prof/kolokol.png">
+                                        </div>
+                                        <div class="col-md-10 col-sm-10 col-xs-10">
+                                            <div class="alert_msg">День рождения у Светы!</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
 
         <div class="nav_menu_mob_border"></div>
-
         <!-- nav menu -->
         <div class="nav_main" id="menu-top">
             <ul class="nav_main">
@@ -138,7 +1589,7 @@
                     <a href="menu.html">Меню</a>
                 </li>
                 <li>
-                    <a href="#">Схема заведения</a>
+                    <a href="order.html">Схема заведения</a>
                 </li>
                 <li>
                     <a href="#">Новости</a>
@@ -160,7 +1611,7 @@
                     <div id="myDropdown" class="dropdown-content">
                         <a href="index.html">Главная</a>
                         <a href="menu.html">Меню</a>
-                        <a href="#">Схема заведения</a>
+                        <a href="order.html">Схема заведения</a>
                         <a href="#">Новости</a>
                         <a href="#">О ресторане</a>
                         <a href="#">Контакты</a>
@@ -173,7 +1624,7 @@
                     <a href="menu.html">Меню</a>
                 </li>
                 <li>
-                    <a href="#">Схема заведения</a>
+                    <a href="order.html">Схема заведения</a>
                 </li>
                 <li>
                     <a href="#">Новости</a>
@@ -184,7 +1635,6 @@
                 <li class="hide_last_li">
                     <a href="#">Контакты</a>
                 </li>
-                <!--&nbsp;-->
             </ul>
         </div>
     </header>
@@ -453,6 +1903,1514 @@
                     </div>
                 </div>
             </div>
+            <div class="panel panel-default">
+                <div class="panel_heading_container">
+                    <div class="panel-heading">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                            <div class="order_item">
+                                <div class="order_item_number">
+                                    <div>
+                                        <p class="brown order_item_number">3328<img src="img/icons/import.png" /></p>
+                                        <span class="brown bold order_item_name p15">MSCUVS198456 / SUNE842484, SUNE842485</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="order_item_count brown">7 (3*20, 4*40)</span>
+                                    <span class="order_spot">
+                                        Tokiо / Odessa
+                                    </span>
+                                    <span class="order_item_status brown">
+                                        На загрузке (24.11.2016)
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div id="collapse2" class="panel-collapse collapse">
+                    <div class="panel-body inner_order">
+                        <h4 class="brown margin_left_10px bold">3145IMP BL MSCUVS198456 / SUNE842484, SUNE842485 – всего 7 (3*20, 4*40)</h4>
+                        <div class="discription">
+                            <div>Статус: <b>Таможенное оформление в порту (24.11.2016)</b></div>
+                            <br />
+                            <div>
+                                Получатель – <b>ЧП «Гесс Автозапчасти»</b>
+                            </div>
+                            <div>
+                                Адрес получателя – <b>г. Александрия, ул. Промышленная, 58, Украина</b>
+                            </div>
+                            <br />
+                            <div>
+                                Дата отправки – <b>29.07.2016 из Гуанчжоу на т/х Mehtab Bayraktar</b>
+                            </div>
+                            <br />
+                            <div>
+                                Порт перевалки – <b>1 порт</b>
+                            </div>
+                            <div>
+                                Порт перевалки – <b>2 порт</b>
+                            </div>
+                            <br />
+                            <div>
+                                Порт назначения – <b>Одесса, Украина</b>
+                            </div>
+                            <div>
+                                Пункт назначения (адрес доставки) - <b>г. Александрия, ул. Промышленная, 58, Украина</b>
+                            </div>
+                            <br />
+                            <div class="vertical_line">
+                                <h5 class="brown bold">SUNE842484 {MSCUVS198456 - 3*20 контейнеров}</h5>
+                                <br />
+                                <div>
+                                    Условия поставки – <b>FOB</b>
+                                </div>
+                                <div>
+                                    Груз – <b>Сталь в рулонах, 7210</b>
+                                </div>
+                                <div>
+                                    Отправитель – <b>NINGBO INTERNATIONAL CO., LTD.,</b>
+                                </div>
+                                <br />
+                                <div>
+                                    Адрес отправителя – <b>NINGBO, TOWN STREET, 876521, CHINA</b>
+                                </div>
+                                <br />
+
+                                <div style="min-width: 280px; overflow-x: scroll;">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th>Номер контейнера</th>
+                                                <th>Тип контейнера</th>
+                                                <th>Количество мест</th>
+                                                <th>Нетто (кг.)</th>
+                                                <th>Брутто (кг.)</th>
+                                                <th>Наименование товара</th>
+                                                <th>Код товара</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>MSCU9845617</td>
+                                                <td>20’ HC</td>
+                                                <td>1254</td>
+                                                <td>25600</td>
+                                                <td>28000</td>
+                                                <td>СТАЛЬ В РУЛОНАХ</td>
+                                                <td>7210</td>
+                                            </tr>
+                                            <tr>
+                                                <td>MSCU9845617</td>
+                                                <td>20’ HC</td>
+                                                <td>1254</td>
+                                                <td>25600</td>
+                                                <td>28000</td>
+                                                <td>СТАЛЬ В РУЛОНАХ</td>
+                                                <td>7210</td>
+                                            </tr>
+                                            <tr>
+                                                <td>MSCU9845617</td>
+                                                <td>20’ HC</td>
+                                                <td>1254</td>
+                                                <td>25600</td>
+                                                <td>28000</td>
+                                                <td>СТАЛЬ В РУЛОНАХ</td>
+                                                <td>7210</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <span class="brown p15"><img src="img/prof/paperclip.png"> Прикрепленные файлы</span>
+                                <br />
+                                <ol class="add_files">
+                                    <li>
+                                        <div>Документ 1</div>
+                                        <span class="btn watch"><img src="img/icons/watch.png"></span>
+                                        <span class="btn basket"><img src="img/icons/basket.png"></span>
+                                    </li>
+                                    <li>
+                                        <div>Документ 2</div>
+                                        <span class="btn watch"><img src="img/icons/watch.png"></span>
+                                        <span class="btn basket"><img src="img/icons/basket.png"></span>
+                                    </li>
+                                    <li>
+                                        <div>Поручение</div>
+                                        <span class="btn watch"><img src="img/icons/watch.png"></span>
+                                        <span class="btn basket"><img src="img/icons/basket.png"></span>
+                                    </li>
+                                </ol>
+                                <span class="btn add_files_btn"><img src="img/prof/paperclip.png"> Прикрепить</span>
+                            </div>
+                            <br />
+                            <div class="vertical_line">
+                                <h5 class="brown bold">SUNE842485 {MSCUVS198457 - 4*40 контейнеров}</h5>
+                                <br />
+                                <div>
+                                    Условия поставки – <b>FOB</b>
+                                </div>
+                                <div>
+                                    Груз – <b>Сталь в рулонах, 7210</b>
+                                </div>
+                                <div>
+                                    Отправитель – <b>NINGBO INTERNATIONAL CO., LTD.,</b>
+                                </div>
+                                <br />
+                                <div>
+                                    Адрес отправителя – <b>NINGBO, TOWN STREET, 876521, CHINA</b>
+                                </div>
+                                <br />
+
+                                <div style="min-width: 280px; overflow-x: scroll;">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th>Номер контейнера</th>
+                                                <th>Тип контейнера</th>
+                                                <th>Количество мест</th>
+                                                <th>Нетто (кг.)</th>
+                                                <th>Брутто (кг.)</th>
+                                                <th>Наименование товара</th>
+                                                <th>Код товара</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>MSCU9845617</td>
+                                                <td>40’ HC</td>
+                                                <td>1254</td>
+                                                <td>25600</td>
+                                                <td>28000</td>
+                                                <td>СТАЛЬ В РУЛОНАХ</td>
+                                                <td>7210</td>
+                                            </tr>
+                                            <tr>
+                                                <td>MSCU9845617</td>
+                                                <td>40’ HC</td>
+                                                <td>1254</td>
+                                                <td>25600</td>
+                                                <td>28000</td>
+                                                <td>СТАЛЬ В РУЛОНАХ</td>
+                                                <td>7210</td>
+                                            </tr>
+                                            <tr>
+                                                <td>MSCU9845617</td>
+                                                <td>40’ HC</td>
+                                                <td>1254</td>
+                                                <td>25600</td>
+                                                <td>28000</td>
+                                                <td>СТАЛЬ В РУЛОНАХ</td>
+                                                <td>7210</td>
+                                            </tr>
+                                            <tr>
+                                                <td>MSCU9845617</td>
+                                                <td>40’ HC</td>
+                                                <td>1254</td>
+                                                <td>25600</td>
+                                                <td>28000</td>
+                                                <td>СТАЛЬ В РУЛОНАХ</td>
+                                                <td>7210</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel_heading_container">
+                    <div class="panel-heading">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                            <div class="order_item">
+                                <div class="order_item_number">
+                                    <div>
+                                        <p class="brown order_item_number">1227<img src="img/icons/export.png" /></p>
+                                        <span class="brown bold order_item_name p15">MSCUVS198456 / SUNE842484, SUNE842485</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="order_item_count brown">7 (3*20, 4*40)</span>
+                                    <span class="order_spot">
+                                        Odessa / Dublin
+                                    </span>
+                                    <span class="order_item_status brown">
+                                        Подача порожнего контейнера (24.11.2016)
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div id="collapse3" class="panel-collapse collapse">
+                    <div class="panel-body inner_order">
+                        <h4 class="brown margin_left_10px bold">3145IMP BL MSCUVS198456 / SUNE842484, SUNE842485 – всего 7 (3*20, 4*40)</h4>
+                        <div class="discription">
+                            <div>Статус: <b>Таможенное оформление в порту (24.11.2016)</b></div>
+                            <br />
+                            <div>
+                                Получатель – <b>ЧП «Гесс Автозапчасти»</b>
+                            </div>
+                            <div>
+                                Адрес получателя – <b>г. Александрия, ул. Промышленная, 58, Украина</b>
+                            </div>
+                            <br />
+                            <div>
+                                Дата отправки – <b>29.07.2016 из Гуанчжоу на т/х Mehtab Bayraktar</b>
+                            </div>
+                            <br />
+                            <div>
+                                Порт перевалки – <b>1 порт</b>
+                            </div>
+                            <div>
+                                Порт перевалки – <b>2 порт</b>
+                            </div>
+                            <br />
+                            <div>
+                                Порт назначения – <b>Одесса, Украина</b>
+                            </div>
+                            <div>
+                                Пункт назначения (адрес доставки) - <b>г. Александрия, ул. Промышленная, 58, Украина</b>
+                            </div>
+                            <br />
+                            <div class="vertical_line">
+                                <h5 class="brown bold">SUNE842484 {MSCUVS198456 - 3*20 контейнеров}</h5>
+                                <br />
+                                <div>
+                                    Условия поставки – <b>FOB</b>
+                                </div>
+                                <div>
+                                    Груз – <b>Сталь в рулонах, 7210</b>
+                                </div>
+                                <div>
+                                    Отправитель – <b>NINGBO INTERNATIONAL CO., LTD.,</b>
+                                </div>
+                                <br />
+                                <div>
+                                    Адрес отправителя – <b>NINGBO, TOWN STREET, 876521, CHINA</b>
+                                </div>
+                                <br />
+
+                                <div style="min-width: 280px; overflow-x: scroll;">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th>Номер контейнера</th>
+                                                <th>Тип контейнера</th>
+                                                <th>Количество мест</th>
+                                                <th>Нетто (кг.)</th>
+                                                <th>Брутто (кг.)</th>
+                                                <th>Наименование товара</th>
+                                                <th>Код товара</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>MSCU9845617</td>
+                                                <td>20’ HC</td>
+                                                <td>1254</td>
+                                                <td>25600</td>
+                                                <td>28000</td>
+                                                <td>СТАЛЬ В РУЛОНАХ</td>
+                                                <td>7210</td>
+                                            </tr>
+                                            <tr>
+                                                <td>MSCU9845617</td>
+                                                <td>20’ HC</td>
+                                                <td>1254</td>
+                                                <td>25600</td>
+                                                <td>28000</td>
+                                                <td>СТАЛЬ В РУЛОНАХ</td>
+                                                <td>7210</td>
+                                            </tr>
+                                            <tr>
+                                                <td>MSCU9845617</td>
+                                                <td>20’ HC</td>
+                                                <td>1254</td>
+                                                <td>25600</td>
+                                                <td>28000</td>
+                                                <td>СТАЛЬ В РУЛОНАХ</td>
+                                                <td>7210</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <span class="brown p15"><img src="img/prof/paperclip.png"> Прикрепленные файлы</span>
+                                <br />
+                                <ol class="add_files">
+                                    <li>
+                                        <div>Документ 1</div>
+                                        <span class="btn watch"><img src="img/icons/watch.png"></span>
+                                        <span class="btn basket"><img src="img/icons/basket.png"></span>
+                                    </li>
+                                    <li>
+                                        <div>Документ 2</div>
+                                        <span class="btn watch"><img src="img/icons/watch.png"></span>
+                                        <span class="btn basket"><img src="img/icons/basket.png"></span>
+                                    </li>
+                                    <li>
+                                        <div>Поручение</div>
+                                        <span class="btn watch"><img src="img/icons/watch.png"></span>
+                                        <span class="btn basket"><img src="img/icons/basket.png"></span>
+                                    </li>
+                                </ol>
+                                <span class="btn add_files_btn"><img src="img/prof/paperclip.png"> Прикрепить</span>
+                            </div>
+                            <br />
+                            <div class="vertical_line">
+                                <h5 class="brown bold">SUNE842485 {MSCUVS198457 - 4*40 контейнеров}</h5>
+                                <br />
+                                <div>
+                                    Условия поставки – <b>FOB</b>
+                                </div>
+                                <div>
+                                    Груз – <b>Сталь в рулонах, 7210</b>
+                                </div>
+                                <div>
+                                    Отправитель – <b>NINGBO INTERNATIONAL CO., LTD.,</b>
+                                </div>
+                                <br />
+                                <div>
+                                    Адрес отправителя – <b>NINGBO, TOWN STREET, 876521, CHINA</b>
+                                </div>
+                                <br />
+
+                                <div style="min-width: 280px; overflow-x: scroll;">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th>Номер контейнера</th>
+                                                <th>Тип контейнера</th>
+                                                <th>Количество мест</th>
+                                                <th>Нетто (кг.)</th>
+                                                <th>Брутто (кг.)</th>
+                                                <th>Наименование товара</th>
+                                                <th>Код товара</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>MSCU9845617</td>
+                                                <td>40’ HC</td>
+                                                <td>1254</td>
+                                                <td>25600</td>
+                                                <td>28000</td>
+                                                <td>СТАЛЬ В РУЛОНАХ</td>
+                                                <td>7210</td>
+                                            </tr>
+                                            <tr>
+                                                <td>MSCU9845617</td>
+                                                <td>40’ HC</td>
+                                                <td>1254</td>
+                                                <td>25600</td>
+                                                <td>28000</td>
+                                                <td>СТАЛЬ В РУЛОНАХ</td>
+                                                <td>7210</td>
+                                            </tr>
+                                            <tr>
+                                                <td>MSCU9845617</td>
+                                                <td>40’ HC</td>
+                                                <td>1254</td>
+                                                <td>25600</td>
+                                                <td>28000</td>
+                                                <td>СТАЛЬ В РУЛОНАХ</td>
+                                                <td>7210</td>
+                                            </tr>
+                                            <tr>
+                                                <td>MSCU9845617</td>
+                                                <td>40’ HC</td>
+                                                <td>1254</td>
+                                                <td>25600</td>
+                                                <td>28000</td>
+                                                <td>СТАЛЬ В РУЛОНАХ</td>
+                                                <td>7210</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel_heading_container">
+                    <div class="panel-heading">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+                            <div class="order_item">
+                                <div class="order_item_number">
+                                    <div>
+                                        <p class="brown order_item_number">4242<img src="img/icons/crossboking.png" /></p>
+                                        <span class="brown bold order_item_name p15">MSCUVS198456 / SUNE842484, SUNE842485</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="order_item_count brown">7 (3*20, 4*40)</span>
+                                    <span class="order_spot">
+                                        Berlin / Stambul
+                                    </span>
+                                    <span class="order_item_status brown">
+                                        Порт Южный убыл (20.11.2016)
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div id="collapse4" class="panel-collapse collapse">
+                    <div class="panel-body inner_order">
+                        <h4 class="brown margin_left_10px bold">3145IMP BL MSCUVS198456 / SUNE842484, SUNE842485 – всего 7 (3*20, 4*40)</h4>
+                        <div class="discription">
+                            <div>Статус: <b>Таможенное оформление в порту (24.11.2016)</b></div>
+                            <br />
+                            <div>
+                                Получатель – <b>ЧП «Гесс Автозапчасти»</b>
+                            </div>
+                            <div>
+                                Адрес получателя – <b>г. Александрия, ул. Промышленная, 58, Украина</b>
+                            </div>
+                            <br />
+                            <div>
+                                Дата отправки – <b>29.07.2016 из Гуанчжоу на т/х Mehtab Bayraktar</b>
+                            </div>
+                            <br />
+                            <div>
+                                Порт перевалки – <b>1 порт</b>
+                            </div>
+                            <div>
+                                Порт перевалки – <b>2 порт</b>
+                            </div>
+                            <br />
+                            <div>
+                                Порт назначения – <b>Одесса, Украина</b>
+                            </div>
+                            <div>
+                                Пункт назначения (адрес доставки) - <b>г. Александрия, ул. Промышленная, 58, Украина</b>
+                            </div>
+                            <br />
+                            <div class="vertical_line">
+                                <h5 class="brown bold">SUNE842484 {MSCUVS198456 - 3*20 контейнеров}</h5>
+                                <br />
+                                <div>
+                                    Условия поставки – <b>FOB</b>
+                                </div>
+                                <div>
+                                    Груз – <b>Сталь в рулонах, 7210</b>
+                                </div>
+                                <div>
+                                    Отправитель – <b>NINGBO INTERNATIONAL CO., LTD.,</b>
+                                </div>
+                                <br />
+                                <div>
+                                    Адрес отправителя – <b>NINGBO, TOWN STREET, 876521, CHINA</b>
+                                </div>
+                                <br />
+
+                                <div style="min-width: 280px; overflow-x: scroll;">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th>Номер контейнера</th>
+                                                <th>Тип контейнера</th>
+                                                <th>Количество мест</th>
+                                                <th>Нетто (кг.)</th>
+                                                <th>Брутто (кг.)</th>
+                                                <th>Наименование товара</th>
+                                                <th>Код товара</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>MSCU9845617</td>
+                                                <td>20’ HC</td>
+                                                <td>1254</td>
+                                                <td>25600</td>
+                                                <td>28000</td>
+                                                <td>СТАЛЬ В РУЛОНАХ</td>
+                                                <td>7210</td>
+                                            </tr>
+                                            <tr>
+                                                <td>MSCU9845617</td>
+                                                <td>20’ HC</td>
+                                                <td>1254</td>
+                                                <td>25600</td>
+                                                <td>28000</td>
+                                                <td>СТАЛЬ В РУЛОНАХ</td>
+                                                <td>7210</td>
+                                            </tr>
+                                            <tr>
+                                                <td>MSCU9845617</td>
+                                                <td>20’ HC</td>
+                                                <td>1254</td>
+                                                <td>25600</td>
+                                                <td>28000</td>
+                                                <td>СТАЛЬ В РУЛОНАХ</td>
+                                                <td>7210</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <span class="brown p15"><img src="img/prof/paperclip.png"> Прикрепленные файлы</span>
+                                <br />
+                                <ol class="add_files">
+                                    <li>
+                                        <div>Документ 1</div>
+                                        <span class="btn watch"><img src="img/icons/watch.png"></span>
+                                        <span class="btn basket"><img src="img/icons/basket.png"></span>
+                                    </li>
+                                    <li>
+                                        <div>Документ 2</div>
+                                        <span class="btn watch"><img src="img/icons/watch.png"></span>
+                                        <span class="btn basket"><img src="img/icons/basket.png"></span>
+                                    </li>
+                                    <li>
+                                        <div>Поручение</div>
+                                        <span class="btn watch"><img src="img/icons/watch.png"></span>
+                                        <span class="btn basket"><img src="img/icons/basket.png"></span>
+                                    </li>
+                                </ol>
+                                <span class="btn add_files_btn"><img src="img/prof/paperclip.png"> Прикрепить</span>
+                            </div>
+                            <br />
+                            <div class="vertical_line">
+                                <h5 class="brown bold">SUNE842485 {MSCUVS198457 - 4*40 контейнеров}</h5>
+                                <br />
+                                <div>
+                                    Условия поставки – <b>FOB</b>
+                                </div>
+                                <div>
+                                    Груз – <b>Сталь в рулонах, 7210</b>
+                                </div>
+                                <div>
+                                    Отправитель – <b>NINGBO INTERNATIONAL CO., LTD.,</b>
+                                </div>
+                                <br />
+                                <div>
+                                    Адрес отправителя – <b>NINGBO, TOWN STREET, 876521, CHINA</b>
+                                </div>
+                                <br />
+
+                                <div style="min-width: 280px; overflow-x: scroll;">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th>Номер контейнера</th>
+                                                <th>Тип контейнера</th>
+                                                <th>Количество мест</th>
+                                                <th>Нетто (кг.)</th>
+                                                <th>Брутто (кг.)</th>
+                                                <th>Наименование товара</th>
+                                                <th>Код товара</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>MSCU9845617</td>
+                                                <td>40’ HC</td>
+                                                <td>1254</td>
+                                                <td>25600</td>
+                                                <td>28000</td>
+                                                <td>СТАЛЬ В РУЛОНАХ</td>
+                                                <td>7210</td>
+                                            </tr>
+                                            <tr>
+                                                <td>MSCU9845617</td>
+                                                <td>40’ HC</td>
+                                                <td>1254</td>
+                                                <td>25600</td>
+                                                <td>28000</td>
+                                                <td>СТАЛЬ В РУЛОНАХ</td>
+                                                <td>7210</td>
+                                            </tr>
+                                            <tr>
+                                                <td>MSCU9845617</td>
+                                                <td>40’ HC</td>
+                                                <td>1254</td>
+                                                <td>25600</td>
+                                                <td>28000</td>
+                                                <td>СТАЛЬ В РУЛОНАХ</td>
+                                                <td>7210</td>
+                                            </tr>
+                                            <tr>
+                                                <td>MSCU9845617</td>
+                                                <td>40’ HC</td>
+                                                <td>1254</td>
+                                                <td>25600</td>
+                                                <td>28000</td>
+                                                <td>СТАЛЬ В РУЛОНАХ</td>
+                                                <td>7210</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel_heading_container">
+                    <div class="panel-heading">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+                            <div class="order_item">
+                                <div class="order_item_number">
+                                    <div>
+                                        <p class="brown order_item_number">5555<img src="img/icons/crossboking.png" /></p>
+                                        <span class="brown bold order_item_name p15">MSCUVS198456 / SUNE842484, SUNE842485</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="order_item_count brown">7 (3*20, 4*40)</span>
+                                    <span class="order_spot">
+                                        Moskow / Odessa
+                                    </span>
+                                    <span class="order_item_status brown">
+                                        Одесский порт прибыл (24.11.2016)
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div id="collapse5" class="panel-collapse collapse">
+                    <div class="panel-body inner_order">
+                        <h4 class="brown margin_left_10px bold">3145IMP BL MSCUVS198456 / SUNE842484, SUNE842485 – всего 7 (3*20, 4*40)</h4>
+                        <div class="discription">
+                            <div>Статус: <b>Таможенное оформление в порту (24.11.2016)</b></div>
+                            <br />
+                            <div>
+                                Получатель – <b>ЧП «Гесс Автозапчасти»</b>
+                            </div>
+                            <div>
+                                Адрес получателя – <b>г. Александрия, ул. Промышленная, 58, Украина</b>
+                            </div>
+                            <br />
+                            <div>
+                                Дата отправки – <b>29.07.2016 из Гуанчжоу на т/х Mehtab Bayraktar</b>
+                            </div>
+                            <br />
+                            <div>
+                                Порт перевалки – <b>1 порт</b>
+                            </div>
+                            <div>
+                                Порт перевалки – <b>2 порт</b>
+                            </div>
+                            <br />
+                            <div>
+                                Порт назначения – <b>Одесса, Украина</b>
+                            </div>
+                            <div>
+                                Пункт назначения (адрес доставки) - <b>г. Александрия, ул. Промышленная, 58, Украина</b>
+                            </div>
+                            <br />
+                            <div class="vertical_line">
+                                <h5 class="brown bold">SUNE842484 {MSCUVS198456 - 3*20 контейнеров}</h5>
+                                <br />
+                                <div>
+                                    Условия поставки – <b>FOB</b>
+                                </div>
+                                <div>
+                                    Груз – <b>Сталь в рулонах, 7210</b>
+                                </div>
+                                <div>
+                                    Отправитель – <b>NINGBO INTERNATIONAL CO., LTD.,</b>
+                                </div>
+                                <br />
+                                <div>
+                                    Адрес отправителя – <b>NINGBO, TOWN STREET, 876521, CHINA</b>
+                                </div>
+                                <br />
+
+                                <div style="min-width: 280px; overflow-x: scroll;">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th>Номер контейнера</th>
+                                                <th>Тип контейнера</th>
+                                                <th>Количество мест</th>
+                                                <th>Нетто (кг.)</th>
+                                                <th>Брутто (кг.)</th>
+                                                <th>Наименование товара</th>
+                                                <th>Код товара</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>MSCU9845617</td>
+                                                <td>20’ HC</td>
+                                                <td>1254</td>
+                                                <td>25600</td>
+                                                <td>28000</td>
+                                                <td>СТАЛЬ В РУЛОНАХ</td>
+                                                <td>7210</td>
+                                            </tr>
+                                            <tr>
+                                                <td>MSCU9845617</td>
+                                                <td>20’ HC</td>
+                                                <td>1254</td>
+                                                <td>25600</td>
+                                                <td>28000</td>
+                                                <td>СТАЛЬ В РУЛОНАХ</td>
+                                                <td>7210</td>
+                                            </tr>
+                                            <tr>
+                                                <td>MSCU9845617</td>
+                                                <td>20’ HC</td>
+                                                <td>1254</td>
+                                                <td>25600</td>
+                                                <td>28000</td>
+                                                <td>СТАЛЬ В РУЛОНАХ</td>
+                                                <td>7210</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <span class="brown p15"><img src="img/prof/paperclip.png"> Прикрепленные файлы</span>
+                                <br />
+                                <ol class="add_files">
+                                    <li>
+                                        <div>Документ 1</div>
+                                        <span class="btn watch"><img src="img/icons/watch.png"></span>
+                                        <span class="btn basket"><img src="img/icons/basket.png"></span>
+                                    </li>
+                                    <li>
+                                        <div>Документ 2</div>
+                                        <span class="btn watch"><img src="img/icons/watch.png"></span>
+                                        <span class="btn basket"><img src="img/icons/basket.png"></span>
+                                    </li>
+                                    <li>
+                                        <div>Поручение</div>
+                                        <span class="btn watch"><img src="img/icons/watch.png"></span>
+                                        <span class="btn basket"><img src="img/icons/basket.png"></span>
+                                    </li>
+                                </ol>
+                                <span class="btn add_files_btn"><img src="img/prof/paperclip.png"> Прикрепить</span>
+                            </div>
+                            <br />
+                            <div class="vertical_line">
+                                <h5 class="brown bold">SUNE842485 {MSCUVS198457 - 4*40 контейнеров}</h5>
+                                <br />
+                                <div>
+                                    Условия поставки – <b>FOB</b>
+                                </div>
+                                <div>
+                                    Груз – <b>Сталь в рулонах, 7210</b>
+                                </div>
+                                <div>
+                                    Отправитель – <b>NINGBO INTERNATIONAL CO., LTD.,</b>
+                                </div>
+                                <br />
+                                <div>
+                                    Адрес отправителя – <b>NINGBO, TOWN STREET, 876521, CHINA</b>
+                                </div>
+                                <br />
+
+                                <div style="min-width: 280px; overflow-x: scroll;">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th>Номер контейнера</th>
+                                                <th>Тип контейнера</th>
+                                                <th>Количество мест</th>
+                                                <th>Нетто (кг.)</th>
+                                                <th>Брутто (кг.)</th>
+                                                <th>Наименование товара</th>
+                                                <th>Код товара</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>MSCU9845617</td>
+                                                <td>40’ HC</td>
+                                                <td>1254</td>
+                                                <td>25600</td>
+                                                <td>28000</td>
+                                                <td>СТАЛЬ В РУЛОНАХ</td>
+                                                <td>7210</td>
+                                            </tr>
+                                            <tr>
+                                                <td>MSCU9845617</td>
+                                                <td>40’ HC</td>
+                                                <td>1254</td>
+                                                <td>25600</td>
+                                                <td>28000</td>
+                                                <td>СТАЛЬ В РУЛОНАХ</td>
+                                                <td>7210</td>
+                                            </tr>
+                                            <tr>
+                                                <td>MSCU9845617</td>
+                                                <td>40’ HC</td>
+                                                <td>1254</td>
+                                                <td>25600</td>
+                                                <td>28000</td>
+                                                <td>СТАЛЬ В РУЛОНАХ</td>
+                                                <td>7210</td>
+                                            </tr>
+                                            <tr>
+                                                <td>MSCU9845617</td>
+                                                <td>40’ HC</td>
+                                                <td>1254</td>
+                                                <td>25600</td>
+                                                <td>28000</td>
+                                                <td>СТАЛЬ В РУЛОНАХ</td>
+                                                <td>7210</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel_heading_container">
+                    <div class="panel-heading">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">
+                            <div class="order_item">
+                                <div class="order_item_number">
+                                    <div>
+                                        <p class="brown order_item_number">4444<img src="img/icons/crossboking.png" /></p>
+                                        <span class="brown bold order_item_name p15">MSCUVS198456 / SUNE842484, SUNE842485</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="order_item_count brown">7 (3*20, 4*40)</span>
+                                    <span class="order_spot">
+                                        Pekin/Riga
+                                    </span>
+                                    <span class="order_item_status brown">
+                                        Таможенное оформление в порту
+                                        (24.11.2016/26.11.2016)
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div id="collapse6" class="panel-collapse collapse">
+                    <div class="panel-body inner_order">
+                        <h4 class="brown margin_left_10px bold">3145IMP BL MSCUVS198456 / SUNE842484, SUNE842485 – всего 7 (3*20, 4*40)</h4>
+                        <div class="discription">
+                            <div>Статус: <b>Таможенное оформление в порту (24.11.2016)</b></div>
+                            <br />
+                            <div>
+                                Получатель – <b>ЧП «Гесс Автозапчасти»</b>
+                            </div>
+                            <div>
+                                Адрес получателя – <b>г. Александрия, ул. Промышленная, 58, Украина</b>
+                            </div>
+                            <br />
+                            <div>
+                                Дата отправки – <b>29.07.2016 из Гуанчжоу на т/х Mehtab Bayraktar</b>
+                            </div>
+                            <br />
+                            <div>
+                                Порт перевалки – <b>1 порт</b>
+                            </div>
+                            <div>
+                                Порт перевалки – <b>2 порт</b>
+                            </div>
+                            <br />
+                            <div>
+                                Порт назначения – <b>Одесса, Украина</b>
+                            </div>
+                            <div>
+                                Пункт назначения (адрес доставки) - <b>г. Александрия, ул. Промышленная, 58, Украина</b>
+                            </div>
+                            <br />
+                            <div class="vertical_line">
+                                <h5 class="brown bold">SUNE842484 {MSCUVS198456 - 3*20 контейнеров}</h5>
+                                <br />
+                                <div>
+                                    Условия поставки – <b>FOB</b>
+                                </div>
+                                <div>
+                                    Груз – <b>Сталь в рулонах, 7210</b>
+                                </div>
+                                <div>
+                                    Отправитель – <b>NINGBO INTERNATIONAL CO., LTD.,</b>
+                                </div>
+                                <br />
+                                <div>
+                                    Адрес отправителя – <b>NINGBO, TOWN STREET, 876521, CHINA</b>
+                                </div>
+                                <br />
+
+                                <div style="min-width: 280px; overflow-x: scroll;">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th>Номер контейнера</th>
+                                                <th>Тип контейнера</th>
+                                                <th>Количество мест</th>
+                                                <th>Нетто (кг.)</th>
+                                                <th>Брутто (кг.)</th>
+                                                <th>Наименование товара</th>
+                                                <th>Код товара</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>MSCU9845617</td>
+                                                <td>20’ HC</td>
+                                                <td>1254</td>
+                                                <td>25600</td>
+                                                <td>28000</td>
+                                                <td>СТАЛЬ В РУЛОНАХ</td>
+                                                <td>7210</td>
+                                            </tr>
+                                            <tr>
+                                                <td>MSCU9845617</td>
+                                                <td>20’ HC</td>
+                                                <td>1254</td>
+                                                <td>25600</td>
+                                                <td>28000</td>
+                                                <td>СТАЛЬ В РУЛОНАХ</td>
+                                                <td>7210</td>
+                                            </tr>
+                                            <tr>
+                                                <td>MSCU9845617</td>
+                                                <td>20’ HC</td>
+                                                <td>1254</td>
+                                                <td>25600</td>
+                                                <td>28000</td>
+                                                <td>СТАЛЬ В РУЛОНАХ</td>
+                                                <td>7210</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <span class="brown p15"><img src="img/prof/paperclip.png"> Прикрепленные файлы</span>
+                                <br />
+                                <ol class="add_files">
+                                    <li>
+                                        <div>Документ 1</div>
+                                        <span class="btn watch"><img src="img/icons/watch.png"></span>
+                                        <span class="btn basket"><img src="img/icons/basket.png"></span>
+                                    </li>
+                                    <li>
+                                        <div>Документ 2</div>
+                                        <span class="btn watch"><img src="img/icons/watch.png"></span>
+                                        <span class="btn basket"><img src="img/icons/basket.png"></span>
+                                    </li>
+                                    <li>
+                                        <div>Поручение</div>
+                                        <span class="btn watch"><img src="img/icons/watch.png"></span>
+                                        <span class="btn basket"><img src="img/icons/basket.png"></span>
+                                    </li>
+                                </ol>
+                                <span class="btn add_files_btn"><img src="img/prof/paperclip.png"> Прикрепить</span>
+                            </div>
+                            <br />
+                            <div class="vertical_line">
+                                <h5 class="brown bold">SUNE842485 {MSCUVS198457 - 4*40 контейнеров}</h5>
+                                <br />
+                                <div>
+                                    Условия поставки – <b>FOB</b>
+                                </div>
+                                <div>
+                                    Груз – <b>Сталь в рулонах, 7210</b>
+                                </div>
+                                <div>
+                                    Отправитель – <b>NINGBO INTERNATIONAL CO., LTD.,</b>
+                                </div>
+                                <br />
+                                <div>
+                                    Адрес отправителя – <b>NINGBO, TOWN STREET, 876521, CHINA</b>
+                                </div>
+                                <br />
+
+                                <div style="min-width: 280px; overflow-x: scroll;">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th>Номер контейнера</th>
+                                                <th>Тип контейнера</th>
+                                                <th>Количество мест</th>
+                                                <th>Нетто (кг.)</th>
+                                                <th>Брутто (кг.)</th>
+                                                <th>Наименование товара</th>
+                                                <th>Код товара</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>MSCU9845617</td>
+                                                <td>40’ HC</td>
+                                                <td>1254</td>
+                                                <td>25600</td>
+                                                <td>28000</td>
+                                                <td>СТАЛЬ В РУЛОНАХ</td>
+                                                <td>7210</td>
+                                            </tr>
+                                            <tr>
+                                                <td>MSCU9845617</td>
+                                                <td>40’ HC</td>
+                                                <td>1254</td>
+                                                <td>25600</td>
+                                                <td>28000</td>
+                                                <td>СТАЛЬ В РУЛОНАХ</td>
+                                                <td>7210</td>
+                                            </tr>
+                                            <tr>
+                                                <td>MSCU9845617</td>
+                                                <td>40’ HC</td>
+                                                <td>1254</td>
+                                                <td>25600</td>
+                                                <td>28000</td>
+                                                <td>СТАЛЬ В РУЛОНАХ</td>
+                                                <td>7210</td>
+                                            </tr>
+                                            <tr>
+                                                <td>MSCU9845617</td>
+                                                <td>40’ HC</td>
+                                                <td>1254</td>
+                                                <td>25600</td>
+                                                <td>28000</td>
+                                                <td>СТАЛЬ В РУЛОНАХ</td>
+                                                <td>7210</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel_heading_container">
+                    <div class="panel-heading">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">
+                            <div class="order_item">
+                                <div class="order_item_number">
+                                    <div>
+                                        <p class="brown order_item_number">3127<img src="img/icons/crossboking.png" /></p>
+                                        <span class="brown bold order_item_name p15">MSCUVS198456 / SUNE842484, SUNE842485</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="order_item_count brown">7 (3*20, 4*40)</span>
+                                    <span class="order_spot">
+                                        Pekin/Riga
+                                    </span>
+                                    <span class="order_item_status brown">
+                                        Таможенное оформление в порту
+                                        (24.11.2016/26.11.2016)
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div id="collapse7" class="panel-collapse collapse">
+                    <div class="panel-body inner_order">
+                        <h4 class="brown margin_left_10px bold">3145IMP BL MSCUVS198456 / SUNE842484, SUNE842485 – всего 7 (3*20, 4*40)</h4>
+                        <div class="discription">
+                            <div>Статус: <b>Таможенное оформление в порту (24.11.2016)</b></div>
+                            <br />
+                            <div>
+                                Получатель – <b>ЧП «Гесс Автозапчасти»</b>
+                            </div>
+                            <div>
+                                Адрес получателя – <b>г. Александрия, ул. Промышленная, 58, Украина</b>
+                            </div>
+                            <br />
+                            <div>
+                                Дата отправки – <b>29.07.2016 из Гуанчжоу на т/х Mehtab Bayraktar</b>
+                            </div>
+                            <br />
+                            <div>
+                                Порт перевалки – <b>1 порт</b>
+                            </div>
+                            <div>
+                                Порт перевалки – <b>2 порт</b>
+                            </div>
+                            <br />
+                            <div>
+                                Порт назначения – <b>Одесса, Украина</b>
+                            </div>
+                            <div>
+                                Пункт назначения (адрес доставки) - <b>г. Александрия, ул. Промышленная, 58, Украина</b>
+                            </div>
+                            <br />
+                            <div class="vertical_line">
+                                <h5 class="brown bold">SUNE842484 {MSCUVS198456 - 3*20 контейнеров}</h5>
+                                <br />
+                                <div>
+                                    Условия поставки – <b>FOB</b>
+                                </div>
+                                <div>
+                                    Груз – <b>Сталь в рулонах, 7210</b>
+                                </div>
+                                <div>
+                                    Отправитель – <b>NINGBO INTERNATIONAL CO., LTD.,</b>
+                                </div>
+                                <br />
+                                <div>
+                                    Адрес отправителя – <b>NINGBO, TOWN STREET, 876521, CHINA</b>
+                                </div>
+                                <br />
+
+                                <div style="min-width: 280px; overflow-x: scroll;">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th>Номер контейнера</th>
+                                                <th>Тип контейнера</th>
+                                                <th>Количество мест</th>
+                                                <th>Нетто (кг.)</th>
+                                                <th>Брутто (кг.)</th>
+                                                <th>Наименование товара</th>
+                                                <th>Код товара</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>MSCU9845617</td>
+                                                <td>20’ HC</td>
+                                                <td>1254</td>
+                                                <td>25600</td>
+                                                <td>28000</td>
+                                                <td>СТАЛЬ В РУЛОНАХ</td>
+                                                <td>7210</td>
+                                            </tr>
+                                            <tr>
+                                                <td>MSCU9845617</td>
+                                                <td>20’ HC</td>
+                                                <td>1254</td>
+                                                <td>25600</td>
+                                                <td>28000</td>
+                                                <td>СТАЛЬ В РУЛОНАХ</td>
+                                                <td>7210</td>
+                                            </tr>
+                                            <tr>
+                                                <td>MSCU9845617</td>
+                                                <td>20’ HC</td>
+                                                <td>1254</td>
+                                                <td>25600</td>
+                                                <td>28000</td>
+                                                <td>СТАЛЬ В РУЛОНАХ</td>
+                                                <td>7210</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <span class="brown p15"><img src="img/prof/paperclip.png"> Прикрепленные файлы</span>
+                                <br />
+                                <ol class="add_files">
+                                    <li>
+                                        <div>Документ 1</div>
+                                        <span class="btn watch"><img src="img/icons/watch.png"></span>
+                                        <span class="btn basket"><img src="img/icons/basket.png"></span>
+                                    </li>
+                                    <li>
+                                        <div>Документ 2</div>
+                                        <span class="btn watch"><img src="img/icons/watch.png"></span>
+                                        <span class="btn basket"><img src="img/icons/basket.png"></span>
+                                    </li>
+                                    <li>
+                                        <div>Поручение</div>
+                                        <span class="btn watch"><img src="img/icons/watch.png"></span>
+                                        <span class="btn basket"><img src="img/icons/basket.png"></span>
+                                    </li>
+                                </ol>
+                                <span class="btn add_files_btn"><img src="img/prof/paperclip.png"> Прикрепить</span>
+                            </div>
+                            <br />
+                            <div class="vertical_line">
+                                <h5 class="brown bold">SUNE842485 {MSCUVS198457 - 4*40 контейнеров}</h5>
+                                <br />
+                                <div>
+                                    Условия поставки – <b>FOB</b>
+                                </div>
+                                <div>
+                                    Груз – <b>Сталь в рулонах, 7210</b>
+                                </div>
+                                <div>
+                                    Отправитель – <b>NINGBO INTERNATIONAL CO., LTD.,</b>
+                                </div>
+                                <br />
+                                <div>
+                                    Адрес отправителя – <b>NINGBO, TOWN STREET, 876521, CHINA</b>
+                                </div>
+                                <br />
+
+                                <div style="min-width: 280px; overflow-x: scroll;">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th>Номер контейнера</th>
+                                                <th>Тип контейнера</th>
+                                                <th>Количество мест</th>
+                                                <th>Нетто (кг.)</th>
+                                                <th>Брутто (кг.)</th>
+                                                <th>Наименование товара</th>
+                                                <th>Код товара</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>MSCU9845617</td>
+                                                <td>40’ HC</td>
+                                                <td>1254</td>
+                                                <td>25600</td>
+                                                <td>28000</td>
+                                                <td>СТАЛЬ В РУЛОНАХ</td>
+                                                <td>7210</td>
+                                            </tr>
+                                            <tr>
+                                                <td>MSCU9845617</td>
+                                                <td>40’ HC</td>
+                                                <td>1254</td>
+                                                <td>25600</td>
+                                                <td>28000</td>
+                                                <td>СТАЛЬ В РУЛОНАХ</td>
+                                                <td>7210</td>
+                                            </tr>
+                                            <tr>
+                                                <td>MSCU9845617</td>
+                                                <td>40’ HC</td>
+                                                <td>1254</td>
+                                                <td>25600</td>
+                                                <td>28000</td>
+                                                <td>СТАЛЬ В РУЛОНАХ</td>
+                                                <td>7210</td>
+                                            </tr>
+                                            <tr>
+                                                <td>MSCU9845617</td>
+                                                <td>40’ HC</td>
+                                                <td>1254</td>
+                                                <td>25600</td>
+                                                <td>28000</td>
+                                                <td>СТАЛЬ В РУЛОНАХ</td>
+                                                <td>7210</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel_heading_container">
+                    <div class="panel-heading">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse8">
+                            <div class="order_item">
+                                <div class="order_item_number">
+                                    <div>
+                                        <p class="brown order_item_number">3127<img src="img/icons/crossboking.png" /></p>
+                                        <span class="brown bold order_item_name p15">MSCUVS198456 / SUNE842484, SUNE842485</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="order_item_count brown">7 (3*20, 4*40)</span>
+                                    <span class="order_spot">
+                                        Pekin/Riga
+                                    </span>
+                                    <span class="order_item_status brown">
+                                        Таможенное оформление в порту
+                                        (24.11.2016/26.11.2016)
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div id="collapse8" class="panel-collapse collapse">
+                    <div class="panel-body inner_order">
+                        <h4 class="brown margin_left_10px bold">3145IMP BL MSCUVS198456 / SUNE842484, SUNE842485 – всего 7 (3*20, 4*40)</h4>
+                        <div class="discription">
+                            <div>Статус: <b>Таможенное оформление в порту (24.11.2016)</b></div>
+                            <br />
+                            <div>
+                                Получатель – <b>ЧП «Гесс Автозапчасти»</b>
+                            </div>
+                            <div>
+                                Адрес получателя – <b>г. Александрия, ул. Промышленная, 58, Украина</b>
+                            </div>
+                            <br />
+                            <div>
+                                Дата отправки – <b>29.07.2016 из Гуанчжоу на т/х Mehtab Bayraktar</b>
+                            </div>
+                            <br />
+                            <div>
+                                Порт перевалки – <b>1 порт</b>
+                            </div>
+                            <div>
+                                Порт перевалки – <b>2 порт</b>
+                            </div>
+                            <br />
+                            <div>
+                                Порт назначения – <b>Одесса, Украина</b>
+                            </div>
+                            <div>
+                                Пункт назначения (адрес доставки) - <b>г. Александрия, ул. Промышленная, 58, Украина</b>
+                            </div>
+                            <br />
+                            <div class="vertical_line">
+                                <h5 class="brown bold">SUNE842484 {MSCUVS198456 - 3*20 контейнеров}</h5>
+                                <br />
+                                <div>
+                                    Условия поставки – <b>FOB</b>
+                                </div>
+                                <div>
+                                    Груз – <b>Сталь в рулонах, 7210</b>
+                                </div>
+                                <div>
+                                    Отправитель – <b>NINGBO INTERNATIONAL CO., LTD.,</b>
+                                </div>
+                                <br />
+                                <div>
+                                    Адрес отправителя – <b>NINGBO, TOWN STREET, 876521, CHINA</b>
+                                </div>
+                                <br />
+
+                                <div style="min-width: 280px; overflow-x: scroll;">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th>Номер контейнера</th>
+                                                <th>Тип контейнера</th>
+                                                <th>Количество мест</th>
+                                                <th>Нетто (кг.)</th>
+                                                <th>Брутто (кг.)</th>
+                                                <th>Наименование товара</th>
+                                                <th>Код товара</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>MSCU9845617</td>
+                                                <td>20’ HC</td>
+                                                <td>1254</td>
+                                                <td>25600</td>
+                                                <td>28000</td>
+                                                <td>СТАЛЬ В РУЛОНАХ</td>
+                                                <td>7210</td>
+                                            </tr>
+                                            <tr>
+                                                <td>MSCU9845617</td>
+                                                <td>20’ HC</td>
+                                                <td>1254</td>
+                                                <td>25600</td>
+                                                <td>28000</td>
+                                                <td>СТАЛЬ В РУЛОНАХ</td>
+                                                <td>7210</td>
+                                            </tr>
+                                            <tr>
+                                                <td>MSCU9845617</td>
+                                                <td>20’ HC</td>
+                                                <td>1254</td>
+                                                <td>25600</td>
+                                                <td>28000</td>
+                                                <td>СТАЛЬ В РУЛОНАХ</td>
+                                                <td>7210</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <span class="brown p15"><img src="img/prof/paperclip.png"> Прикрепленные файлы</span>
+                                <br />
+                                <ol class="add_files">
+                                    <li>
+                                        <div>Документ 1</div>
+                                        <span class="btn watch"><img src="img/icons/watch.png"></span>
+                                        <span class="btn basket"><img src="img/icons/basket.png"></span>
+                                    </li>
+                                    <li>
+                                        <div>Документ 2</div>
+                                        <span class="btn watch"><img src="img/icons/watch.png"></span>
+                                        <span class="btn basket"><img src="img/icons/basket.png"></span>
+                                    </li>
+                                    <li>
+                                        <div>Поручение</div>
+                                        <span class="btn watch"><img src="img/icons/watch.png"></span>
+                                        <span class="btn basket"><img src="img/icons/basket.png"></span>
+                                    </li>
+                                </ol>
+                                <span class="btn add_files_btn"><img src="img/prof/paperclip.png"> Прикрепить</span>
+                            </div>
+                            <br />
+                            <div class="vertical_line">
+                                <h5 class="brown bold">SUNE842485 {MSCUVS198457 - 4*40 контейнеров}</h5>
+                                <br />
+                                <div>
+                                    Условия поставки – <b>FOB</b>
+                                </div>
+                                <div>
+                                    Груз – <b>Сталь в рулонах, 7210</b>
+                                </div>
+                                <div>
+                                    Отправитель – <b>NINGBO INTERNATIONAL CO., LTD.,</b>
+                                </div>
+                                <br />
+                                <div>
+                                    Адрес отправителя – <b>NINGBO, TOWN STREET, 876521, CHINA</b>
+                                </div>
+                                <br />
+
+                                <div style="min-width: 280px; overflow-x: scroll;">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th>Номер контейнера</th>
+                                                <th>Тип контейнера</th>
+                                                <th>Количество мест</th>
+                                                <th>Нетто (кг.)</th>
+                                                <th>Брутто (кг.)</th>
+                                                <th>Наименование товара</th>
+                                                <th>Код товара</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>MSCU9845617</td>
+                                                <td>40’ HC</td>
+                                                <td>1254</td>
+                                                <td>25600</td>
+                                                <td>28000</td>
+                                                <td>СТАЛЬ В РУЛОНАХ</td>
+                                                <td>7210</td>
+                                            </tr>
+                                            <tr>
+                                                <td>MSCU9845617</td>
+                                                <td>40’ HC</td>
+                                                <td>1254</td>
+                                                <td>25600</td>
+                                                <td>28000</td>
+                                                <td>СТАЛЬ В РУЛОНАХ</td>
+                                                <td>7210</td>
+                                            </tr>
+                                            <tr>
+                                                <td>MSCU9845617</td>
+                                                <td>40’ HC</td>
+                                                <td>1254</td>
+                                                <td>25600</td>
+                                                <td>28000</td>
+                                                <td>СТАЛЬ В РУЛОНАХ</td>
+                                                <td>7210</td>
+                                            </tr>
+                                            <tr>
+                                                <td>MSCU9845617</td>
+                                                <td>40’ HC</td>
+                                                <td>1254</td>
+                                                <td>25600</td>
+                                                <td>28000</td>
+                                                <td>СТАЛЬ В РУЛОНАХ</td>
+                                                <td>7210</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -463,7 +3421,7 @@
                     <h3 class="brown">Наши контакты</h3>
                     <div>
                         <svg class="head_icon" style="width:24px;height:24px;position:absolute" viewBox="0 0 24 24">
-                            <path fill="#f99b30" d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z" />
+                            <path fill="#1F5989" d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z" />
                         </svg>
                         <div class="footer_phone">
                             <div class="p17 brown">(050)&nbsp;450-33-34</div>
@@ -473,7 +3431,7 @@
                     </div>
                     <div>
                         <svg class="head_icon" style="width:24px;height:24px;position:absolute" viewBox="0 0 24 24">
-                            <path fill="#f99b30" d="M20,4H4A2,2 0 0,0 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6A2,2 0 0,0 20,4M20,18H4V8L12,13L20,8V18M20,6L12,11L4,6V6H20V6Z" />
+                            <path fill="#1F5989" d="M20,4H4A2,2 0 0,0 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6A2,2 0 0,0 20,4M20,18H4V8L12,13L20,8V18M20,6L12,11L4,6V6H20V6Z" />
                         </svg>
                         <div class="footer_email">
                             <div class="p17 brown">cafe@cafe.com.ua</div>
@@ -491,7 +3449,7 @@
                     <h3 class="brown">Доставка еды</h3>
                     <div>
                         <svg class="head_icon" style="width:24px;height:24px;position:absolute" viewBox="0 0 24 24">
-                            <path fill="#f99b30" d="M3,4A2,2 0 0,0 1,6V17H3A3,3 0 0,0 6,20A3,3 0 0,0 9,17H15A3,3 0 0,0 18,20A3,3 0 0,0 21,17H23V12L20,8H17V4M10,6L14,10L10,14V11H4V9H10M17,9.5H19.5L21.47,12H17M6,15.5A1.5,1.5 0 0,1 7.5,17A1.5,1.5 0 0,1 6,18.5A1.5,1.5 0 0,1 4.5,17A1.5,1.5 0 0,1 6,15.5M18,15.5A1.5,1.5 0 0,1 19.5,17A1.5,1.5 0 0,1 18,18.5A1.5,1.5 0 0,1 16.5,17A1.5,1.5 0 0,1 18,15.5Z" />
+                            <path fill="#1F5989" d="M3,4A2,2 0 0,0 1,6V17H3A3,3 0 0,0 6,20A3,3 0 0,0 9,17H15A3,3 0 0,0 18,20A3,3 0 0,0 21,17H23V12L20,8H17V4M10,6L14,10L10,14V11H4V9H10M17,9.5H19.5L21.47,12H17M6,15.5A1.5,1.5 0 0,1 7.5,17A1.5,1.5 0 0,1 6,18.5A1.5,1.5 0 0,1 4.5,17A1.5,1.5 0 0,1 6,15.5M18,15.5A1.5,1.5 0 0,1 19.5,17A1.5,1.5 0 0,1 18,18.5A1.5,1.5 0 0,1 16.5,17A1.5,1.5 0 0,1 18,15.5Z" />
                         </svg>
                         <div class="footer_delivery">
                             <p class="p15 brown" id="time_1">Доставка блюд</p>
@@ -519,5 +3477,6 @@
             initval: 0
         });
     </script>
+    <script src="js/user_block.js"></script>
 </body>
 </html>

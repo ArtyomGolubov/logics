@@ -31,12 +31,14 @@ $(".switcher").on('click', function () {
 $(".prof_icon").on('click', function () {
     console.log('.prof_icon click');
     if ($(".prof_info").is(":visible")) {
+        $('#user_block_in_menu #prof_icon').css('color', '#fff');
         showItem('prof_other', 'prof_main');
         $(".prof_info").hide('fast');   // открытие/скрывание главного окна профиля с содержимым
         // убираем активный класс из кнопки личного меню
         $(".prof_icon").removeClass("active");
     }
     else {
+        $('#user_block_in_menu #prof_icon').css('color', '#512c15');
         $(".prof_info").addClass("main-data-menu-opened");
         $(".prof_info").show('fast');   // открытие/скрывание главного окна профиля с содержимым 
         // добавляем активный класс к кнопке личного меню
