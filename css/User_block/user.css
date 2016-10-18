@@ -151,7 +151,9 @@
     color: #fff;
     padding-bottom: 10px;
     -webkit-user-select: none;
+    -ms-user-select: none;
     -moz-user-select: none;
+    user-select: none;
     margin-right: 0px;
     margin-left: 0px;
     border-bottom-left-radius: 5px;
@@ -160,7 +162,7 @@
 
 .click, #prof_icon {
     font-size: 13px;
-    color: #512c15;
+    color: #1c4174;
     font-family: Roboto-Regular;
     padding-left: 3px;
     padding-top: 2px;
@@ -169,7 +171,9 @@
     height: 100%;
     cursor: pointer;
     -webkit-user-select: none;
+    -ms-user-select: none;
     -moz-user-select: none;
+    user-select: none;
 }
 
 .prof_main_item {
@@ -207,7 +211,7 @@
 .prof-main-menu-block > div {
 
         font-size: 13px;
-    color: #512c15;
+    color: #1c4174;
     font-family: Roboto-Regular;
 }
 
@@ -226,7 +230,7 @@
 #prof_mess div *,
 #prof_dialog div *,
 #prof_alert  div *{
-    color: #512c15;
+    color: #1c4174;
     font-family: Roboto-Regular;
 }
 
@@ -464,7 +468,7 @@
 .main-menu-back-button-label {
     /*vertical-align: bottom;*/
     margin-left: 5px;
-    color: #5e3c26;
+    color: #255d8b;
     font-size: 14px;
     font-family: Roboto-Regular;
 }
@@ -486,6 +490,72 @@
     margin-left: -2px;
 }
 
-@media only screen and (max-width : 768px) {
+/*---Color for user_block_in_menu---*/
+@media only screen and (max-width : 769px) {
+    .prof_info {
+        right: 1px !important;
+        width: 100% !important;
+        /*border-bottom: 1px solid #deb887 !important;
+        border-left: 1px solid #deb887 !important;
+        border-right: 1px solid #deb887 !important;*/
+    }
 
+    .switch_content,
+    .prof_last_item textarea, 
+    .main-menu-back-button-label,
+    .prof-main-menu-block>div
+    {
+        color: #fff !important;
+    }
+
+    #prof_info .prof_item,
+    #prof_info .prof_last_item,
+    #prof_info .all-summ,
+    .prof_info,
+    .prof_icon.active,
+    .switch_content,
+    .prof_last_item textarea, 
+    .main-menu-back-button-label,
+    .prof-main-menu-block>div,
+    .main-menu-back-button {
+        background-color: #255d8b !important;
+        /*background-color: rgba(122, 94, 75, .8) !important;*/
+    }
+
+    .main-menu-back-button{
+        border-top-left-radius: 0px !important;
+        border-top-right-radius: 0px !important;
+    }
+
+    #user_block_in_menu .last_mess,
+    .alert_msg,
+    #user_block_in_menu .institution-name,
+    .dish-name, .dish-info, .all-summ,
+    #scroll_dialog .family,
+    #scroll_dialog .name,
+    #scroll_mess .family,
+    #scroll_mess .name
+     {
+        /*color: #deb887 !important;*/
+        color: #fff !important;
+    }
+
+    .work-time,.prof_item .price,
+    .prof_item .summ-price,
+    #scroll_zak2 .allSum, 
+    #scroll_zak2 p.dish-info>span.price,
+    .prof_last_item .summ-price{
+        color: #f89b2f !important;
+    }
+
+    #prof_mess textarea,
+    #prof_mess textarea:active {
+        border: 1px solid #86a9c1 !important;
+    }
+
+    #prof_info .prof_item,
+    #prof_info .all-summ,
+    .prof-item-notice {
+        border-bottom: 1px solid #86a9c1 !important;
+    }
 }

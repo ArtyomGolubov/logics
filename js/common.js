@@ -2,6 +2,7 @@
 $(window).on('load', function () {
 
     console.log('screen = ' + $(window).width());
+    BtnGroupResize();
 
     var preloader = $('#page-preloader'),
         loader = preloader.find('.loader');
@@ -65,6 +66,7 @@ $(window).ready(function () {
 
 $(window).bind('orientationchange', function (e) {
     $(window).ready(function () {
+        BtnGroupResize();
         Ascroll();
         SizeMenuInit();
         ChangeMainMenu();
@@ -134,6 +136,7 @@ function ChangeMainMenu() {
 
 //---- REsize #menu -------------------------------
 $(window).resize(function () {
+    BtnGroupResize();
     ChangeMainMenu();
     //console.log('resize = ' + $('#menu li:hidden').length);
     CheckDropdownMenuBtn();
@@ -176,13 +179,16 @@ function SizeMenuInit() {
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function dropdownMenu() {
-    document.getElementById("myDropdown").classList.toggle("show");
-    if ($('#myDropdown').is('.show')) {
-        //console.log('border');
-        $('.nav_main').css('border-radius', '5px 5px 0 5px');
+    //document.getElementById("myDropdown").classList.toggle("show");
+    if ($('#myDropdown').is(':visible')) {
+        console.log('visible');
+        $('#myDropdown').hide('fast');
+        $('.nav_main').css('border-radius', '5px');
     }
     else {
-        $('.nav_main').css('border-radius', '5px');
+        console.log('not visible');
+        $('#myDropdown').show('fast');
+        $('.nav_main').css('border-radius', '5px 5px 0 5px');
     }
 }
 
@@ -288,6 +294,21 @@ function MobMenuToggle() {
     else {
         menu.css('left', '0px');
         body.css('overflow', 'hidden');
+    }
+}
+
+function BtnGroupResize() {
+    var winWidth = $(window).width();
+        var btnGroup = $('#delivery_type>div');
+    if (btnGroup.hasClass('btn-group') && winWidth < 480) {
+        console.log('btn-group-vertical');
+        btnGroup.toggleClass('btn-group');
+        btnGroup.toggleClass('btn-group-vertical');
+    }
+    else if (btnGroup.hasClass('btn-group-vertical') && winWidth > 480) {
+        console.log('btn-group');
+        btnGroup.toggleClass('btn-group-vertical');
+        btnGroup.toggleClass('btn-group');
     }
 }
 
