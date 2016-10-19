@@ -15,7 +15,6 @@
 .p18 {
     font-size: 18px;
     font-family: Roboto-Regular;
-    /*letter-spacing: .1px;*/
 }
 
 .p15 {
@@ -67,10 +66,6 @@
         cursor: pointer;
         text-decoration: underline;
     }
-
-/*.callback p:hover {
-        color: #59341d;
-    }*/
 
 .head {
     margin: 10px 0;
@@ -156,7 +151,6 @@
 }
 
 #logo {
-    /*float: left;*/
     margin: 20px 0px 0px 0px;
 }
 
@@ -216,7 +210,6 @@
         }
 
             .nav_main li a:hover {
-                /*color: #cbcbcb;*/
                 text-decoration: underline;
                 background-color: transparent;
             }
@@ -388,20 +381,17 @@
         }
 
 .dropdown a:hover {
-    /*color: #cbcbcb;*/
     text-decoration: underline;
 }
 
 .mob_nav_menu_btn {
     display: none;
-    /*background-color: #1F5989;*/
     background-color: rgba(31, 89, 137, .8);
     padding: 0 1px 0 5px;
     top: 0px;
 }
 
 .menu_mob_btn_container {
-    /*border-left: 1px solid #1c4174;*/
     height: 100%;
     width: 50px;
     padding-right: 5px;
@@ -428,7 +418,6 @@
 }
 
     .mobile-menu li {
-        /*margin: 15px 0;*/
         list-style: none;
         border-bottom: 1px solid #fff;
         border-right: 1px solid #fff;
@@ -570,36 +559,30 @@ body.mob-act {
 
 .dishes_x_3_left_img img {
     max-width: 130px;
-    /*height: 130px;*/
 }
 
 .dishes_x_3_right_img img {
     max-width: 130px;
-    /*height: 130px;*/
     float: right !important;
     margin: 0px 0px 10px 10px !important;
 }
 
 .dishes_x_2_left_img img {
     max-width: 210px;
-    /*height: 210px;*/
 }
 
 .dishes_x_2_right_img img {
     max-width: 210px;
-    /*height: 210px;*/
     float: right;
     margin: 0px 0px 10px 10px;
 }
 
 .dishes_x_1_left_img img {
     max-width: 450px;
-    /*height: 450px;*/
 }
 
 .dishes_x_1_right_img img {
     max-width: 450px;
-    /*height: 450px;*/
     float: right;
     margin: 0px 0px 10px 10px;
 }

@@ -185,12 +185,10 @@ toggle between hiding and showing the dropdown content */
 function dropdownMenu() {
     //document.getElementById("myDropdown").classList.toggle("show");
     if ($('#myDropdown').is(':visible')) {
-        console.log('visible');
         $('#myDropdown').hide('fast');
         $('.nav_main').css('border-radius', '5px');
     }
     else {
-        console.log('not visible');
         $('#myDropdown').show('fast');
         $('.nav_main').css('border-radius', '5px 5px 0 5px');
     }
@@ -289,7 +287,7 @@ $(function () {
 function MobMenuToggle() {
     var menu = $('.mobile-menu');
     var body = $('body');
-    console.log('MobMenuToggle() = ' + menu.css('left'));
+    //console.log('MobMenuToggle() = ' + menu.css('left'));
  
     if (menu.css('left') == '0px') {
         menu.css('left', '-100%');
@@ -306,12 +304,10 @@ function BtnGroupResize() {
     var winWidth = $(window).width();
         var btnGroup = $('#delivery_type>div');
     if (btnGroup.hasClass('btn-group') && winWidth < 560) {
-        console.log('btn-group-vertical');
         btnGroup.toggleClass('btn-group');
         btnGroup.toggleClass('btn-group-vertical');
     }
     else if (btnGroup.hasClass('btn-group-vertical') && winWidth > 560) {
-        console.log('btn-group');
         btnGroup.toggleClass('btn-group-vertical');
         btnGroup.toggleClass('btn-group');
     }

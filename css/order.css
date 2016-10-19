@@ -1,15 +1,11 @@
 ﻿.order .panel-heading {
     padding: 8px 15px;
-    /*border-top-left-radius: 5px;
-    border-top-right-radius: 5px;*/
     background-color: #d3d7da;
-    /*overflow: scroll;*/
     min-width: 760px;
 }
 
 .panel_heading_container {
     min-width: 280px;
-    /*overflow-x: scroll;*/
     width:auto;
     overflow: auto;
 }
@@ -28,13 +24,10 @@
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        /*flex-grow: 1;*/
     }
 
     .order_item>div>span {
-        /*width: 33%;*/
         text-align: end;
-        /*padding: 0 5px;*/
         overflow-wrap: break-word;
     }
 
@@ -53,19 +46,15 @@
 .order_title>div:last-of-type {
     display: flex;
     justify-content: flex-end;
-    /*max-width: 50%;*/
     align-items: flex-end;
 }
 
 .order_title>div>span {
-    /*width: 33%;*/
     text-align: end;
 }
 
 .order_item_number {
     margin: 0 10px;
-    /*width: 50px;
-    display: inline-block;*/
     white-space: nowrap;
 
     display: flex;
@@ -93,10 +82,8 @@
 }
 
 .order_item_name {
-    /*width: 80%;*/
     white-space: normal;
     min-width: 220px;
-    /*max-width: 300px;*/
     text-align: start !important;
 }
 
@@ -188,7 +175,6 @@
 }
 
 .order .panel {
-    /*border: none;*/
     background: none;
     border-bottom-color: #babec0 !important;
     border-left: none;
@@ -218,12 +204,6 @@
 
 .order .panel-group {
     margin-bottom: 0px;
-}
-
-.order_item>a {
-    /*text-decoration: none;
-    flex-grow: 2;
-    padding-top: 7px;*/
 }
 
 .order .selectpicker {
@@ -283,28 +263,6 @@
         max-width: 50%;
     }
 }
-
-/*@media only screen and (max-width : 560px) {
-    .order_item_status {
-        width: 60px;
-        font-size: 11px;
-    }
-
-    .order_spot, .order_item_count {
-        width: 60px;
-        font-size: 11px;
-    }
-
-    .order_title > div:first-of-type {
-        font-size: 11px;
-    }
-}
-
-@media only screen and (max-width : 480px) {
-    .order_item_name {
-        font-size: 11px;
-    }
-}*/
 
 .order .col-md-6 {
     padding-left: 0;
@@ -377,7 +335,6 @@
 #orders_title .btn-group label,
 #orders_title .btn-group-vertical label
  {
-    /*white-space: nowrap;*/
     background: #fff;
     color: #1c4174;
 }
@@ -418,8 +375,6 @@
 }
 
 .vertical_line {
-    /*height:50px;*/
-    /*width:400px;*/
     border-left:4px solid #1c4174;
     padding-left:10px;
     background: transparent;
