@@ -50,7 +50,15 @@
     color: #3e3e3e;
 }
 
+.black {
+    color: #3b3b3b;
+}
+
 /*    ---- .head ------ */
+.opening_hours {
+    margin-bottom: 10px;
+}
+
 .callback, .opening_hours, .delivery {
     float: left;
 }
@@ -208,7 +216,8 @@
         }
 
             .nav_main li a:hover {
-                color: #cbcbcb;
+                /*color: #cbcbcb;*/
+                text-decoration: underline;
                 background-color: transparent;
             }
 
@@ -268,7 +277,7 @@
         right: 0px;
         width: 200px;
         padding: 10px;
-        background: #d3d7da;
+        background: #ebedeb;
         border-radius: 5px;
         font-family: Roboto-Regular;
         font-size: 14px;
@@ -282,8 +291,7 @@
         width: 100%;
         padding: 8px;
         border-radius: 5px;
-        /*background: linear-gradient(#c4ced5, #424447);*/
-        background: linear-gradient(#c4ced5, #424447);
+        background: linear-gradient(#2477a3, #1c4174);
         border: none;
         outline: 0;
     }
@@ -293,7 +301,7 @@
         }
 
         #call_me button:active {
-            background: linear-gradient(#424447, #c4ced5);
+            background: linear-gradient(#1c4174, #2477a3);
         }
 
     #call_me input {
@@ -380,7 +388,8 @@
         }
 
 .dropdown a:hover {
-    color: #cbcbcb;
+    /*color: #cbcbcb;*/
+    text-decoration: underline;
 }
 
 .mob_nav_menu_btn {
@@ -402,9 +411,9 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    background-color: #1F5989;
+    background-color: rgba(31, 89, 137, .95);
     padding: 0 5px;
-    width: 100%;
+    width: 84%;
     height: 100%;
     overflow: auto;
     position: fixed;
@@ -421,8 +430,8 @@
     .mobile-menu li {
         /*margin: 15px 0;*/
         list-style: none;
-        border-bottom: 1px solid #2477a3;
-        border-right: 1px solid #2477a3;
+        border-bottom: 1px solid #fff;
+        border-right: 1px solid #fff;
         width: 100%;
         height: 50px;
         display: flex;
@@ -715,7 +724,7 @@ footer {
 }
 
     .footer_img img {
-        margin: 0px 30px 0px 0px;
+        display: block;
     }
 
 /*social*/
@@ -755,6 +764,7 @@ footer {
 
 footer h3 {
     font-size: 21px;
+    text-align: center;
 }
 
 /*----------*/
@@ -944,9 +954,10 @@ a > .glyphicon {
     }
 }
 
-.footer_block_1 {
+.flex_center {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 /* общая ширина ползунка */
@@ -959,7 +970,7 @@ a > .glyphicon {
 ::-webkit-scrollbar-thumb {
     border-width: 1px 1px 1px 2px;
     border-color: #e5e5e5;
-    background-color: #777;
+    background-color: #1F5989;
     border-radius: 10px;
 }
 
@@ -970,7 +981,7 @@ a > .glyphicon {
 
 /* При наведении курсора на полосу прокрутки, делаем ее темнее */
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #777;
+    background-color: #2477a3;
 }
 
 .padding-right-100p {
@@ -1026,7 +1037,7 @@ a > .glyphicon {
     align-items: flex-start;
     width: 1180px;
     height: 500px;
-    background: #ecece0;
+    background: #d3d7da;
 }
 
 .image80x80 {

@@ -38,15 +38,13 @@ $(".prof_icon").on('click', function () {
         $(".prof_icon").removeClass("active");
     }
     else {
-        $('#user_block_in_menu #prof_icon').css('color', '#512c15');
+        $('#user_block_in_menu #prof_icon').css('color', '#1c4174');
         $(".prof_info").addClass("main-data-menu-opened");
         $(".prof_info").show('fast');   // открытие/скрывание главного окна профиля с содержимым 
         // добавляем активный класс к кнопке личного меню
         $(".prof_icon").addClass("active");
     }
 });
-
-console.log('.prof_icon');
 
 /* Функция для управления показом содержимого(в виде дочерних окон) внутри главного окна профиля */
 function showItem(thisCLASS, CLASS) {  // параметры: (скрываемое окно, показываемое окно)

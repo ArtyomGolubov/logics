@@ -293,6 +293,10 @@
         justify-content: center;
         padding-left: 1%;
     }
+
+        .head_info_item.two_item:last-of-type {
+            padding-right: 10%;
+        }
 }
 
 /* Large Devices, Wide Screens */

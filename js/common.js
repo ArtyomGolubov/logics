@@ -1,7 +1,7 @@
 ﻿
 $(window).on('load', function () {
 
-    console.log('screen = ' + $(window).width());
+    //console.log('screen = ' + $(window).width());
     BtnGroupResize();
 
     var preloader = $('#page-preloader'),
@@ -61,7 +61,11 @@ $(window).ready(function () {
         // перемещаем пункты меню в выпадающий список, если они рядом с правой границей монитора.
         ChangeMainMenu();
         // Проверяем нужно ли показывать кнопку выпадающего списка.
-        CheckDropdownMenuBtn();       
+        CheckDropdownMenuBtn();
+    // на странице отправок прячем не выбранные отправки
+        //if (window.location.pathname == '/order.html') {
+            ChangeDeliveryType();
+        //}
 });
 
 $(window).bind('orientationchange', function (e) {
@@ -297,6 +301,7 @@ function MobMenuToggle() {
     }
 }
 
+// для  radiobutton на странице отправок
 function BtnGroupResize() {
     var winWidth = $(window).width();
         var btnGroup = $('#delivery_type>div');
@@ -310,5 +315,14 @@ function BtnGroupResize() {
         btnGroup.toggleClass('btn-group-vertical');
         btnGroup.toggleClass('btn-group');
     }
+}
+
+// обработка клика radiobutton на странице отправок
+function ChangeDeliveryType() {
+    $('input[name=delivery_type]').each(function () {
+        $('.order>#' + $(this).attr('id')).hide();
+    });
+    var checkedItem = $('input[name=delivery_type]:checked');
+    $('.order>#' + checkedItem.attr('id')).show();
 }
 

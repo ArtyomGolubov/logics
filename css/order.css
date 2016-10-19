@@ -28,7 +28,7 @@
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        flex-grow: 1;
+        /*flex-grow: 1;*/
     }
 
     .order_item>div>span {
@@ -53,7 +53,7 @@
 .order_title>div:last-of-type {
     display: flex;
     justify-content: flex-end;
-    max-width: 50%;
+    /*max-width: 50%;*/
     align-items: flex-end;
 }
 
@@ -64,12 +64,15 @@
 
 .order_item_number {
     margin: 0 10px;
-    width: 50px;
-    display: inline-block;
+    /*width: 50px;
+    display: inline-block;*/
     white-space: nowrap;
 
+    display: flex;
+    justify-content: space-between;
+    min-width: 100px;
     text-decoration: none;
-    flex-grow: 2;
+    flex-grow: 1;
     align-self: center;
 }
 
@@ -83,14 +86,18 @@
     display: inline-block;
 }
 
-.order_item_number div {
+.order_item_number_and_name {
     display: flex;
     justify-content:flex-start;
+    align-items:center;
 }
 
 .order_item_name {
     /*width: 80%;*/
     white-space: normal;
+    min-width: 220px;
+    /*max-width: 300px;*/
+    text-align: start !important;
 }
 
 /* magiya! input shadow - off!!!*/
@@ -238,22 +245,22 @@
 }
 
 .order_item_status {
-    width: 150px;
+    width: 250px;
 }
 
 .order_spot, .order_item_count {
-    width: 130px;
+    width: 170px;
     margin: 0 10px;
     color: #1c4174;
 }
 
 @media only screen and (max-width : 992px) {
     .order_item_status {
-        width: 100px;
+        width: 190px;
     }
 
     .order_spot, .order_item_count {
-        width: 100px;
+        width: 95px;
     }
 }
 
@@ -270,6 +277,10 @@
 
     .order_title > div:first-of-type {
         font-size: 12px;
+    }
+
+    .order_title > div:last-of-type {
+        max-width: 50%;
     }
 }
 
@@ -382,6 +393,12 @@
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
+}
+
+@media only screen and (max-width : 640px) {
+    #orders_title #delivery_type {
+        flex-flow: column;
+    }
 }
 
 #orders_title .type>span {

@@ -242,7 +242,7 @@
 }
 
     .cont > .institution-name {
-        color: #868686;
+        color: #3b3b3b;
     }
 
     .cont > .work-time {
@@ -272,7 +272,7 @@
 }
 
     .cont_zak > .dish-name {
-        color: #878787;
+        color: #3b3b3b;
     }
 
     .cont_zak > .dish-info {
@@ -321,7 +321,7 @@
     display: inline-block;
     width: 100%;
     vertical-align: middle;
-    color: #a2a2a2;
+    color: #3b3b3b;
 }
 
 .allSum {
