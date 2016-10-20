@@ -70,3 +70,27 @@ function toggle_window(window) {
         $("." + window + "-window").show('fast');
     }
 }
+
+// функция переходна к отправке из личного меню
+// при прикручивании серверной, это говно надо будет удалить
+function showOrder(tracking_num) {
+    if (window.location.pathname != '/order.html') {
+        window.location.pathname = '/order.html';
+        $(document).ready(function () {
+            $('.order_item .order_item_number').each(function () {
+                if ($(this).text() == tracking_num) {
+                    $(this).click();
+                }
+            });
+        });
+    }
+    else {
+        $('.order_item .order_item_number').each(function () {
+            if ($(this).text() == tracking_num) {
+                var accordion = $(this).parent("#accordion").eq(0);
+
+                $(this).click();
+            }
+        });
+    }
+}

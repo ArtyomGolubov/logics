@@ -314,6 +314,7 @@ function BtnGroupResize() {
 }
 
 // обработка клика radiobutton на странице отправок
+// Возможно это надо будет удалиить при прикручивании серверной
 function ChangeDeliveryType() {
     $('input[name=delivery_type]').each(function () {
         $('.order>#' + $(this).attr('id')).hide();

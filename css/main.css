@@ -12,6 +12,10 @@
     margin: 0 auto;
 }
 
+.width10em {
+    width: 7em;
+}
+
 .p18 {
     font-size: 18px;
     font-family: Roboto-Regular;
@@ -38,7 +42,7 @@
 }
 
 .bold {
-    font-family: Roboto-bold;
+    font-family: Roboto-bold !important;
 }
 
 .darkblue {
@@ -940,7 +944,34 @@ a > .glyphicon {
 .flex_center {
     display: flex;
     justify-content: center;
+    /*align-items: center;*/
+}
+
+.flex_between {
+    display: flex;
+    justify-content: space-between;
+    /*align-items: center;*/
+}
+
+.prof_item.flex_between {
     align-items: center;
+}
+
+.flex_start {
+    display: flex;
+    justify-content: flex-start;
+    /*align-items: center;*/
+}
+
+.flex_end {
+    display: flex !important;
+    justify-content: flex-end;
+    /*align-items: center;*/
+}
+
+.flex_column {
+    display: flex !important;
+    flex-flow: column;
 }
 
 /* общая ширина ползунка */

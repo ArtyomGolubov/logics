@@ -60,7 +60,7 @@
                 <div id="prof_info" class="prof_info main-data-menu-opened" style="display: none;">
                     <div id="prof_main" class="prof_main" style="display: block;">
                         <div class="prof-main-menu-block">
-                            <div class="prof_main_item" onclick="showItem('prof_main','prof_zak')">Заказы</div>
+                            <div class="prof_main_item" onclick="showItem('prof_main','prof_zak')">Отправки</div>
                             <div class="prof_main_item" onclick="showItem('prof_main','prof_dialog')">Сообщения (1234)</div>
                             <div class="prof_main_item" onclick="showItem('prof_main','prof_alert')">Уведомления (2689)</div>
                         </div>
@@ -70,138 +70,198 @@
                     </div>
 
                     <div id="prof_zak" class="prof_zak prof_other main-menu-punkt" hidden="true" style="display: none;">
-                        <div class="prof_item main-menu-back-button" onclick="showItem('prof_zak','prof_main')">
-                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                                <path fill="#1F5989" d="M7,12L12,7V10H16V14H12V17L7,12M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12Z" />
-                            </svg>
-                            <span class="main-menu-back-button-label">Заказы</span>
+                        <div class="prof_item main-menu-back-button flex_column" onclick="showItem('prof_zak','prof_main')">
+                            <div style="width: 100%">
+                                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                    <path fill="#1F5989" d="M7,12L12,7V10H16V14H12V17L7,12M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12Z" />
+                                </svg>
+                                <span class="main-menu-back-button-label" style="vertical-align: super;">Отправки</span>
+                            </div>
+                            <div class="flex_between">
+                                <span class="bold">Tracking number</span>
+                                <span class="bold span_status">Статус</span>
+                            </div>
                         </div>
 
                         <div id="scroll_zak" class="scroll_zak main-menu-body">
-                            <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
-                                <img class="icon" src="img/prof/Layer.png">
+                            <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
+                                <div class="width10em flex_between">
+                                    <span id="tracking_number">3127000000</span>
+                                    <img class="" src="img/icons/export.png">
+                                </div>
                                 <span class="cont cont_zak">
-                                    <p class="institution-name">Очень длинное название заведения в две строки</p>
-                                    <p class="work-time">11:00</p>
+                                    <p class="institution-name">Таможенное оформление в порту</p>
+                                    <p class="work-time">(24.11.2016/26.11.2016)</p>
                                 </span>
                             </div>
-                            <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
-                                <img class="icon" src="img/prof/Layer.png">
+                            <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
+                                <div class="width10em flex_between">
+                                    <span id="tracking_number">3127111111</span>
+                                    <img class="" src="img/icons/export.png">
+                                </div>
                                 <span class="cont cont_zak">
-                                    <p class="institution-name">Варадеро</p>
-                                    <p class="work-time">11:00</p>
+                                    <p class="institution-name">Таможенное оформление в порту</p>
+                                    <p class="work-time">(24.11.2016/26.11.2016)</p>
                                 </span>
                             </div>
-                            <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
-                                <img class="icon" src="img/prof/Layer.png">
+                            <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
+                                <div class="width10em flex_between">
+                                    <span id="tracking_number">3127000000</span>
+                                    <img class="" src="img/icons/export.png">
+                                </div>
                                 <span class="cont cont_zak">
-                                    <p class="institution-name">Варадеро</p>
-                                    <p class="work-time">11:00</p>
+                                    <p class="institution-name">Таможенное оформление в порту</p>
+                                    <p class="work-time">(24.11.2016/26.11.2016)</p>
                                 </span>
                             </div>
-                            <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
-                                <img class="icon" src="img/prof/Layer.png">
+                            <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
+                                <div class="width10em flex_between">
+                                    <span id="tracking_number">3127000000</span>
+                                    <img class="" src="img/icons/export.png">
+                                </div>
                                 <span class="cont cont_zak">
-                                    <p class="institution-name">Варадеро</p>
-                                    <p class="work-time">11:00</p>
+                                    <p class="institution-name">Таможенное оформление в порту</p>
+                                    <p class="work-time">(24.11.2016/26.11.2016)</p>
                                 </span>
                             </div>
-                            <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
-                                <img class="icon" src="img/prof/Layer.png">
+                            <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
+                                <div class="width10em flex_between">
+                                    <span id="tracking_number">3127000000</span>
+                                    <img class="" src="img/icons/export.png">
+                                </div>
                                 <span class="cont cont_zak">
-                                    <p class="institution-name">Варадеро</p>
-                                    <p class="work-time">11:00</p>
+                                    <p class="institution-name">Таможенное оформление в порту</p>
+                                    <p class="work-time">(24.11.2016/26.11.2016)</p>
                                 </span>
                             </div>
-                            <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
-                                <img class="icon" src="img/prof/Layer.png">
+                            <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
+                                <div class="width10em flex_between">
+                                    <span id="tracking_number">3127000000</span>
+                                    <img class="" src="img/icons/export.png">
+                                </div>
                                 <span class="cont cont_zak">
-                                    <p class="institution-name">Варадеро</p>
-                                    <p class="work-time">11:00</p>
+                                    <p class="institution-name">Таможенное оформление в порту</p>
+                                    <p class="work-time">(24.11.2016/26.11.2016)</p>
                                 </span>
                             </div>
-                            <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
-                                <img class="icon" src="img/prof/Layer.png">
+                            <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
+                                <div class="width10em flex_between">
+                                    <span id="tracking_number">3127000000</span>
+                                    <img class="" src="img/icons/export.png">
+                                </div>
                                 <span class="cont cont_zak">
-                                    <p class="institution-name">Варадеро</p>
-                                    <p class="work-time">11:00</p>
+                                    <p class="institution-name">Таможенное оформление в порту</p>
+                                    <p class="work-time">(24.11.2016/26.11.2016)</p>
                                 </span>
                             </div>
-                            <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
-                                <img class="icon" src="img/prof/Layer.png">
+                            <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
+                                <div class="width10em flex_between">
+                                    <span id="tracking_number">3127000000</span>
+                                    <img class="" src="img/icons/export.png">
+                                </div>
                                 <span class="cont cont_zak">
-                                    <p class="institution-name">Варадеро</p>
-                                    <p class="work-time">11:00</p>
+                                    <p class="institution-name">Таможенное оформление в порту</p>
+                                    <p class="work-time">(24.11.2016/26.11.2016)</p>
                                 </span>
                             </div>
-                            <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
-                                <img class="icon" src="img/prof/Layer.png">
+                            <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
+                                <div class="width10em flex_between">
+                                    <span id="tracking_number">3127000000</span>
+                                    <img class="" src="img/icons/export.png">
+                                </div>
                                 <span class="cont cont_zak">
-                                    <p class="institution-name">Варадеро</p>
-                                    <p class="work-time">11:00</p>
+                                    <p class="institution-name">Таможенное оформление в порту</p>
+                                    <p class="work-time">(24.11.2016/26.11.2016)</p>
                                 </span>
                             </div>
-                            <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
-                                <img class="icon" src="img/prof/Layer.png">
+                            <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
+                                <div class="width10em flex_between">
+                                    <span id="tracking_number">3127000000</span>
+                                    <img class="" src="img/icons/export.png">
+                                </div>
                                 <span class="cont cont_zak">
-                                    <p class="institution-name">Варадеро</p>
-                                    <p class="work-time">11:00</p>
+                                    <p class="institution-name">Таможенное оформление в порту</p>
+                                    <p class="work-time">(24.11.2016/26.11.2016)</p>
                                 </span>
                             </div>
-                            <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
-                                <img class="icon" src="img/prof/Layer.png">
+                            <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
+                                <div class="width10em flex_between">
+                                    <span id="tracking_number">3127000000</span>
+                                    <img class="" src="img/icons/export.png">
+                                </div>
                                 <span class="cont cont_zak">
-                                    <p class="institution-name">Варадеро</p>
-                                    <p class="work-time">11:00</p>
+                                    <p class="institution-name">Таможенное оформление в порту</p>
+                                    <p class="work-time">(24.11.2016/26.11.2016)</p>
                                 </span>
                             </div>
-                            <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
-                                <img class="icon" src="img/prof/Layer.png">
+                            <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
+                                <div class="width10em flex_between">
+                                    <span id="tracking_number">3127000000</span>
+                                    <img class="" src="img/icons/export.png">
+                                </div>
                                 <span class="cont cont_zak">
-                                    <p class="institution-name">Варадеро</p>
-                                    <p class="work-time">11:00</p>
+                                    <p class="institution-name">Таможенное оформление в порту</p>
+                                    <p class="work-time">(24.11.2016/26.11.2016)</p>
                                 </span>
                             </div>
-                            <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
-                                <img class="icon" src="img/prof/Layer.png">
+                            <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
+                                <div class="width10em flex_between">
+                                    <span id="tracking_number">3127000000</span>
+                                    <img class="" src="img/icons/export.png">
+                                </div>
                                 <span class="cont cont_zak">
-                                    <p class="institution-name">Варадеро</p>
-                                    <p class="work-time">11:00</p>
+                                    <p class="institution-name">Таможенное оформление в порту</p>
+                                    <p class="work-time">(24.11.2016/26.11.2016)</p>
                                 </span>
                             </div>
-                            <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
-                                <img class="icon" src="img/prof/Layer.png">
+                            <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
+                                <div class="width10em flex_between">
+                                    <span id="tracking_number">3127000000</span>
+                                    <img class="" src="img/icons/export.png">
+                                </div>
                                 <span class="cont cont_zak">
-                                    <p class="institution-name">Варадеро</p>
-                                    <p class="work-time">11:00</p>
+                                    <p class="institution-name">Таможенное оформление в порту</p>
+                                    <p class="work-time">(24.11.2016/26.11.2016)</p>
                                 </span>
                             </div>
-                            <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
-                                <img class="icon" src="img/prof/Layer.png">
+                            <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
+                                <div class="width10em flex_between">
+                                    <span id="tracking_number">3127000000</span>
+                                    <img class="" src="img/icons/export.png">
+                                </div>
                                 <span class="cont cont_zak">
-                                    <p class="institution-name">Варадеро</p>
-                                    <p class="work-time">11:00</p>
+                                    <p class="institution-name">Таможенное оформление в порту</p>
+                                    <p class="work-time">(24.11.2016/26.11.2016)</p>
                                 </span>
                             </div>
-                            <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
-                                <img class="icon" src="img/prof/Layer.png">
+                            <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
+                                <div class="width10em flex_between">
+                                    <span id="tracking_number">3127000000</span>
+                                    <img class="" src="img/icons/export.png">
+                                </div>
                                 <span class="cont cont_zak">
-                                    <p class="institution-name">Варадеро</p>
-                                    <p class="work-time">11:00</p>
+                                    <p class="institution-name">Таможенное оформление в порту</p>
+                                    <p class="work-time">(24.11.2016/26.11.2016)</p>
                                 </span>
                             </div>
-                            <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
-                                <img class="icon" src="img/prof/Layer.png">
+                            <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
+                                <div class="width10em flex_between">
+                                    <span id="tracking_number">3127000000</span>
+                                    <img class="" src="img/icons/export.png">
+                                </div>
                                 <span class="cont cont_zak">
-                                    <p class="institution-name">Варадеро</p>
-                                    <p class="work-time">11:00</p>
+                                    <p class="institution-name">Таможенное оформление в порту</p>
+                                    <p class="work-time">(24.11.2016/26.11.2016)</p>
                                 </span>
                             </div>
-                            <div class="prof_last_item" onclick="showItem('prof_zak','prof_zak2')">
-                                <img class="icon" src="img/prof/Layer.png">
+                            <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
+                                <div class="width10em flex_between">
+                                    <span id="tracking_number">3127000000</span>
+                                    <img class="" src="img/icons/export.png">
+                                </div>
                                 <span class="cont cont_zak">
-                                    <p class="institution-name">Варадеро</p>
-                                    <p class="work-time">11:00</p>
+                                    <p class="institution-name">Таможенное оформление в порту</p>
+                                    <p class="work-time">(24.11.2016/26.11.2016)</p>
                                 </span>
                             </div>
                         </div>
@@ -883,7 +943,7 @@
                     <div id="prof_info" class="prof_info main-data-menu-opened" style="display: none;">
                         <div id="prof_main" class="prof_main" style="display: block;">
                             <div class="prof-main-menu-block">
-                                <div class="prof_main_item" onclick="showItem('prof_main','prof_zak')">Заказы</div>
+                                <div class="prof_main_item" onclick="showItem('prof_main','prof_zak')">Отправки</div>
                                 <div class="prof_main_item" onclick="showItem('prof_main','prof_dialog')">Сообщения (1234)</div>
                                 <div class="prof_main_item" onclick="showItem('prof_main','prof_alert')">Уведомления (2689)</div>
                             </div>
@@ -893,138 +953,198 @@
                         </div>
 
                         <div id="prof_zak" class="prof_zak prof_other main-menu-punkt" hidden="true" style="display: none;">
-                            <div class="prof_item main-menu-back-button" onclick="showItem('prof_zak','prof_main')">
-                                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                                    <path fill="#1F5989" d="M7,12L12,7V10H16V14H12V17L7,12M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12Z" />
-                                </svg>
-                                <span class="main-menu-back-button-label">Заказы</span>
+                            <div class="prof_item main-menu-back-button flex_column" onclick="showItem('prof_zak','prof_main')">
+                                <div style="width: 100%">
+                                    <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                        <path fill="#1F5989" d="M7,12L12,7V10H16V14H12V17L7,12M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12Z" />
+                                    </svg>
+                                    <span class="main-menu-back-button-label" style="vertical-align: super;">Отправки</span>
+                                </div>
+                                <div class="flex_between">
+                                    <span class="bold">Tracking number</span>
+                                    <span class="bold span_status">Статус</span>
+                                </div>
                             </div>
 
                             <div id="scroll_zak" class="scroll_zak main-menu-body">
-                                <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
-                                    <img class="icon" src="img/prof/Layer.png">
+                                <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
+                                    <div class="width10em flex_between">
+                                        <span id="tracking_number">3127000000</span>
+                                        <img class="" src="img/icons/export.png">
+                                    </div>
                                     <span class="cont cont_zak">
-                                        <p class="institution-name">Очень длинное название заведения в две строки</p>
-                                        <p class="work-time">11:00</p>
+                                        <p class="institution-name">Таможенное оформление в порту</p>
+                                        <p class="work-time">(24.11.2016/26.11.2016)</p>
                                     </span>
                                 </div>
-                                <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
-                                    <img class="icon" src="img/prof/Layer.png">
+                                <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
+                                    <div class="width10em flex_between">
+                                        <span id="tracking_number">3127111111</span>
+                                        <img class="" src="img/icons/export.png">
+                                    </div>
                                     <span class="cont cont_zak">
-                                        <p class="institution-name">Варадеро</p>
-                                        <p class="work-time">11:00</p>
+                                        <p class="institution-name">Таможенное оформление в порту</p>
+                                        <p class="work-time">(24.11.2016/26.11.2016)</p>
                                     </span>
                                 </div>
-                                <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
-                                    <img class="icon" src="img/prof/Layer.png">
+                                <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
+                                    <div class="width10em flex_between">
+                                        <span id="tracking_number">3127000000</span>
+                                        <img class="" src="img/icons/export.png">
+                                    </div>
                                     <span class="cont cont_zak">
-                                        <p class="institution-name">Варадеро</p>
-                                        <p class="work-time">11:00</p>
+                                        <p class="institution-name">Таможенное оформление в порту</p>
+                                        <p class="work-time">(24.11.2016/26.11.2016)</p>
                                     </span>
                                 </div>
-                                <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
-                                    <img class="icon" src="img/prof/Layer.png">
+                                <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
+                                    <div class="width10em flex_between">
+                                        <span id="tracking_number">3127000000</span>
+                                        <img class="" src="img/icons/export.png">
+                                    </div>
                                     <span class="cont cont_zak">
-                                        <p class="institution-name">Варадеро</p>
-                                        <p class="work-time">11:00</p>
+                                        <p class="institution-name">Таможенное оформление в порту</p>
+                                        <p class="work-time">(24.11.2016/26.11.2016)</p>
                                     </span>
                                 </div>
-                                <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
-                                    <img class="icon" src="img/prof/Layer.png">
+                                <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
+                                    <div class="width10em flex_between">
+                                        <span id="tracking_number">3127000000</span>
+                                        <img class="" src="img/icons/export.png">
+                                    </div>
                                     <span class="cont cont_zak">
-                                        <p class="institution-name">Варадеро</p>
-                                        <p class="work-time">11:00</p>
+                                        <p class="institution-name">Таможенное оформление в порту</p>
+                                        <p class="work-time">(24.11.2016/26.11.2016)</p>
                                     </span>
                                 </div>
-                                <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
-                                    <img class="icon" src="img/prof/Layer.png">
+                                <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
+                                    <div class="width10em flex_between">
+                                        <span id="tracking_number">3127000000</span>
+                                        <img class="" src="img/icons/export.png">
+                                    </div>
                                     <span class="cont cont_zak">
-                                        <p class="institution-name">Варадеро</p>
-                                        <p class="work-time">11:00</p>
+                                        <p class="institution-name">Таможенное оформление в порту</p>
+                                        <p class="work-time">(24.11.2016/26.11.2016)</p>
                                     </span>
                                 </div>
-                                <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
-                                    <img class="icon" src="img/prof/Layer.png">
+                                <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
+                                    <div class="width10em flex_between">
+                                        <span id="tracking_number">3127000000</span>
+                                        <img class="" src="img/icons/export.png">
+                                    </div>
                                     <span class="cont cont_zak">
-                                        <p class="institution-name">Варадеро</p>
-                                        <p class="work-time">11:00</p>
+                                        <p class="institution-name">Таможенное оформление в порту</p>
+                                        <p class="work-time">(24.11.2016/26.11.2016)</p>
                                     </span>
                                 </div>
-                                <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
-                                    <img class="icon" src="img/prof/Layer.png">
+                                <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
+                                    <div class="width10em flex_between">
+                                        <span id="tracking_number">3127000000</span>
+                                        <img class="" src="img/icons/export.png">
+                                    </div>
                                     <span class="cont cont_zak">
-                                        <p class="institution-name">Варадеро</p>
-                                        <p class="work-time">11:00</p>
+                                        <p class="institution-name">Таможенное оформление в порту</p>
+                                        <p class="work-time">(24.11.2016/26.11.2016)</p>
                                     </span>
                                 </div>
-                                <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
-                                    <img class="icon" src="img/prof/Layer.png">
+                                <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
+                                    <div class="width10em flex_between">
+                                        <span id="tracking_number">3127000000</span>
+                                        <img class="" src="img/icons/export.png">
+                                    </div>
                                     <span class="cont cont_zak">
-                                        <p class="institution-name">Варадеро</p>
-                                        <p class="work-time">11:00</p>
+                                        <p class="institution-name">Таможенное оформление в порту</p>
+                                        <p class="work-time">(24.11.2016/26.11.2016)</p>
                                     </span>
                                 </div>
-                                <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
-                                    <img class="icon" src="img/prof/Layer.png">
+                                <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
+                                    <div class="width10em flex_between">
+                                        <span id="tracking_number">3127000000</span>
+                                        <img class="" src="img/icons/export.png">
+                                    </div>
                                     <span class="cont cont_zak">
-                                        <p class="institution-name">Варадеро</p>
-                                        <p class="work-time">11:00</p>
+                                        <p class="institution-name">Таможенное оформление в порту</p>
+                                        <p class="work-time">(24.11.2016/26.11.2016)</p>
                                     </span>
                                 </div>
-                                <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
-                                    <img class="icon" src="img/prof/Layer.png">
+                                <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
+                                    <div class="width10em flex_between">
+                                        <span id="tracking_number">3127000000</span>
+                                        <img class="" src="img/icons/export.png">
+                                    </div>
                                     <span class="cont cont_zak">
-                                        <p class="institution-name">Варадеро</p>
-                                        <p class="work-time">11:00</p>
+                                        <p class="institution-name">Таможенное оформление в порту</p>
+                                        <p class="work-time">(24.11.2016/26.11.2016)</p>
                                     </span>
                                 </div>
-                                <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
-                                    <img class="icon" src="img/prof/Layer.png">
+                                <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
+                                    <div class="width10em flex_between">
+                                        <span id="tracking_number">3127000000</span>
+                                        <img class="" src="img/icons/export.png">
+                                    </div>
                                     <span class="cont cont_zak">
-                                        <p class="institution-name">Варадеро</p>
-                                        <p class="work-time">11:00</p>
+                                        <p class="institution-name">Таможенное оформление в порту</p>
+                                        <p class="work-time">(24.11.2016/26.11.2016)</p>
                                     </span>
                                 </div>
-                                <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
-                                    <img class="icon" src="img/prof/Layer.png">
+                                <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
+                                    <div class="width10em flex_between">
+                                        <span id="tracking_number">3127000000</span>
+                                        <img class="" src="img/icons/export.png">
+                                    </div>
                                     <span class="cont cont_zak">
-                                        <p class="institution-name">Варадеро</p>
-                                        <p class="work-time">11:00</p>
+                                        <p class="institution-name">Таможенное оформление в порту</p>
+                                        <p class="work-time">(24.11.2016/26.11.2016)</p>
                                     </span>
                                 </div>
-                                <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
-                                    <img class="icon" src="img/prof/Layer.png">
+                                <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
+                                    <div class="width10em flex_between">
+                                        <span id="tracking_number">3127000000</span>
+                                        <img class="" src="img/icons/export.png">
+                                    </div>
                                     <span class="cont cont_zak">
-                                        <p class="institution-name">Варадеро</p>
-                                        <p class="work-time">11:00</p>
+                                        <p class="institution-name">Таможенное оформление в порту</p>
+                                        <p class="work-time">(24.11.2016/26.11.2016)</p>
                                     </span>
                                 </div>
-                                <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
-                                    <img class="icon" src="img/prof/Layer.png">
+                                <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
+                                    <div class="width10em flex_between">
+                                        <span id="tracking_number">3127000000</span>
+                                        <img class="" src="img/icons/export.png">
+                                    </div>
                                     <span class="cont cont_zak">
-                                        <p class="institution-name">Варадеро</p>
-                                        <p class="work-time">11:00</p>
+                                        <p class="institution-name">Таможенное оформление в порту</p>
+                                        <p class="work-time">(24.11.2016/26.11.2016)</p>
                                     </span>
                                 </div>
-                                <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
-                                    <img class="icon" src="img/prof/Layer.png">
+                                <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
+                                    <div class="width10em flex_between">
+                                        <span id="tracking_number">3127000000</span>
+                                        <img class="" src="img/icons/export.png">
+                                    </div>
                                     <span class="cont cont_zak">
-                                        <p class="institution-name">Варадеро</p>
-                                        <p class="work-time">11:00</p>
+                                        <p class="institution-name">Таможенное оформление в порту</p>
+                                        <p class="work-time">(24.11.2016/26.11.2016)</p>
                                     </span>
                                 </div>
-                                <div class="prof_item" onclick="showItem('prof_zak','prof_zak2')">
-                                    <img class="icon" src="img/prof/Layer.png">
+                                <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
+                                    <div class="width10em flex_between">
+                                        <span id="tracking_number">3127000000</span>
+                                        <img class="" src="img/icons/export.png">
+                                    </div>
                                     <span class="cont cont_zak">
-                                        <p class="institution-name">Варадеро</p>
-                                        <p class="work-time">11:00</p>
+                                        <p class="institution-name">Таможенное оформление в порту</p>
+                                        <p class="work-time">(24.11.2016/26.11.2016)</p>
                                     </span>
                                 </div>
-                                <div class="prof_last_item" onclick="showItem('prof_zak','prof_zak2')">
-                                    <img class="icon" src="img/prof/Layer.png">
+                                <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
+                                    <div class="width10em flex_between">
+                                        <span id="tracking_number">3127000000</span>
+                                        <img class="" src="img/icons/export.png">
+                                    </div>
                                     <span class="cont cont_zak">
-                                        <p class="institution-name">Варадеро</p>
-                                        <p class="work-time">11:00</p>
+                                        <p class="institution-name">Таможенное оформление в порту</p>
+                                        <p class="work-time">(24.11.2016/26.11.2016)</p>
                                     </span>
                                 </div>
                             </div>
@@ -2317,7 +2437,7 @@
         </div>
     </section>
 
-    <footer>
+    <footer class="flex_between">
         <div class="container">
             <div class="row">
                 <div class="col-md-3 col-sm-6 flex_center">

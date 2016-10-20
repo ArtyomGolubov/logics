@@ -268,7 +268,7 @@
     display: inline-block;
     margin: 0 0 0 5px;
     vertical-align: middle;
-    width: 83%;
+    /*width: 83%;*/
 }
 
     .cont_zak > .dish-name {
@@ -467,7 +467,7 @@
     }
 
 .main-menu-back-button-label {
-    /*vertical-align: bottom;*/
+    /*vertical-align: super;*/
     margin-left: 5px;
     color: #1F5989;
     font-size: 14px;
@@ -561,4 +561,12 @@
     .prof-item-notice {
         /*border-bottom: 1px solid #deb887 !important;*/
     }
+
+    .span_status {
+        margin-right: 20px !important;
+    }
+}
+
+.span_status {
+    margin-right: 40px;
 }

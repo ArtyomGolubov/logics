@@ -297,6 +297,10 @@
         .head_info_item.two_item:last-of-type {
             padding-right: 10%;
         }
+
+    .width_40p_min_992px {
+        width: 40% !important
+    }
 }
 
 /* Large Devices, Wide Screens */
