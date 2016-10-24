@@ -70,6 +70,15 @@ $(window).ready(function () {
 
 $(window).bind('orientationchange', function (e) {
     $(window).ready(function () {
+
+        // закрываем боковое меню.
+        if ($('.mobile-menu').css('left') == '0px') {
+            $('.mobile-menu').css('left', '-100%');
+            $('body').css('overflow', 'auto');
+
+            $('#nav-icon1').removeClass('open');
+        }
+
         BtnGroupResize();
         Ascroll();
         SizeMenuInit();
@@ -323,3 +332,10 @@ function ChangeDeliveryType() {
     $('.order>#' + checkedItem.attr('id')).show();
 }
 
+//Menu "Hamburger" Icon Animations
+
+$(document).ready(function () {
+    $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function () {
+        $(this).toggleClass('open');
+    });
+});

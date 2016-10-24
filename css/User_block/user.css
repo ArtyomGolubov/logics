@@ -67,7 +67,7 @@
     position: absolute;
     display: none;
     right: 0;
-    top: 47px;
+    /*top: 47px;*/
     border-radius: 6px;
     border-top-right-radius: 0px;
     /*border: 1px solid #ececec;*/
