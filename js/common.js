@@ -2,17 +2,25 @@
 $(window).on('load', function () {
 
     //console.log('screen = ' + $(window).width());
-    BtnGroupResize();
+    // Добавляем обработчик, в котором узнаем: делать фиксированное навигационное меню или нет.
+    window.addEventListener('scroll', Ascroll, false);
+
+    Ascroll();
+    ChangeDeliveryType();
+    // перемещаем пункты меню в выпадающее меню, если они ушли вниз.
+    SizeMenuInit();
+    CheckDropdownMenuBtn();
 
     var preloader = $('#page-preloader'),
         loader = preloader.find('.loader');
-    loader.fadeOut();
-    preloader.delay(350).fadeOut('slow');
-    $('#content').show();
+    loader.fadeOut('slow');
+    preloader.delay(500).fadeOut('slow', function () {
+    //$('#content').show('fast', function () {
+        BtnGroupResize();
+        // здесь блокирую установку курсора в инпут с количеством на странице блюда
+        $("input[name^='touchspin']").attr("readonly", true);
+    });   
 });
-
-
-//(function () {
 
 
 // изменение меню при  прокрутке
@@ -20,7 +28,8 @@ function Ascroll() {
 
     if (document.documentElement.clientWidth > 768) {
         var a = document.querySelector('#menu'), b = document.querySelector('#menu-top'), P = 0;  // если ноль заменить на число, то блок будет прилипать до того, как верхний край окна браузера дойдёт до верхнего края элемента. Может быть отрицательным числом
-        ChangeMainMenu();
+        //ChangeMainMenu();
+        SizeMenuInit();
 
         var Ra = a.getBoundingClientRect(),
             R = Math.round(Ra.top + b.getBoundingClientRect().height - document.querySelector('footer').getBoundingClientRect().top + 0);  // селектор блока, при достижении верхнего края которого нужно открепить прилипающий элемент;  Math.round() только для IE; если ноль заменить на число, то блок будет прилипать до того, как нижний край элемента дойдёт до футера
@@ -42,31 +51,7 @@ function Ascroll() {
             dropdown.css('position', 'relative');
         }
     }
-    //window.addEventListener('resize', function () {
-    //    console.log('111');
-    //    a.children[0].style.width = getComputedStyle(a, '').width
-    //}, false);
 }
-
-$(window).ready(function () {
-        // здесь блокирую установку курсора в инпут с количеством на странице блюда
-        $("input[name^='touchspin']").attr("readonly", true);
-
-        // Добавляем обработчик, в котором узнаем: делать фиксированное навигационное меню или нет.
-        window.addEventListener('scroll', Ascroll, false);
-
-        Ascroll();
-        // перемещаем пункты меню в выпадающее меню, если они угли вниз.
-        SizeMenuInit();
-        // перемещаем пункты меню в выпадающий список, если они рядом с правой границей монитора.
-        ChangeMainMenu();
-        // Проверяем нужно ли показывать кнопку выпадающего списка.
-        CheckDropdownMenuBtn();
-    // на странице отправок прячем не выбранные отправки
-        //if (window.location.pathname == '/order.html') {
-            ChangeDeliveryType();
-        //}
-});
 
 $(window).bind('orientationchange', function (e) {
     $(window).ready(function () {
@@ -82,7 +67,7 @@ $(window).bind('orientationchange', function (e) {
         BtnGroupResize();
         Ascroll();
         SizeMenuInit();
-        ChangeMainMenu();
+        //ChangeMainMenu();
         CheckDropdownMenuBtn();
     });
 });
@@ -90,6 +75,7 @@ $(window).bind('orientationchange', function (e) {
 
 
 //---- #menu -------------------------------
+// Проверяем нужно ли показывать кнопку выпадающего списка.
 function CheckDropdownMenuBtn() {
     if ($('#menu li:hidden').length > 0) {
         $('.dropdown').addClass('show');
@@ -99,8 +85,9 @@ function CheckDropdownMenuBtn() {
     }
 }
 
-// изменение меню при изменении ширины экрана
+// изменение меню при изменении ширины экрана (сейчас нигде не вызывается)
 function ChangeMainMenu() {
+    //console.log('ChangeMainMenu()');
     var offsetMin = 60;
     var winWidth = $(this).width();
     var li = $('#menu li').each(function (index) {
@@ -150,16 +137,21 @@ function ChangeMainMenu() {
 //---- REsize #menu -------------------------------
 $(window).resize(function () {
     BtnGroupResize();
-    ChangeMainMenu();
+    //ChangeMainMenu();
+    SizeMenuInit();
+
     //console.log('resize = ' + $('#menu li:hidden').length);
     CheckDropdownMenuBtn();
 });
 
 //---------------------------------------
-// если пункты меню ушли вниз, то перемещаем их в выпадающий список.
+// если пункты меню ушли вниз, то скрываем их в  #menu и #menu-top 
+// и открываем эти пункты в выпадающем списке (.dropdown-content).
 function SizeMenuInit() {
+    //console.log('SizeMenuInit()');
+    var text = '';
+    //#menu
     var top = $('#menu li').eq(0).offset().top;
-
     $('#menu li').each(function (index) {
         if (top < $(this).offset().top) {
             //console.log('orientationchange = ' + $(this).text());
@@ -169,7 +161,15 @@ function SizeMenuInit() {
                     $(this).addClass('show');
                 }
             });
+            text = $(this).text();
+            //console.log($.trim(text));
             $(this).hide();
+            $('#menu-top li').each(function (i) {
+                if (index == i) {
+                    //console.log(text + ' bingo 1');
+                    $(this).hide();
+                }
+            });
             return;
         }
         else {
@@ -181,11 +181,16 @@ function SizeMenuInit() {
                     }
                 });
                 $(this).next('li').show();
+                $('#menu-top li').each(function (i) {
+                    if (index == i) {
+                        //console.log(text + ' bingo 2');
+                        $(this).show();
+                    }
+                });
             }
         }
     });
 }
-//})();
 
 
 //----- DROPDOWN MENU ------------------
@@ -208,18 +213,18 @@ $(window).ready(function () {
     window.onclick = function (event) {
         if (!event.target.matches('.dropbtn')) {
 
-            var dropdowns = document.getElementsByClassName("dropdown-content");
-            var i;
-            for (i = 0; i < dropdowns.length; i++) {
-                var openDropdown = dropdowns[i];
-                if (openDropdown.classList.contains('show')) {
-                    openDropdown.classList.remove('show');
+            var dropdowns = $('.dropdown-content');
+            dropdowns.each(function () {
+                if (dropdowns.is(':visible')) {
+                    dropdowns.hide('fast');
                 }
-            }
+            });
             $('.nav_main').css('border-radius', '5px');
         }
     }
 });
+
+//--------------- menu end --------------------------------------
 
 
 // ------------ call me -----------------------

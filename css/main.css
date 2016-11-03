@@ -247,7 +247,7 @@
 }
 
 #dd_btn {
-    background: url(/img/icons/op-menu.png) no-repeat center;
+    background: url(../img/icons/op-menu.png) no-repeat center;
     margin: auto;
     height: 40px;
     width: 40px;
@@ -325,7 +325,7 @@
 
 /*    dropdown  menu*/
 .dropbtn, .menu_btn {
-    background: url(/img/icons/op-menu.png) no-repeat center;
+    background: url(../img/icons/op-menu.png) no-repeat center;
     color: white;
     padding: 16px;
     font-size: 16px;
@@ -346,7 +346,7 @@
     }
 
     .menu_btn.close {
-        background-image: url(/img/icons/op-menu-close.png);
+        background-image: url(../img/icons/op-menu-close.png);
         background-position-x: 7px;
         background-position-y: 7px;
     }
@@ -713,6 +713,8 @@ footer {
 
     .footer_img img {
         display: block;
+        max-width: 90%;
+        margin: auto;
     }
 
 /*social*/
@@ -731,23 +733,23 @@ footer {
 }
 
 .social-vk {
-    background: url(/img/icons/vk_icon.png);
+    background: url(../img/icons/vk_icon.png);
 }
 
 .social-fb {
-    background: url(/img/icons/fb_icon.png);
+    background: url(../img/icons/fb_icon.png);
 }
 
 .social-tw {
-    background: url(/img/icons/twitter_icon.png);
+    background: url(../img/icons/twitter_icon.png);
 }
 
 .social-google {
-    background: url(/img/icons/google_plus_icon.png);
+    background: url(../img/icons/google_plus_icon.png);
 }
 
 .social-insta {
-    background: url(/img/icons/insta_icon.png);
+    background: url(../img/icons/insta_icon.png);
 }
 
 footer h3 {
@@ -805,14 +807,14 @@ a > .glyphicon {
 }
 
 .right_arrow {
-    background-image: url('/img/icons/strelka_vpravo.png');
+    background-image: url('../img/icons/strelka_vpravo.png');
     width: 40px;
     height: 40px;
     float: right;
 }
 
 .left_arrow {
-    background-image: url('/img/icons/strelka_vlevo.png');
+    background-image: url('../img/icons/strelka_vlevo.png');
     width: 40px;
     height: 40px;
     float: left;
@@ -834,7 +836,7 @@ a > .glyphicon {
     top: 0;
     right: 0;
     bottom: 0;
-    background: url(/img/bg-body.png);
+    background: url(../img/bg-body.png);
     z-index: 100500;
     display: flex;
 }
@@ -849,7 +851,7 @@ a > .glyphicon {
     height: 117px;
     margin: auto;
     position: relative;
-    background: url(/img/logo.png) no-repeat;
+    background: url(../img/logo.png) no-repeat;
 }
 
 @-webkit-keyframes load6 {

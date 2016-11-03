@@ -11,12 +11,12 @@
         
         .jssora01l {
             /*background-position: -8px -38px*/
-            background: url('/img/icons/strelka_vlevo.png') no-repeat;
+            background: url('../img/icons/strelka_vlevo.png') no-repeat;
         }
         
         .jssora01r {
             /*background-position: -68px -38px*/
-            background: url('/img//icons/strelka_vpravo.png') no-repeat;
+            background: url('../img//icons/strelka_vpravo.png') no-repeat;
         }
         
         .jssora01l:hover {

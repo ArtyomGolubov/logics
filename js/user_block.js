@@ -29,7 +29,7 @@ $(".switcher").on('click', function () {
 
 /* Функция-отклик на событие для открытия главного окна профиля с содержимым*/
 $(".prof_icon").on('click', function () {
-    console.log('.prof_icon click');
+    //console.log('.prof_icon click');
     if ($(".prof_info").is(":visible")) {
         $('#user_block_in_menu #prof_icon').css('color', '#fff');
         showItem('prof_other', 'prof_main');
