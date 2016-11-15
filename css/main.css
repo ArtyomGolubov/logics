@@ -393,6 +393,7 @@
     background-color: rgba(31, 89, 137, .95);
     padding: 0 1px 0 5px;
     top: 0px;
+    height: 44px;
 }
 
 .menu_mob_btn_container {
@@ -414,7 +415,7 @@
     position: fixed;
     top: 44px;
     left: -100%;
-    z-index: 11;
+    z-index: 9;
     -webkit-transition: left 0.25s ease-in-out;
     -moz-transition: left 0.25s ease-in-out;
     -ms-transition: left 0.25s ease-in-out;
@@ -443,6 +444,7 @@
     .mobile-menu ul {
         width: 100%;
         padding: 0;
+        margin-bottom: 44px;
     }
 
 body.mob-act {
@@ -713,7 +715,7 @@ footer {
 
     .footer_img img {
         display: block;
-        max-width: 90%;
+        max-width: 100%;
         margin: auto;
     }
 

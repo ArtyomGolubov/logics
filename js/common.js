@@ -208,9 +208,10 @@ function dropdownMenu() {
     }
 }
 
-// Close the dropdown if the user clicks outside of it
+
 $(window).ready(function () {
     window.onclick = function (event) {
+        // Close the dropdown if the user clicks outside of it
         if (!event.target.matches('.dropbtn')) {
 
             var dropdowns = $('.dropdown-content');
@@ -220,6 +221,17 @@ $(window).ready(function () {
                 }
             });
             $('.nav_main').css('border-radius', '5px');
+        }
+
+        /* Закрываем главное окно профиля с содержимым при клике в другую область*/
+        if (!event.target.matches('.prof *, #prof_info *')) {
+            if ($(".prof_info").is(":visible")) {
+                $('#user_block_in_menu #prof_icon').css('color', '#fff');
+                showItem('prof_other', 'prof_main');
+                $(".prof_info").hide('fast');   // открытие/скрывание главного окна профиля с содержимым
+                // убираем активный класс из кнопки личного меню
+                $(".prof_icon").removeClass("active");
+            }
         }
     }
 });

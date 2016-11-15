@@ -10,7 +10,7 @@
         font-size: 12px;
     }
 
-    .callback div > div:last-child {
+    .callback div > div {
         margin: -5px 0;
     }
 
