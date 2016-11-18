@@ -338,11 +338,11 @@
 
     .dropbtn:hover, .dropbtn:focus,
     .menu_btn:hover, .menu_btn:focus {
-        background-color: #1c4174;
+        /*background-color: #1c4174;*/
     }
 
     .dropbtn:active, .menu_btn:active {
-        background-color: #2477a3;
+        background-color: #1c4174;
     }
 
     .menu_btn.close {

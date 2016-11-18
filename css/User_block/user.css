@@ -462,6 +462,10 @@
     display: -webkit-inline-box;
 }
 
+    .main-menu-back-button svg{
+        margin-bottom: 3px;
+    }
+
     .main-menu-back-button:hover > .main-menu-back-button-label {
         /*text-decoration: underline;*/
     }

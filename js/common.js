@@ -1,6 +1,8 @@
 ﻿
 $(window).on('load', function () {
 
+    setMenuItemsWidth();
+
     //console.log('screen = ' + $(window).width());
     // Добавляем обработчик, в котором узнаем: делать фиксированное навигационное меню или нет.
     window.addEventListener('scroll', Ascroll, false);
@@ -55,6 +57,7 @@ function Ascroll() {
 
 $(window).bind('orientationchange', function (e) {
     $(window).ready(function () {
+        setMenuItemsWidth();
 
         // закрываем боковое меню.
         if ($('.mobile-menu').css('left') == '0px') {
@@ -82,6 +85,28 @@ function CheckDropdownMenuBtn() {
     }
     else {
         $('.dropdown').removeClass('show');
+    }
+}
+
+// регулировка ширины пунктов меню (.nav_main li)
+function setMenuItemsWidth() {
+    // минимальнодопустимая ширина пунктов меню
+    var minWidthLi = 180;
+
+    var widthBody = $('body').css('width');
+    //console.log('widthBody', widthBody);
+
+    var countLi = $('#menu li').length;
+    //console.log('#menu li count = ', countLi);
+
+    var dolya = (((parseInt(widthBody) / 10) * 9) / countLi);
+    //console.log('dolya = ', dolya);
+
+    if (dolya < minWidthLi) {
+        $('.nav_main li').css('width', minWidthLi + 'px');
+    }
+    else {
+        $('.nav_main li').css('width', dolya + 'px');
     }
 }
 
@@ -136,6 +161,7 @@ function ChangeMainMenu() {
 
 //---- REsize #menu -------------------------------
 $(window).resize(function () {
+    setMenuItemsWidth();
     BtnGroupResize();
     //ChangeMainMenu();
     SizeMenuInit();
@@ -201,6 +227,7 @@ function dropdownMenu() {
     if ($('#myDropdown').is(':visible')) {
         $('#myDropdown').hide('fast');
         $('.nav_main').css('border-radius', '5px');
+        $('.dropbtn').blur();
     }
     else {
         $('#myDropdown').show('fast');
