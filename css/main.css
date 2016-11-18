@@ -516,6 +516,26 @@ body.mob-act {
 
 /*dishes BEGIN*/
 
+.dishes_img_middle_x_4 img,
+.dishes_img_middle_x_3 img,
+.dishes_img_middle_x_2 img{
+    float: none !important;
+    /*max-width: 220px;
+    max-height: 220px;*/
+    width: 100%;
+    height: 100%;
+    margin: 0px 0px 10px 0 !important;
+}
+
+.dishes_img_middle_x_4 h4,
+.dishes_img_middle_x_3 h4,
+.dishes_img_middle_x_2 h4,
+.dishes_middle_x_4 h4,
+.dishes_middle_x_3 h4,
+.dishes_middle_x_2 h4 {
+    text-align: center;
+}
+
 .dishes_img_left_x_4 img {
     max-width: 110px;
     /*height: 110px;*/
