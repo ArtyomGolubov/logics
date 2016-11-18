@@ -113,7 +113,7 @@
 }
 
 .user_block {
-    padding: 15px;
+    padding: 14px;
     border: 1px solid #ecece0;
     border-radius: 5px;
 }
@@ -336,9 +336,9 @@
     border-radius: 5px;
 }
 
-    .dropbtn:hover, .dropbtn:focus,
-    .menu_btn:hover, .menu_btn:focus {
-        /*background-color: #1c4174;*/
+    .dropbtn:focus,
+    .menu_btn:focus {
+        background-color: #1c4174;
     }
 
     .dropbtn:active, .menu_btn:active {
