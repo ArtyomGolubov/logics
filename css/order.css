@@ -321,7 +321,7 @@
     margin-bottom: 20px;
 }
 
-@media only screen and (max-width : 992px) {
+@media only screen and (max-width : 1070px) {
     #orders_title {
         flex-flow: column;
         align-items: center;
@@ -395,4 +395,9 @@
 
 #orders_title .type span {
     cursor: pointer;
+}
+
+.dlvr_type_icon {
+    display: inline-block;
+    width: 25px;
 }

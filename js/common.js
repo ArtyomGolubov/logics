@@ -352,10 +352,11 @@ function MobMenuToggle() {
     }
 }
 
-// для  radiobutton на странице отправок
+// для  radiobutton на странице отправок и для чекбоксов .type
 function BtnGroupResize() {
     var winWidth = $(window).width();
-        var btnGroup = $('#delivery_type>div');
+    var btnGroup = $('#delivery_type>div');
+    var checkboxes = $('.type label');
     if (btnGroup.hasClass('btn-group') && winWidth < 560) {
         btnGroup.toggleClass('btn-group');
         btnGroup.toggleClass('btn-group-vertical');
@@ -363,6 +364,15 @@ function BtnGroupResize() {
     else if (btnGroup.hasClass('btn-group-vertical') && winWidth > 560) {
         btnGroup.toggleClass('btn-group-vertical');
         btnGroup.toggleClass('btn-group');
+    }
+
+    if (checkboxes.hasClass('checkbox-inline') && winWidth < 480) {
+        checkboxes.toggleClass('checkbox-inline');
+        checkboxes.toggleClass('checkbox');
+    }
+    else if (checkboxes.hasClass('checkbox') && winWidth > 480) {
+        checkboxes.toggleClass('checkbox-inline');
+        checkboxes.toggleClass('checkbox');
     }
 }
 
