@@ -399,5 +399,8 @@
 
 .dlvr_type_icon {
     display: inline-block;
-    width: 25px;
+}
+
+.checkbox input[type=checkbox], .checkbox-inline input[type=checkbox] {
+    margin-left: -15px !important;
 }

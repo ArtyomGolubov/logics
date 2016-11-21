@@ -176,6 +176,11 @@
     user-select: none;
 }
 
+#prof_icon.active {
+    border: 1px solid #e6e6e6;
+    background-color: #fff;
+}
+
 .prof_main_item {
     border-bottom: transparent;
     padding-right: 8px;

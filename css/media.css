@@ -247,6 +247,11 @@
         max-width: 280px !important;
         margin: 10px 5px;
     }
+
+    .dlvr_type_icon {
+        display: inline-block;
+        width: 25px; 
+    }
 }
 
 /* Custom, iPhone Retina */
@@ -275,6 +280,11 @@
 
     #user_block_in_menu {
         display: none;
+    }
+
+    #prof_icon {
+        background-color: #e1e3e0;
+        border: 1px solid #c9cfd3;
     }
 }
 
