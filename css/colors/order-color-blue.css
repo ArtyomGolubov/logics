@@ -124,3 +124,38 @@
 {
     color: #1c4174;
 }
+
+/*.dlvr_type_icon.export {
+    width: 22px;
+    height: 20px;
+    background-image: url(/img/icons/export.png);
+    background-repeat: no-repeat;
+}
+
+.dlvr_type_icon.import {
+    width: 22px;
+    height: 20px;
+    background-image: url(/img/icons/import.png);
+    background-repeat: no-repeat;
+}
+
+.dlvr_type_icon.transit {
+    width: 22px;
+    height: 20px;
+    background-image: url(/img/icons/transit.png);
+    background-repeat: no-repeat;
+}
+
+.dlvr_type_icon.crossbooking,
+.img_crossbooking {
+    width: 22px;
+    height: 20px;
+    background-image: url(/img/icons/crossboking.png);
+    background-repeat: no-repeat;
+}
+
+#orders_title .type span {
+    height: 25px;
+    display: flex;
+    align-items: center;
+}*/

@@ -7,7 +7,7 @@
 }
 
 .black {
-    color: #3b3b3b;
+    color: #3e3e3e;
 }
 
 .user_block {
@@ -34,7 +34,7 @@
 
     .nav_main li {
         color: #fff;
-        border-color: #4b86a5;
+        border-left-color: #2477a3 !important;
     }
 
         .nav_main li a {
@@ -60,13 +60,13 @@
     }
 
 #call_me input {
-    border-color: #b5b5a3;
+    border-color: #b5b5a3 !important;
 }
 
 #call_me:before {
-    border-left-color: transparent;
-    border-right-color: transparent;
-    border-bottom-color: #ecece0;
+    border-left-color: transparent !important;
+    border-right-color: transparent !important;
+    border-bottom-color: #ebedeb !important;
 }
 
 .dropbtn, .menu_btn {
@@ -88,7 +88,7 @@
 }
 
     .dropdown-content a {
-        color: #f9f9f9;
+        color: #fff;
         border-bottom: 1px solid #2477a3;
     }
 
@@ -165,7 +165,7 @@
 
 /* ползунок */
 ::-webkit-scrollbar-thumb {
-    border-color: #e5e5e5;
+    border-color: #ecece0;
     background-color: #1F5989;
 }
 
@@ -200,3 +200,31 @@ svg path {
     .slideshow > nav span.current {
         background-color: #E76116;
     }
+
+.slideshow h2,
+.slideshow .description {
+    color: #1c4174;
+}
+
+    .slideshow h2 span {
+        color: #3e3e3e;
+    }
+
+.dish .discription,
+footer h3,
+.footer_phone,
+.footer_email,
+.opening_hours title,
+.time .text,
+.callback .header_text div,
+#call_me form,
+.footer_delivery p,
+.footer_delivery .time .text {
+    color: #1c4174;
+}
+
+.time .number,
+#callback,
+.slide-header {
+    color: #3e3e3e;
+}
