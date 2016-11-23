@@ -1,0 +1,202 @@
+﻿.main_color {
+    color: #EB661C;
+}
+
+.secondary_color {
+    color: #3e3e3e;
+}
+
+.black {
+    color: #3b3b3b;
+}
+
+.user_block {
+    border: 1px solid #c9cfd3;
+    background-color: #e1e3e0;
+}
+
+    .user_block a:hover {
+        color: #f89b2f;
+    }
+
+#user_block_in_menu #prof_icon {
+    color: #fff;
+}
+
+#user_block_in_menu .prof_icon {
+    background: transparent;
+}
+
+.nav_main {
+    border-color: #1c4174;
+    background: linear-gradient(#2477a3, #1c4174);
+}
+
+    .nav_main li {
+        color: #fff;
+        border-color: #4b86a5;
+    }
+
+        .nav_main li a {
+            color: #fff;
+        }
+
+#menu, #menu-top {
+    box-shadow: 0 7px 8px -4px rgba(0, 0, 0, .4);
+}
+
+#call_me form {
+    box-shadow: 5px 8px 16px 0px rgba(0,0,0,0.2);
+    background: #ebedeb;
+}
+
+#call_me button {
+    color: #fff;
+    background: linear-gradient(#2477a3, #1c4174);
+}
+
+    #call_me button:active {
+        background: linear-gradient(#1c4174, #2477a3);
+    }
+
+#call_me input {
+    border-color: #b5b5a3;
+}
+
+#call_me:before {
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: #ecece0;
+}
+
+.dropbtn, .menu_btn {
+    color: white;
+}
+
+    .dropbtn:focus,
+    .menu_btn:focus {
+        background-color: #1c4174;
+    }
+
+    .dropbtn:active, .menu_btn:active {
+        background-color: #1c4174;
+    }
+
+.dropdown-content {
+    background-color: #1F5989;
+    box-shadow: 0 7px 8px -4px rgba(0, 0, 0, .4);
+}
+
+    .dropdown-content a {
+        color: #f9f9f9;
+        border-bottom: 1px solid #2477a3;
+    }
+
+.mob_nav_menu_btn {
+    background-color: rgba(31, 89, 137, .95);
+}
+
+.mobile-menu {
+    background-color: rgba(31, 89, 137, .95);
+    border-top: 1px solid #fff;
+}
+
+    .mobile-menu li {
+        border-bottom: 1px solid #fff;
+    }
+
+        .mobile-menu li > a {
+            color: #fff;
+        }
+
+.nav_menu_mob_border {
+    background: linear-gradient(#2477a3, #1c4174);
+    box-shadow: 0 7px 8px -4px rgba(0, 0, 0, .4);
+}
+
+#carousel {
+    background-color: #ecece0;
+}
+
+.capt_for_slider1 {
+    color: #1c4174;
+}
+
+#carousel li {
+    border-color: #1c4174;
+}
+
+    #carousel li.active {
+        background-color: #f89b2f;
+    }
+
+.dish {
+    color: #1c4174;
+}
+
+    .dish .discription:hover {
+        color: #3e3e3e;
+    }
+
+    .dish > h4 > a {
+        color: #1c4174;
+    }
+
+    .dish > h4 {
+        color: #1c4174;
+    }
+
+.slider2_description {
+    color: white;
+    background-color: rgba(18,15,14, 0.6);
+}
+
+.breadcrumb1 > li > a {
+    color: #1c4174;
+}
+
+.breadcrumb1 > li {
+    color: #1c4174 !important;
+}
+
+    .breadcrumb1 > li + li:before {
+        color: #3e3e3e;
+    }
+
+/* ползунок */
+::-webkit-scrollbar-thumb {
+    border-color: #e5e5e5;
+    background-color: #1F5989;
+}
+
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: #2477a3;
+    }
+
+.image1180x500 {
+    background: #d3d7da;
+}
+
+.image80x80 {
+    background: #ecece0;
+}
+
+#nav-icon1 span, #nav-icon3 span, #nav-icon4 span {
+    background: #fff;
+}
+
+svg path {
+    fill: #E76116;
+}
+
+.slideshow > nav span {
+    border-color: #b1501a !important;
+}
+
+    .slideshow > nav span:hover {
+        background-color: #b1501a;
+    }
+
+    .slideshow > nav span.current {
+        background-color: #E76116;
+    }

@@ -1,6 +1,10 @@
-﻿.order .panel-heading {
+﻿/*@import "/css/colors/order-color-blue.css" screen; /* Стиль для вывода результата на монитор */
+@import url('colors/order-color-blue.css');
+
+
+.order .panel-heading {
     padding: 8px 15px;
-    background-color: #d3d7da;
+    /*background-color: #d3d7da;*/
     min-width: 760px;
 }
 
@@ -115,10 +119,10 @@
 .order_touchspin .btn-default {
     border: none;
     border-radius: 5px  !important;
-    background: linear-gradient(#f89b2e, #e8701b);
+    /*background: linear-gradient(#f89b2e, #e8701b);*/
     font-family: Roboto-Bold;
     font-size: 21px;
-    color: #fff;
+    /*color: #fff;*/
     margin: 0;
     padding: 0px;
     height: 25px;
@@ -127,56 +131,56 @@
 }
 
     .order_touchspin .btn-default:active {
-        background: linear-gradient(#e8701b, #f89b2e);
-        color: #fff;
+        /*background: linear-gradient(#e8701b, #f89b2e);
+        color: #fff;*/
     }
 
 .basket {
     height: 25px;
     width: 25px;
-    background: linear-gradient(#e6e9eb, #7c7f83);
+    /*background: linear-gradient(#e6e9eb, #7c7f83);*/
     padding: 3px;
     border-radius: 5px;
     border: none;
 }
 
 .basket:active {
-    background: linear-gradient(#7c7f83, #e6e9eb);
+    /*background: linear-gradient(#7c7f83, #e6e9eb);*/
 }
 
 .watch {
     height: 25px;
     width: 25px;
-    background: linear-gradient(#2477a3, #1c4174);
+    /*background: linear-gradient(#2477a3, #1c4174);*/
     padding: 2px;
     border-radius: 5px;
     border: none;
 }
 
 .watch:active {
-    background: linear-gradient(#1c4174, #2477a3);
+    /*background: linear-gradient(#1c4174, #2477a3);*/
 }
 
 .add_files_btn {
-    background: linear-gradient(#2477a3, #1c4174);
+    /*background: linear-gradient(#2477a3, #1c4174);*/
     padding: 5px 10px;
     border-radius: 5px;
     border: none;
-    color: #fff;
+    /*color: #fff;*/
     margin-left: 24px;
 }
 
 .add_files_btn:active {
-    background: linear-gradient(#1c4174, #2477a3);
+    /*background: linear-gradient(#1c4174, #2477a3);*/
 }
 
 .add_files_btn:hover {
-    color: #fff;
+    /*color: #fff;*/
 }
 
 .order .panel {
     background: none;
-    border-bottom-color: #babec0 !important;
+    /*border-bottom-color: #babec0 !important;*/
     border-left: none;
     border-right: none;
     border-top: none;
@@ -209,9 +213,9 @@
 .order .selectpicker {
     padding: 5px;
     width: 250px;
-    border-color: #eeeee3;
+    /*border-color: #eeeee3;*/
     border-radius: 5px;
-    outline-color: #512c15;
+    /*outline-color: #512c15;*/
     outline-style:none;
     margin-bottom: 15px;
 
@@ -219,9 +223,9 @@
 }
 
 .order .selectpicker>option {
-    border-color: #eeeee3;
+    /*border-color: #eeeee3;*/
     border-radius: 5px !important;
-    outline-color: #512c15;
+    /*outline-color: #512c15;*/
 }
 
 .order_item_status {
@@ -231,7 +235,7 @@
 .order_spot, .order_item_count {
     width: 170px;
     margin: 0 10px;
-    color: #1c4174;
+    /*color: #1c4174;*/
 }
 
 @media only screen and (max-width : 992px) {
@@ -271,7 +275,7 @@
 .result {
     display: flex;
     justify-content: space-between;
-    background-color: #eeeee3;
+    /*background-color: #eeeee3;*/
     padding: 13px 15px 12px 15px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -289,27 +293,27 @@
 }
 
 .cansel_btn {
-    background: linear-gradient(#e8e8e8, #cacaca);
+    /*background: linear-gradient(#e8e8e8, #cacaca);*/
     outline: 0 !important;
  }
 
 .cansel_btn:active {
-    background: linear-gradient(#cacaca, #e8e8e8);
+    /*background: linear-gradient(#cacaca, #e8e8e8);*/
  }
 
 .confirm_btn {
-   background: linear-gradient(#f89b2e, #e8701b);
-   color: #fff;
+   /*background: linear-gradient(#f89b2e, #e8701b);
+   color: #fff;*/
    outline: 0 !important;
 }
 
 .confirm_btn:active {
-   background: linear-gradient(#e8701b, #f89b2e);
-   color: #fff;
+   /*background: linear-gradient(#e8701b, #f89b2e);
+   color: #fff;*/
 }
 
 .confirm_btn:hover, .confirm_btn:focus {
-    color: #fff;
+    /*color: #fff;*/
 }
 
 
@@ -335,14 +339,14 @@
 #orders_title .btn-group label,
 #orders_title .btn-group-vertical label
  {
-    background: #fff;
-    color: #1c4174;
+    /*background: #fff;
+    color: #1c4174;*/
 }
 
 #orders_title .btn-group label.active,
 #orders_title .btn-group-vertical label.active {
-    background: linear-gradient(#2477a3, #1c4174);
-    color: #fff;
+    /*background: linear-gradient(#2477a3, #1c4174);
+    color: #fff;*/
 }
 
 #orders_title #delivery_type {
@@ -371,17 +375,17 @@
 }
 
 .inner_order .discription  {
-    color: #000;
+    /*color: #000;*/
 }
 
 .vertical_line {
-    border-left:4px solid #1c4174;
+    /*border-left:4px solid #1c4174;*/
     padding-left:10px;
-    background: transparent;
+    /*background: transparent;*/
 }
 
 .vertical_line .table {
-    background: #fff;
+    /*background: #fff;*/
     margin-bottom: 0;
 }
 
