@@ -1,5 +1,5 @@
 ﻿.main_color {
-    color: #EB661C;
+    color: #e9631a;
 }
 
 .secondary_color {
@@ -28,13 +28,13 @@
 }
 
 .nav_main {
-    border-color: #1c4174;
-    background: linear-gradient(#2477a3, #1c4174);
+    border-color: #e9631a;
+    background: linear-gradient(#ff803a, #e9631a);
 }
 
     .nav_main li {
         color: #fff;
-        border-left-color: #2477a3 !important;
+        border-left-color: #fca371 !important;
     }
 
         .nav_main li a {
@@ -52,11 +52,11 @@
 
 #call_me button {
     color: #fff;
-    background: linear-gradient(#2477a3, #1c4174);
+    background: linear-gradient(#ff803a, #e9631a);
 }
 
     #call_me button:active {
-        background: linear-gradient(#1c4174, #2477a3);
+        background: linear-gradient(#e9631a, #ff803a);
     }
 
 #call_me input {
@@ -75,29 +75,29 @@
 
     .dropbtn:focus,
     .menu_btn:focus {
-        background-color: #1c4174;
+        background-color: #e9631a;
     }
 
     .dropbtn:active, .menu_btn:active {
-        background-color: #1c4174;
+        background-color: #e9631a;
     }
 
 .dropdown-content {
-    background-color: #1F5989;
+    background-color: #ed742f;
     box-shadow: 0 7px 8px -4px rgba(0, 0, 0, .4);
 }
 
     .dropdown-content a {
         color: #fff;
-        border-bottom: 1px solid #2477a3;
+        border-bottom: 1px solid #ff803a;
     }
 
 .mob_nav_menu_btn {
-    background-color: rgba(31, 89, 137, .95);
+    background-color: rgba(237, 116, 47, .95);
 }
 
 .mobile-menu {
-    background-color: rgba(31, 89, 137, .95);
+    background-color: rgba(237, 116, 47, .95);
     border-top: 1px solid #fff;
 }
 
@@ -110,7 +110,7 @@
         }
 
 .nav_menu_mob_border {
-    background: linear-gradient(#2477a3, #1c4174);
+    background: linear-gradient(#ff803a, #e9631a);
     box-shadow: 0 7px 8px -4px rgba(0, 0, 0, .4);
 }
 
@@ -119,11 +119,11 @@
 }
 
 .capt_for_slider1 {
-    color: #1c4174;
+    color: #e9631a;
 }
 
 #carousel li {
-    border-color: #1c4174;
+    border-color: #e9631a;
 }
 
     #carousel li.active {
@@ -131,7 +131,7 @@
     }
 
 .dish {
-    color: #1c4174;
+    color: #e9631a;
 }
 
     .dish .discription:hover {
@@ -139,11 +139,11 @@
     }
 
     .dish > h4 > a {
-        color: #1c4174;
+        color: #e9631a;
     }
 
     .dish > h4 {
-        color: #1c4174;
+        color: #e9631a;
     }
 
 .slider2_description {
@@ -152,11 +152,11 @@
 }
 
 .breadcrumb1 > li > a {
-    color: #1c4174;
+    color: #e9631a;
 }
 
 .breadcrumb1 > li {
-    color: #1c4174 !important;
+    color: #e9631a !important;
 }
 
     .breadcrumb1 > li + li:before {
@@ -166,15 +166,15 @@
 /* ползунок */
 ::-webkit-scrollbar-thumb {
     border-color: #ecece0;
-    background-color: #1F5989;
+    background-color: #ed742f;
 }
 
     ::-webkit-scrollbar-thumb:hover {
-        background-color: #2477a3;
+        background-color: #ff803a;
     }
 
 .image1180x500 {
-    background: #d3d7da;
+    background: #f0e3d6;
 }
 
 .image80x80 {
@@ -186,24 +186,24 @@
 }
 
 svg path {
-    fill: #E76116;
+    fill: #e9631a;
 }
 
 .slideshow > nav span {
-    border-color: #b1501a !important;
+    border-color: #ff803a !important;
 }
 
     .slideshow > nav span:hover {
-        background-color: #b1501a;
+        background-color: #ff803a;
     }
 
     .slideshow > nav span.current {
-        background-color: #E76116;
+        background-color: #e9631a;
     }
 
 .slideshow h2,
 .slideshow .description {
-    color: #1c4174;
+    color: #e9631a;
 }
 
     .slideshow h2 span {
@@ -211,7 +211,6 @@ svg path {
     }
 
 .dish .discription,
-footer h3,
 .footer_phone,
 .footer_email,
 .opening_hours title,
@@ -220,11 +219,14 @@ footer h3,
 #call_me form,
 .footer_delivery p,
 .footer_delivery .time .text {
-    color: #1c4174;
+    color: #3e3e3e;
 }
 
+footer h3,
 .time .number,
 #callback,
 .slide-header {
-    color: #3e3e3e;
+    color: #e9631a;
 }
+
+/*e9631a*/

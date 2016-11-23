@@ -5,19 +5,36 @@ color:#2477a3; /* 2 menu gradient*/
 color:#3e3e3e; /* 3 */
 color:#c9cfd3; /* 4 */
 color:#e1e3e0; /* 5 */
-color:#f89b2f; /* 6 not use*/
-color:#4b86a5; /* 7 .nav_main li*/
-color:#ebedeb; /* 8 */
-color:#b5b5a3; /* 9 */
-color:#ecece0; /* 10 */
-color:#1F5989; /* 11 */ 
-
+color:#4b86a5; /* 6 .nav_main li*/
+color:#ebedeb; /* 7 */
+color:#b5b5a3; /* 8 */
+color:#ecece0; /* 9 */
+color:#1F5989; /* 10 */ 
+color:#d3d7da; /* 11 */
+color:#babec0; /* 12 */
 
 color:rgba(31, 89, 137, .95);
 color:rgba(18,15,14, 0.6);
 
-color:#d3d7da;
+color:#f89b2f; /* 6 not use*/
 }
 
 .orange_style {
+    color:#e9631a; /* 1 menu gradient*/
+    color:#ff803a; /* 2 menu gradient*/
+    color:#3e3e3e; /* 3 */
+    color:#c9cfd3; /* 4 */
+    color:#e1e3e0; /* 5 */
+    color:#fca371; /* 6 .nav_main li*/
+    color:#ebedeb; /* 7 */
+    color:#b5b5a3; /* 8 */
+    color:#ecece0; /* 9 */
+    color:#ed742f; /* 10 */
+    color:#d3d7da; /* 11 */
+    color:#f6ccb4; /* 12 */
+
+    color:rgba(237, 116, 47, .95);
+    color:rgba(18,15,14, 0.6);
+
+    color:#f89b2f; /* not use*/
 }

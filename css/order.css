@@ -339,8 +339,7 @@
 #orders_title .btn-group label,
 #orders_title .btn-group-vertical label
  {
-    /*background: #fff;
-    color: #1c4174;*/
+    font-weight: bold;
 }
 
 #orders_title .btn-group label.active,

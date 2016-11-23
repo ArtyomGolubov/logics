@@ -92,6 +92,10 @@
     color: #1c4174;
 }
 
+#orders_title .btn-primary {
+    border-color: #1c4174;
+}
+
 #orders_title .btn-group label.active,
 #orders_title .btn-group-vertical label.active {
     background: linear-gradient(#2477a3, #1c4174);

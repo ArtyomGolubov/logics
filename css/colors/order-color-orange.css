@@ -1,2 +1,135 @@
-﻿body {
+﻿.order .panel-heading {
+    background-color: #f0e3d6;
 }
+
+.order_touchspin .btn-default {
+    background: linear-gradient(#f89b2e, #e8701b);
+    color: #fff;
+}
+
+    .order_touchspin .btn-default:active {
+        background: linear-gradient(#e8701b, #f89b2e);
+        color: #fff;
+    }
+
+.basket {
+    background: linear-gradient(#e6e9eb, #7c7f83);
+}
+
+.basket:active {
+    background: linear-gradient(#7c7f83, #e6e9eb);
+}
+
+.watch {
+    background: linear-gradient(#ff803a, #e9631a);
+}
+
+.watch:active {
+    background: linear-gradient(#e9631a, #ff803a);
+}
+
+.add_files_btn {
+    background: linear-gradient(#ff803a, #e9631a);
+    color: #fff;
+}
+
+.add_files_btn:active {
+    background: linear-gradient(#e9631a, #ff803a);
+}
+
+.add_files_btn:hover {
+    color: #fff;
+}
+
+.order .panel {
+    border-bottom-color: #f6ccb4 !important;
+}
+
+.order .selectpicker {
+    border-color: #eeeee3;
+    outline-color: #512c15;
+}
+
+.order .selectpicker>option {
+    border-color: #eeeee3;
+    outline-color: #512c15;
+}
+
+.order_spot, .order_item_count {
+    color: #e9631a;
+}
+
+.result {
+    background-color: #eeeee3;
+}
+
+.cansel_btn {
+    background: linear-gradient(#e8e8e8, #cacaca);
+ }
+
+.cansel_btn:active {
+    background: linear-gradient(#cacaca, #e8e8e8);
+ }
+
+.confirm_btn {
+   background: linear-gradient(#f89b2e, #e8701b);
+   color: #fff;
+}
+
+.confirm_btn:active {
+   background: linear-gradient(#e8701b, #f89b2e);
+   color: #fff;
+}
+
+.confirm_btn:hover, .confirm_btn:focus {
+    color: #fff;
+}
+
+#orders_title .btn-group label,
+#orders_title .btn-group-vertical label
+ {
+    background: #fff;
+    color: #3e3e3e;
+}
+
+#orders_title .btn-primary {
+    border-color: #e9631a;
+}
+
+#orders_title .btn-group label.active,
+#orders_title .btn-group-vertical label.active {
+    background: linear-gradient(#ff803a, #e9631a);
+    color: #fff;
+}
+
+.inner_order .discription  {
+    color: #000;
+}
+
+.vertical_line {
+    border-left:4px solid #e9631a;
+    background: transparent;
+}
+
+.vertical_line .table {
+    background: #fff;
+}
+
+#orders_title h4,
+.order_item_number_title,
+.order_item_name,
+.order_item_count,
+.order_spot,
+.order_item_status,
+.order_item_number
+{
+    color: #3e3e3e;
+}
+
+.order h4,
+.order h5,
+.add_files_title 
+{
+    color: #e9631a;
+}
+
