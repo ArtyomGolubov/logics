@@ -71,7 +71,7 @@
 }
 
     .cont > .institution-name {
-        color: #3b3b3b;
+        color: #3e3e3e;
     }
 
     .cont > .work-time {
@@ -87,7 +87,7 @@
 }
 
 .cont_zak > .dish-name {
-    color: #3b3b3b;
+    color: #3e3e3e;
 }
 
 .cont_zak > .dish-info {
@@ -118,7 +118,7 @@
 }
 
 .alert_msg {
-    color: #3b3b3b;
+    color: #3e3e3e;
 }
 
 .smiles, .submit {
