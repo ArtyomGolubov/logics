@@ -55,6 +55,10 @@
         background-color: #e1e3e0;
         border: 1px solid #c9cfd3;
     }
+
+    .prof_icon > span {
+        color: #e9631a;
+    }
 }
 
 .prof_main_item {
@@ -153,6 +157,15 @@
     color: #ed742f;
 }
 
+@media only screen and (max-width : 768px) {
+    .prof_icon > span {
+        color: #fff;
+    }
+}
+
+.prof_icon.active>span{
+    color: #e9631a;
+}
 
 #prof_info .prof_last_item,
 #prof_info .all-summ,

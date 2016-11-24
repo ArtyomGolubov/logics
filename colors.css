@@ -1,22 +1,21 @@
 .blue_style{
-
-color:#1c4174; /* 1 menu gradient*/
-color:#2477a3; /* 2 menu gradient*/
-color:#3e3e3e; /* 3 */
-color:#c9cfd3; /* 4 */
-color:#e1e3e0; /* 5 */
-color:#4b86a5; /* 6 .nav_main li*/
-color:#ebedeb; /* 7 */
-color:#b5b5a3; /* 8 */
-color:#ecece0; /* 9 */
-color:#1F5989; /* 10 */ 
-color:#d3d7da; /* 11 */
-color:#babec0; /* 12 */
-
-color:rgba(31, 89, 137, .95);
-color:rgba(18,15,14, 0.6);
-
-color:#f89b2f; /* 6 not use*/
+    color:#1c4174; /* 1 menu gradient*/
+    color:#2477a3; /* 2 menu gradient*/
+    color:#3e3e3e; /* 3 */
+    color:#c9cfd3; /* 4 */
+    color:#e1e3e0; /* 5 */
+    color:#4b86a5; /* 6 .nav_main li*/
+    color:#ebedeb; /* 7 */
+    color:#b5b5a3; /* 8 */
+    color:#ecece0; /* 9 */
+    color:#1F5989; /* 10 */ 
+    color:#d3d7da; /* 11 */
+    color:#babec0; /* 12 */
+    
+    color:rgba(31, 89, 137, .95);
+    color:rgba(18,15,14, 0.6);
+    
+    color:#f89b2f; /* 6 not use*/
 }
 
 .orange_style {
