@@ -21,20 +21,20 @@
 }
 
 .watch {
-    background: linear-gradient(#ff803a, #e9631a);
+    background: linear-gradient(#ef7532, #cf4b02);
 }
 
 .watch:active {
-    background: linear-gradient(#e9631a, #ff803a);
+    background: linear-gradient(#cf4b02, #ef7532);
 }
 
 .add_files_btn {
-    background: linear-gradient(#ff803a, #e9631a);
+    background: linear-gradient(#ef7532, #cf4b02);
     color: #fff;
 }
 
 .add_files_btn:active {
-    background: linear-gradient(#e9631a, #ff803a);
+    background: linear-gradient(#cf4b02, #ef7532);
 }
 
 .add_files_btn:hover {
@@ -56,7 +56,7 @@
 }
 
 .order_spot, .order_item_count {
-    color: #e9631a;
+    color: #cf4b02;
 }
 
 .result {
@@ -93,12 +93,12 @@
 }
 
 #orders_title .btn-primary {
-    border-color: #e9631a;
+    border-color: #cf4b02;
 }
 
 #orders_title .btn-group label.active,
 #orders_title .btn-group-vertical label.active {
-    background: linear-gradient(#ff803a, #e9631a);
+    background: linear-gradient(#ef7532, #cf4b02);
     color: #fff;
 }
 
@@ -107,7 +107,7 @@
 }
 
 .vertical_line {
-    border-left:4px solid #e9631a;
+    border-left:4px solid #cf4b02;
     background: transparent;
 }
 
@@ -130,6 +130,6 @@
 .order h5,
 .add_files_title 
 {
-    color: #e9631a;
+    color: #cf4b02;
 }
 

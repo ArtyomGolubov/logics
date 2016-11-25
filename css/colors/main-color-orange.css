@@ -1,5 +1,5 @@
 ﻿.main_color {
-    color: #e9631a;
+    color: #cf4b02;
 }
 
 .secondary_color {
@@ -28,8 +28,8 @@
 }
 
 .nav_main {
-    border-color: #e9631a;
-    background: linear-gradient(#ff803a, #e9631a);
+    border-color: #cf4b02;
+    background: linear-gradient(#ef7532, #cf4b02);
 }
 
     .nav_main li {
@@ -52,11 +52,11 @@
 
 #call_me button {
     color: #fff;
-    background: linear-gradient(#ff803a, #e9631a);
+    background: linear-gradient(#ef7532, #cf4b02);
 }
 
     #call_me button:active {
-        background: linear-gradient(#e9631a, #ff803a);
+        background: linear-gradient(#cf4b02, #ef7532);
     }
 
 #call_me input {
@@ -75,21 +75,22 @@
 
     .dropbtn:focus,
     .menu_btn:focus {
-        background-color: #e9631a;
+        background-color: #cf4b02;
     }
 
     .dropbtn:active, .menu_btn:active {
-        background-color: #e9631a;
+        background-color: #cf4b02;
     }
 
 .dropdown-content {
-    background-color: #ed742f;
+    /*background-color: #ed742f;*/
+    background-color: #e26118;
     box-shadow: 0 7px 8px -4px rgba(0, 0, 0, .4);
 }
 
     .dropdown-content a {
         color: #fff;
-        border-bottom: 1px solid #ff803a;
+        border-bottom: 1px solid #ef7532;
     }
 
 .mob_nav_menu_btn {
@@ -110,7 +111,7 @@
         }
 
 .nav_menu_mob_border {
-    background: linear-gradient(#ff803a, #e9631a);
+    background: linear-gradient(#ef7532, #cf4b02);
     box-shadow: 0 7px 8px -4px rgba(0, 0, 0, .4);
 }
 
@@ -119,11 +120,11 @@
 }
 
 .capt_for_slider1 {
-    color: #e9631a;
+    color: #cf4b02;
 }
 
 #carousel li {
-    border-color: #e9631a;
+    border-color: #cf4b02;
 }
 
     #carousel li.active {
@@ -131,7 +132,7 @@
     }
 
 .dish {
-    color: #e9631a;
+    color: #cf4b02;
 }
 
     .dish .discription:hover {
@@ -139,11 +140,11 @@
     }
 
     .dish > h4 > a {
-        color: #e9631a;
+        color: #cf4b02;
     }
 
     .dish > h4 {
-        color: #e9631a;
+        color: #cf4b02;
     }
 
 .slider2_description {
@@ -152,11 +153,11 @@
 }
 
 .breadcrumb1 > li > a {
-    color: #e9631a;
+    color: #cf4b02;
 }
 
 .breadcrumb1 > li {
-    color: #e9631a !important;
+    color: #cf4b02 !important;
 }
 
     .breadcrumb1 > li + li:before {
@@ -166,11 +167,11 @@
 /* ползунок */
 ::-webkit-scrollbar-thumb {
     border-color: #ecece0;
-    background-color: #ed742f;
+    background-color: #cf4b02;
 }
 
     ::-webkit-scrollbar-thumb:hover {
-        background-color: #ff803a;
+        background-color: #ef7532;
     }
 
 .image1180x500 {
@@ -186,28 +187,28 @@
 }
 
 svg path {
-    fill: #e9631a;
+    fill: #cf4b02;
 }
 
 .slideshow > nav span {
-    border-color: #ff803a !important;
+    border-color: #ef7532 !important;
 }
 
     .slideshow > nav span:hover {
-        background-color: #ff803a;
+        background-color: #ef7532;
     }
 
     .slideshow > nav span.current {
-        background-color: #e9631a;
+        background-color: #cf4b02;
     }
 
 .slideshow h2,
 .slideshow .description {
-    color: #e9631a;
+    color: #505050;
 }
 
     .slideshow h2 span {
-        color: #3e3e3e;
+        color: #cf4b02;
     }
 
 .dish .discription,
@@ -226,7 +227,7 @@ footer h3,
 .time .number,
 #callback,
 .slide-header {
-    color: #e9631a;
+    color: #cf4b02;
 }
 
-/*e9631a*/
+/*cf4b02*/

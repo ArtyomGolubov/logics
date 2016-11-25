@@ -42,7 +42,7 @@
 }
 
 .click, #prof_icon {
-    color: #e9631a;
+    color: #cf4b02;
 }
 
 #prof_icon.active {
@@ -52,12 +52,13 @@
 
 @media only screen and (min-width : 769px) {
     #prof_icon {
-        background-color: #e1e3e0;
+        /*background-color: #e1e3e0;*/
+        background-color: transparent;
         border: 1px solid #c9cfd3;
     }
 
     .prof_icon > span {
-        color: #e9631a;
+        color: #cf4b02;
     }
 }
 
@@ -71,7 +72,7 @@
 }
 
 .prof-main-menu-block > div {
-    color: #e9631a;
+    color: #cf4b02;
 }
 
     .cont > .institution-name {
@@ -114,7 +115,7 @@
 }
 
 .last_mess_time {
-    color: #ff803a !important;
+    color: #ef7532 !important;
 }
 
 .last_mess {
@@ -127,12 +128,12 @@
 }
 
 .smiles, .submit {
-    background: linear-gradient(#ff803a, #e9631a);
+    background: linear-gradient(#ef7532, #cf4b02);
     color: #ffffff !important;
 }
 
 .smiles:active, .submit:active {
-    background: linear-gradient(#e9631a, #ff803a);
+    background: linear-gradient(#cf4b02, #ef7532);
 }
 
 .peoplb, .sendf {
@@ -164,7 +165,7 @@
 }
 
 .prof_icon.active>span{
-    color: #e9631a;
+    color: #cf4b02;
 }
 
 #prof_info .prof_last_item,
@@ -177,7 +178,7 @@
 .prof-main-menu-block>div,
 .main-menu-back-button {
     background-color: #fff !important;
-    color: #e9631a;
+    color: #cf4b02;
 }
 
 .work-time,.prof_item .price,
@@ -190,5 +191,5 @@
 
 #prof_zak .tracking_number,
 .user_block a {
-    color: #e9631a;
+    color: #cf4b02;
 }
