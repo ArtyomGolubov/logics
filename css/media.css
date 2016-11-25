@@ -63,6 +63,14 @@
         font-size: 12px;
     }*/
 
+    body {
+        border-left: 0px solid #fff;
+        border-right: 0px solid #fff;
+        border-top: 70px solid #fff;
+        border-bottom: 70px solid #fff;
+        box-sizing: content-box;
+    }
+
     .dropdown {
         display: block;
     }
@@ -165,7 +173,7 @@
     }
 
     body {
-        margin-top: 70px;
+        /*margin-top: 70px;*/
     }
 
     .nav_menu_mob_border {

@@ -34,7 +34,7 @@
 
     .nav_main li {
         color: #fff;
-        border-left-color: #fca371 !important;
+        border-left-color: #f68343 !important;
     }
 
         .nav_main li a {
@@ -175,7 +175,7 @@
     }
 
 .image1180x500 {
-    background: #f0e3d6;
+    background: #d3d7da;
 }
 
 .image80x80 {
@@ -191,7 +191,7 @@ svg path {
 }
 
 .slideshow > nav span {
-    border-color: #ef7532 !important;
+    border-color: #585858  !important;
 }
 
     .slideshow > nav span:hover {

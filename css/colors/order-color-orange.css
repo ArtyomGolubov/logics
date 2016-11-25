@@ -88,7 +88,7 @@
 #orders_title .btn-group label,
 #orders_title .btn-group-vertical label
  {
-    background: #fff;
+    background: transparent;
     color: #3e3e3e;
 }
 

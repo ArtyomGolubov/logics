@@ -1,11 +1,21 @@
 ﻿@import url('colors/main-color-orange.css');
 
+html {
+    background-image: url(../img/bg-body1.png);
+}
+
 body {
-    background-image: url(../img/bg-body.png);
+    /*background-image: url(../img/bg-body1.png);*/
     min-width: 320px;
     max-width: 1180px;
     margin: 0 auto;
     font-family: Roboto-Regular;
+    background-color: #fff;
+    border-left: 20px solid #fff;
+    border-right: 20px solid #fff;
+    border-top: 20px solid #fff;
+    border-bottom: 20px solid #fff;
+    box-sizing: content-box;
 }
 
 /*HEADER BEGIN*/
