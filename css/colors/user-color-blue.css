@@ -53,7 +53,7 @@
 @media only screen and (min-width : 769px) {
     #prof_icon {
         background-color: transparent;
-        border: 1px solid #c9cfd3;
+        /*border: 1px solid #c9cfd3;*/
     }
 }
 
