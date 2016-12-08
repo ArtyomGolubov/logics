@@ -63,7 +63,7 @@
         font-size: 12px;
     }*/
 
-    body {
+    .content {
         border-left: 0px solid #fff;
         border-right: 0px solid #fff;
         border-top: 70px solid #fff;
@@ -72,7 +72,7 @@
     }
 
     .dropdown {
-        display: block;
+        /*display: block;*/
     }
 
     .info img {
@@ -172,7 +172,7 @@
         display: none !important;
     }
 
-    body {
+    .content {
         /*margin-top: 70px;*/
     }
 

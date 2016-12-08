@@ -27,17 +27,21 @@
     background: transparent;
 }
 
-.nav_main {
-    border-color: #1c4174;
+#menu-top {
+    /*border-color: #1c4174;*/
     background: linear-gradient(#2477a3, #1c4174);
 }
 
-    .nav_main li {
+    .menu_1 .nav_main li,
+    .menu_1 .nav_main_top li,
+    .menu_1 .dropdown {
         color: #fff;
         border-left-color: #2477a3 !important;
+        background: linear-gradient(#2477a3, #1c4174);
     }
 
-        .nav_main li a {
+        .nav_main li a,
+        .nav_main_top a {
             color: #fff;
         }
 
@@ -81,6 +85,10 @@
     .dropbtn:active, .menu_btn:active {
         background-color: #1c4174;
     }
+
+.dropdown {
+    background: linear-gradient(#2477a3, #1c4174);
+}
 
 .dropdown-content {
     background-color: #1F5989;

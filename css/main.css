@@ -1,12 +1,13 @@
 ﻿@import url('colors/main-color-blue.css');
+@import url('navmenu.css');
 
 /*TEST*/
 
-html {
+body {
     background-image: url(../img/bg-body1.png);
 }
 
-body {
+.content {
     /*background-image: url(../img/bg-body1.png);*/
     min-width: 320px;
     max-width: 1180px;
@@ -184,79 +185,7 @@ body {
 
 /*HEADER END*/
 
-/*NAVBAR BEGIN*/
 
-.nav_main {
-    height: 50px;
-    margin: 36px 0;
-    border: 0px solid;
-    border-radius: 5px;
-    -webkit-padding-start: 0px;
-}
-
-    .nav_main li {
-        border-left: 1px;
-        border-left-style: solid;
-        float: left;
-        list-style: none;
-        width: 180px;
-        height: 50px;
-        text-align: center;
-        justify-content: center;
-        display: flex;
-
-        overflow: hidden;
-    }
-
-        .nav_main li:first-of-type {
-            border: none;
-        }
-
-	    .nav_main li a {
-            font-family: Roboto-Regular;
-            font-size: 15px;
-            text-decoration: none;
-            align-self: center;
-
-            width: 100%;
-            padding: 7%;
-        }
-
-            .nav_main li a:hover {
-                text-decoration: underline;
-                background-color: transparent;
-            }
-
-#menu-top {
-    display: none;
-    position: fixed;
-    z-index: 6;
-    top: 0px;
-    width: 3000px;
-    margin: 0 0 0 -910px;
-}
-
-    #menu-top .nav_main {
-        width: 1180px;
-        margin: auto;
-        border: none;
-        height: 48px;
-    }
-
-.op-menu {
-    display: block;
-    float: right;
-    height: 50px;
-    width: 50px;
-}
-
-#dd_btn {
-    background: url(../img/icons/op-menu.png) no-repeat center;
-    margin: auto;
-    height: 40px;
-    width: 40px;
-    border: none;
-}
 
 /* CallMe form*/
 
@@ -319,126 +248,7 @@ body {
         border-bottom: 10px solid;
     }
 
-/*    dropdown  menu*/
-.dropbtn, .menu_btn {
-    background: url(../img/icons/op-menu.png) no-repeat center;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    margin: 8px 0 8px 0px;
-    outline: 0;
-    border-radius: 5px;
-}
 
-    .menu_btn.close {
-        background-image: url(../img/icons/op-menu-close.png);
-        background-position-x: 7px;
-        background-position-y: 7px;
-    }
-
-.dropdown {
-    display: none;
-    position: relative;
-    width: 50px;
-    float: right;
-    top: 2px;
-    right: 0px;
-    z-index: 7;
-    font-size: 15px;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    min-width: 160px;
-    overflow: auto;
-    right: 0px;
-}
-
-    .dropdown-content a {
-        display: none;
-        padding: 12px 16px;
-        text-decoration: none;
-    }
-
-        .dropdown-content a:last-of-type {
-            border: none;
-        }
-
-.dropdown a:hover {
-    text-decoration: underline;
-}
-
-.mob_nav_menu_btn {
-    display: none;
-    padding: 0 1px 0 5px;
-    top: 0px;
-    height: 44px;
-}
-
-.menu_mob_btn_container {
-    height: 100%;
-    width: 50px;
-    padding-right: 5px;
-}
-
-.mobile-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 84%;
-    height: 100%;
-    overflow: auto;
-    position: fixed;
-    top: 44px;
-    left: -100%;
-    z-index: 9;
-    -webkit-transition: left 0.25s ease-in-out;
-    -moz-transition: left 0.25s ease-in-out;
-    -ms-transition: left 0.25s ease-in-out;
-    -o-transition: left 0.25s ease-in-out;
-    transition: left 0.25s ease-in-out;
-}
-
-    .mobile-menu li {
-        list-style: none;
-        width: 100%;
-        height: 44px;
-        display: flex;
-        align-items: center;
-        font-family: Roboto-Regular;
-        font-size: 16px;
-    }
-
-        .mobile-menu li > a {
-            margin-left: 10px;
-            text-decoration: none;
-
-            width: 100%;
-            padding: 2% 0;
-        }
-
-    .mobile-menu ul {
-        width: 100%;
-        padding: 0;
-        margin-bottom: 44px;
-    }
-
-body.mob-act {
-    overflow: hidden;
-}
-
-.nav_menu_mob_border {
-    display: none;
-    width: 100%;
-    height: 10px;
-    margin: 20px 0;
-}
-
-/*-------------------*/
-
-/*NAVBAR END*/
 
 /*SLIDER-1 BEGIN*/
 
