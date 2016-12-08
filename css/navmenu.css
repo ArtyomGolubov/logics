@@ -164,6 +164,11 @@
     top: 50px;
 }
 
+.menu_4 .dropdown-content {
+    margin-top: 3px;
+    border-radius: 5px;
+}
+
     .dropdown-content a {
         display: none;
         padding: 12px 16px;
@@ -257,6 +262,26 @@
 .menu_1 .dropdown {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+} 
+
+.menu_2 .dropdown,
+.menu_2 .nav_main li {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+} 
+
+.menu_3 .dropdown,
+.menu_3 .nav_main li {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+} 
+
+.menu_4 .dropdown,
+.menu_4 .nav_main li {
+    border-radius: 5px;
+    /*border-left: 1px solid #fff;
+    border-right: 1px solid #fff;*/
+    margin: 0 1px;
 } 
 
 /*-------------------*/

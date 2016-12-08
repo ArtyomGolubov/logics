@@ -40,13 +40,42 @@
         background: linear-gradient(#2477a3, #1c4174);
     }
 
+    .menu_2 .nav_main li,
+    .menu_2 .dropdown {
+        color: #fff;
+        border-left-color: #1d5a7b !important;
+        box-shadow: 0px -1px 6px -2px rgba(0, 0, 0, .8);
+        background: linear-gradient(#2477a3, #1c4174);
+    }
+
+    .menu_3 .nav_main li,
+    .menu_3 .dropdown {
+        color: #fff;
+        border-left-color: #1d5a7b !important;
+        box-shadow: 0px 5px 6px -2px rgba(0, 0, 0, .4);
+        background: linear-gradient(#2477a3, #1c4174);
+    }
+
+    .menu_4 .nav_main li,
+    .menu_4 .dropdown {
+        color: #fff;
+        box-shadow: 0px 5px 6px -2px rgba(0, 0, 0, .4);
+        background: linear-gradient(#2477a3, #1c4174);
+    }
+
         .nav_main li a,
         .nav_main_top a {
             color: #fff;
         }
 
-#menu, #menu-top {
+.menu_1 #menu,
+.menu_2 #menu, 
+#menu-top {
     box-shadow: 0 7px 8px -4px rgba(0, 0, 0, .4);
+}
+
+.menu_3 #menu {
+    box-shadow: none;
 }
 
 #call_me form {
