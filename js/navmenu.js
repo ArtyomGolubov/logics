@@ -1,4 +1,6 @@
-﻿$(window).on('load', function () {
+﻿var sizeNavMenuLi = true;
+
+$(window).on('load', function () {
 
     setMenuItemsWidth();
 
@@ -63,7 +65,7 @@ function menuAscroll() {
     if (document.documentElement.clientWidth > 768) {
         var a = document.querySelector('#menu'), b = document.querySelector('#menu-top'), P = 0;  // если ноль заменить на число, то блок будет прилипать до того, как верхний край окна браузера дойдёт до верхнего края элемента. Может быть отрицательным числом
         //ChangeMainMenu();
-        SizeMenuInit();
+        //SizeMenuInit();
 
         var Ra = a.getBoundingClientRect(),
             R = Math.round(Ra.top + b.getBoundingClientRect().height - document.querySelector('footer').getBoundingClientRect().top + 0);  // селектор блока, при достижении верхнего края которого нужно открепить прилипающий элемент;  Math.round() только для IE; если ноль заменить на число, то блок будет прилипать до того, как нижний край элемента дойдёт до футера
@@ -80,8 +82,11 @@ function menuAscroll() {
 
             //---dropdown menu-----  
             //новый вариант расположения dropdownMenu в top menu
-            dropdown.detach().prependTo('.nav_main_top');
-            dropdownMenuPosChange();
+            if (dropdown.parent().hasClass('nav_main')) {
+                dropdown.detach().prependTo('.nav_main_top');
+                SizeMenuInit();
+                dropdownMenuPosChange();
+            }
 
             //старый вариант расположения dropdownMenu в top menu
             //dropdown.css('position', 'fixed'); 
@@ -91,8 +96,11 @@ function menuAscroll() {
 
             //---dropdown menu-----
             //новый вариант расположения dropdownMenu в top menu
-            dropdown.detach().prependTo('.nav_main');
-            dropdownMenuPosChange();
+            if (dropdown.parent().hasClass('nav_main_top')) {
+                dropdown.detach().prependTo('.nav_main');
+                SizeMenuInit();
+                dropdownMenuPosChange();
+            }
 
             //старый вариант расположения dropdownMenu в top menu
             //dropdown.css('position', 'relative'); 
@@ -108,53 +116,69 @@ function setMenuItemsWidth() {
     // минимальнодопустимая ширина пунктов меню
     var minWidthLi = 180;
 
-    var widthBody = $('.content').css('width');
+    var widthBody = parseInt($('.content').css('width')) - 50;
     //console.log('widthBody', widthBody);
 
     var countLi = $('#menu li').length;
     //console.log('#menu li count = ', countLi);
 
-    var dolya = (((parseInt(widthBody) / 10) * 9) / countLi);
+    var dolya = widthBody / countLi;
+    dolya = dolya - widthBody % countLi;
     //console.log('dolya = ', dolya);
 
     if (dolya < minWidthLi) {
         $('.nav_main li').css('width', minWidthLi + 'px');
+        $('.nav_main_top li').css('width', minWidthLi + 'px');
         return false;
     }
     else {
         $('.nav_main li').css('width', dolya + 'px');
+        $('.nav_main_top li').css('width', dolya + 'px');
         return true;
     }
 }
 
+// распределение остаточной ширины блоков меню 
 function widthLastLi() {
-    // ширина последнего видимого пункта меню
-    var visibleElements = $('#menu li:visible');
-    var widthOfVisibleElements = 0;
-    var countLi = $('#menu li:visible').length;
+    if (0 == 0) {
+        var visibleElements = $('#menu li:visible');
+        var widthOfVisibleElements = 0;
+        var countLi = $('#menu li:visible').length;
 
-    visibleElements.each(function () {
-        if (!$(this).hasClass('last_li')) {
-            //widthOfVisibleElements += $(this).width() + 1;
-            widthOfVisibleElements += parseInt($(this).css('width'));
+        visibleElements.each(function () {
+            if (!$(this).hasClass('last_li')) {
+                //widthOfVisibleElements += $(this).width() + 1;
+                widthOfVisibleElements += parseInt($(this).css('width'));
+            }
+        });
+        var ostatok = widthOfVisibleElements % countLi;
+        widthOfVisibleElements = widthOfVisibleElements - ostatok;
+
+        var lastLiWidth = parseInt($('.nav_main').css('width')) - widthOfVisibleElements - parseInt($('.dropdown').css('width'));
+
+        // добавочная ширина для последнего видимого пункта меню.
+        if ($('.dropdown').hasClass('show')) {
+            $('#menu li:visible.last_li').eq(0).css('width', (lastLiWidth - ostatok) + 'px');
         }
-    });
-    //widthOfVisibleElements -= 1;
+        else {
+            $('#menu li:visible.last_li').eq(0).css('width', (lastLiWidth - ostatok + 48) + 'px');
+            if ($('#menu').hasClass('menu_1')) {
+                console.log('222');
+                $('#menu li:visible.last_li').eq(0).css('border-radius', '0px 5px 5px 0px');
+            }
+            console.log('11111');
+        }
+        //добавочная ширина для всех видимых пунктов меню
 
-    var lastLiWidth = parseInt($('.nav_main').css('width')) - widthOfVisibleElements - parseInt($('.dropdown').css('width'));
+        //var ostatok = (lastLiWidth - 180) % countLi;
+        //var addWidthForLi = (lastLiWidth - 180 - ostatok) / countLi;
+        //visibleElements.each(function () {
+        //    $(this).css('width', (parseInt($(this).css('width')) + addWidthForLi) + 'px');
+        //});
+        //$('#menu li:visible.last_li').eq(0).css('width', (parseInt($('#menu li:visible.last_li').eq(0).css('width')) + ostatok) + 'px');
 
-    // добавочная ширина для последнего видимого пункта меню.
-    //$('#menu li:visible.last_li').eq(0).css('width',lastLiWidth - 0);
-    //добавочная ширина для всех видимых пунктов меню
-    
-    var ostatok = (lastLiWidth - 180) % countLi;
-    var addWidthForLi = (lastLiWidth - 180 - ostatok) / countLi;
-    visibleElements.each(function () {
-        $(this).css('width', (parseInt($(this).css('width')) + addWidthForLi) + 'px');
-    });
-    $('#menu li:visible.last_li').eq(0).css('width', (parseInt($('#menu li:visible.last_li').eq(0).css('width')) + ostatok) + 'px');
-
-    console.log('widthOfVisibleElements', widthOfVisibleElements);
+        console.log('widthOfVisibleElements', widthOfVisibleElements);
+    }
 }
 
 //---------------------------------------
@@ -162,6 +186,7 @@ function widthLastLi() {
 // и открываем эти пункты в выпадающем списке (.dropdown-content).
 function SizeMenuInit() {
     removeLasLi();
+    setLasLi();
     //console.log('SizeMenuInit()');
     var text = '';
     //#menu
@@ -256,14 +281,17 @@ function dropdownMenuPosChange() {
     if ($(window).width() < 1180) {
         if (dropdown.parent().hasClass('nav_main_top')) {
             dropdown.css('position', 'fixed');
+            console.log('dropdownMenuPosChange 1');
         }
         else {
             dropdown.css('position', 'relative');
+            console.log('dropdownMenuPosChange 1.2');
         }
     }
     else {
         if (dropdown.parent().hasClass('nav_main')) {
             dropdown.css('position', 'relative');
+            console.log('dropdownMenuPosChange 2');
         }
     }
 }
