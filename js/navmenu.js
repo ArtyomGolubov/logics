@@ -9,11 +9,12 @@ $(window).on('load', function () {
     window.addEventListener('scroll', menuAscroll, false);
     window.addEventListener('click', function (event) {
         // Close the dropdown if the user clicks outside of it
-        if (!event.target.matches('.dropbtn')) {
+        if (!event.target.matches('.dropbtn') && !event.target.matches('.dropbtn span')) {
 
             var dropdowns = $('.dropdown-content');
             dropdowns.each(function () {
                 if (dropdowns.is(':visible')) {
+                    $('.dropbtn').toggleClass('push');
                     dropdowns.hide('fast');
                 }
             });
@@ -65,7 +66,6 @@ $(window).resize(function () {
 
 // изменение меню при  прокрутке
 function menuAscroll() {
-
     if (document.documentElement.clientWidth > 768) {
         var a = document.querySelector('#menu'), b = document.querySelector('#menu-top'), P = 0;  // если ноль заменить на число, то блок будет прилипать до того, как верхний край окна браузера дойдёт до верхнего края элемента. Может быть отрицательным числом
         //ChangeMainMenu();
@@ -277,7 +277,10 @@ function removeLasLi() {
 toggle between hiding and showing the dropdown content */
 function dropdownMenu() {
     //document.getElementById("myDropdown").classList.toggle("show");
+    console.log('dropdownMenu()');
     if ($('#myDropdown').is(':visible')) {
+        console.log('dropdownMenu() 1');
+        $('.dropbtn').toggleClass('push');
         $('#myDropdown').hide('fast');
 
         if ($('#menu').hasClass('menu_1')) {
@@ -290,13 +293,15 @@ function dropdownMenu() {
         $('.dropbtn').blur();
     }
     else {
+        console.log('dropdownMenu() 2');
+        $('.dropbtn').toggleClass('push');
         $('#myDropdown').show('fast');
         if ($('#menu').hasClass('menu_1')) {
             $('.dropdown').css('border-radius', '0px 5px 0px 0px');
         }
         if ($('#menu').hasClass('menu_3')) {
             $('.dropdown').css('border-radius', '0px 0px 0px 0px');
-            $('#menu li:visible.last_li').eq(0).css('border-radius', '0px 0px 0px 0px');
+            $('#menu li:visible.last_li').eq(0).css('border-radius', '0px 0px 0px 5px');
         }
     }
 }
