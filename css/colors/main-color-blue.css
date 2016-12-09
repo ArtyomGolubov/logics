@@ -36,6 +36,10 @@
     background: linear-gradient(#2477a3, #1c4174);
 }
 
+.menu_1 .nav_main {
+    box-shadow: 0 7px 8px -4px rgba(0, 0, 0, .4);
+}
+
     .menu_1 .nav_main li,
     .nav_main_top li,
     .menu_1 .dropdown {
