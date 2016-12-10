@@ -228,6 +228,10 @@
     top: 50px;
 }
 
+.menu_3 .dropdown-content {
+    border-radius: 0 0 5px 5px;
+}
+
 .menu_4 .dropdown-content {
     margin-top: 3px;
     border-radius: 5px;

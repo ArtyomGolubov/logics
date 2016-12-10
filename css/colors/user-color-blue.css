@@ -7,9 +7,9 @@
 }
 
 .prof_info {
-    border-bottom: 1px solid #ececec;
-    border-left: 1px solid #ececec;
-    border-right: 1px solid #ececec;
+    border-bottom: 1px solid #c9cfd3;
+    border-left: 1px solid #c9cfd3;
+    border-right: 1px solid #c9cfd3;
     background-color: rgba(255,255,255,1);
     box-shadow: 0 7px 8px -4px rgba(0, 0, 0, .4);
 }
@@ -51,9 +51,14 @@
 }
 
 @media only screen and (min-width : 769px) {
-    #prof_icon {
+    body.transparent #prof_icon {
         background-color: transparent;
-        /*border: 1px solid #c9cfd3;*/
+        border: 1px solid #c9cfd3;
+    }
+
+    body.white #prof_icon {
+        background-color: transparent;
+        border: 1px solid #c9cfd3;
     }
 }
 
@@ -61,10 +66,15 @@
     color: #a2a2a2;
 }
 
-.prof_icon {
+/*body.white .prof_icon {
     border: 1px solid #e6e6e6;
     background-color: #fff;
 }
+
+body.transparent .prof_icon {
+    border: 1px solid #e6e6e6;
+    background-color: transparent;
+}*/
 
 .prof-main-menu-block > div {
     color: #1c4174;

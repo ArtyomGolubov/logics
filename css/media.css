@@ -63,7 +63,7 @@
         font-size: 12px;
     }*/
 
-    .content {
+    .white .content {
         border-left: 0px solid #fff;
         border-right: 0px solid #fff;
         border-top: 70px solid #fff;
@@ -172,7 +172,7 @@
         display: none !important;
     }
 
-    .content {
+    body.transparent .content {
         /*margin-top: 70px;*/
     }
 
