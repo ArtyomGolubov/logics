@@ -63,7 +63,7 @@
         font-size: 12px;
     }*/
 
-    .white .content {
+    body.white .content {
         border-left: 0px solid #fff;
         border-right: 0px solid #fff;
         border-top: 70px solid #fff;
