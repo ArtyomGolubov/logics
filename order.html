@@ -62,796 +62,795 @@
 
     </div>
 
-    
 
-        <div id="page-preloader">
-            <div class="loader"></div>
+
+    <div id="page-preloader">
+        <div class="loader"></div>
+    </div>
+
+    <div class="mob_nav_menu_btn">
+        <div id="nav-icon1" onclick="MobMenuToggle()">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-
-        <div class="mob_nav_menu_btn">
-            <div id="nav-icon1" onclick="MobMenuToggle()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div id="user_block_in_menu">
-                <div id="prof" class="prof ">
-                    <div id="prof_icon" class="perc100 prof_icon align-items-vertical">
-                        <img src="img/prof/Layer17.png" class="profIMG"><span class="menu-user-name">Мохитова Юлия</span>
+        <div id="user_block_in_menu">
+            <div id="prof" class="prof ">
+                <div id="prof_icon" class="perc100 prof_icon align-items-vertical">
+                    <img src="img/prof/Layer17.png" class="profIMG"><span class="menu-user-name">Мохитова Юлия</span>
+                </div>
+                <div id="prof_info" class="prof_info main-data-menu-opened" style="display: none;">
+                    <div id="prof_main" class="prof_main" style="display: block;">
+                        <div class="prof-main-menu-block">
+                            <div class="prof_main_item" onclick="showItem('prof_main','prof_zak')">Отправки</div>
+                            <div class="prof_main_item" onclick="showItem('prof_main','prof_dialog')">Сообщения (1234)</div>
+                            <div class="prof_main_item" onclick="showItem('prof_main','prof_alert')">Уведомления (2689)</div>
+                        </div>
+                        <div id="bottom_mark" class="prof_exit row row-without-margin text-center">
+                            Выйти
+                        </div>
                     </div>
-                    <div id="prof_info" class="prof_info main-data-menu-opened" style="display: none;">
-                        <div id="prof_main" class="prof_main" style="display: block;">
-                            <div class="prof-main-menu-block">
-                                <div class="prof_main_item" onclick="showItem('prof_main','prof_zak')">Отправки</div>
-                                <div class="prof_main_item" onclick="showItem('prof_main','prof_dialog')">Сообщения (1234)</div>
-                                <div class="prof_main_item" onclick="showItem('prof_main','prof_alert')">Уведомления (2689)</div>
-                            </div>
-                            <div id="bottom_mark" class="prof_exit row row-without-margin text-center">
-                                Выйти
-                            </div>
-                        </div>
 
-                        <div id="prof_zak" class="prof_zak prof_other main-menu-punkt" hidden="true" style="display: none;">
-                            <div class="prof_item main-menu-back-button flex_column" onclick="showItem('prof_zak','prof_main')">
-                                <div style="width: 100%">
-                                    <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                                        <path fill="#1F5989" d="M7,12L12,7V10H16V14H12V17L7,12M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12Z" />
-                                    </svg>
-                                    <span class="main-menu-back-button-label" style="position: absolute; top: 12px;">Отправки</span>
-                                </div>
-                                <div class="flex_between">
-                                    <span class="bold tracking_number">Tracking number</span>
-                                    <span class="bold span_status">Статус</span>
-                                </div>
-                            </div>
-
-                            <div id="scroll_zak" class="scroll_zak main-menu-body">
-                                <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
-                                    <div class="width10em flex_between">
-                                        <span id="tracking_number">3127000000</span>
-                                        <img class="" src="img/icons/export.png">
-                                    </div>
-                                    <span class="cont cont_zak">
-                                        <p class="institution-name">Таможенное оформление в порту</p>
-                                        <p class="work-time">(24.11.2016/26.11.2016)</p>
-                                    </span>
-                                </div>
-                                <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
-                                    <div class="width10em flex_between">
-                                        <span id="tracking_number">3328</span>
-                                        <img class="" src="img/icons/export.png">
-                                    </div>
-                                    <span class="cont cont_zak">
-                                        <p class="institution-name">Таможенное оформление в порту</p>
-                                        <p class="work-time">(24.11.2016/26.11.2016)</p>
-                                    </span>
-                                </div>
-                                <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
-                                    <div class="width10em flex_between">
-                                        <span id="tracking_number">3127111111</span>
-                                        <img class="" src="img/icons/export.png">
-                                    </div>
-                                    <span class="cont cont_zak">
-                                        <p class="institution-name">Таможенное оформление в порту</p>
-                                        <p class="work-time">(24.11.2016/26.11.2016)</p>
-                                    </span>
-                                </div>
-                                <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
-                                    <div class="width10em flex_between">
-                                        <span id="tracking_number">3127000000</span>
-                                        <img class="" src="img/icons/export.png">
-                                    </div>
-                                    <span class="cont cont_zak">
-                                        <p class="institution-name">Таможенное оформление в порту</p>
-                                        <p class="work-time">(24.11.2016/26.11.2016)</p>
-                                    </span>
-                                </div>
-                                <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
-                                    <div class="width10em flex_between">
-                                        <span id="tracking_number">3127000000</span>
-                                        <img class="" src="img/icons/export.png">
-                                    </div>
-                                    <span class="cont cont_zak">
-                                        <p class="institution-name">Таможенное оформление в порту</p>
-                                        <p class="work-time">(24.11.2016/26.11.2016)</p>
-                                    </span>
-                                </div>
-                                <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
-                                    <div class="width10em flex_between">
-                                        <span id="tracking_number">3127000000</span>
-                                        <img class="" src="img/icons/export.png">
-                                    </div>
-                                    <span class="cont cont_zak">
-                                        <p class="institution-name">Таможенное оформление в порту</p>
-                                        <p class="work-time">(24.11.2016/26.11.2016)</p>
-                                    </span>
-                                </div>
-                                <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
-                                    <div class="width10em flex_between">
-                                        <span id="tracking_number">3127000000</span>
-                                        <img class="" src="img/icons/export.png">
-                                    </div>
-                                    <span class="cont cont_zak">
-                                        <p class="institution-name">Таможенное оформление в порту</p>
-                                        <p class="work-time">(24.11.2016/26.11.2016)</p>
-                                    </span>
-                                </div>
-                                <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
-                                    <div class="width10em flex_between">
-                                        <span id="tracking_number">3127000000</span>
-                                        <img class="" src="img/icons/export.png">
-                                    </div>
-                                    <span class="cont cont_zak">
-                                        <p class="institution-name">Таможенное оформление в порту</p>
-                                        <p class="work-time">(24.11.2016/26.11.2016)</p>
-                                    </span>
-                                </div>
-                                <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
-                                    <div class="width10em flex_between">
-                                        <span id="tracking_number">3127000000</span>
-                                        <img class="" src="img/icons/export.png">
-                                    </div>
-                                    <span class="cont cont_zak">
-                                        <p class="institution-name">Таможенное оформление в порту</p>
-                                        <p class="work-time">(24.11.2016/26.11.2016)</p>
-                                    </span>
-                                </div>
-                                <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
-                                    <div class="width10em flex_between">
-                                        <span id="tracking_number">3127000000</span>
-                                        <img class="" src="img/icons/export.png">
-                                    </div>
-                                    <span class="cont cont_zak">
-                                        <p class="institution-name">Таможенное оформление в порту</p>
-                                        <p class="work-time">(24.11.2016/26.11.2016)</p>
-                                    </span>
-                                </div>
-                                <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
-                                    <div class="width10em flex_between">
-                                        <span id="tracking_number">3127000000</span>
-                                        <img class="" src="img/icons/export.png">
-                                    </div>
-                                    <span class="cont cont_zak">
-                                        <p class="institution-name">Таможенное оформление в порту</p>
-                                        <p class="work-time">(24.11.2016/26.11.2016)</p>
-                                    </span>
-                                </div>
-                                <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
-                                    <div class="width10em flex_between">
-                                        <span id="tracking_number">3127000000</span>
-                                        <img class="" src="img/icons/export.png">
-                                    </div>
-                                    <span class="cont cont_zak">
-                                        <p class="institution-name">Таможенное оформление в порту</p>
-                                        <p class="work-time">(24.11.2016/26.11.2016)</p>
-                                    </span>
-                                </div>
-                                <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
-                                    <div class="width10em flex_between">
-                                        <span id="tracking_number">3127000000</span>
-                                        <img class="" src="img/icons/export.png">
-                                    </div>
-                                    <span class="cont cont_zak">
-                                        <p class="institution-name">Таможенное оформление в порту</p>
-                                        <p class="work-time">(24.11.2016/26.11.2016)</p>
-                                    </span>
-                                </div>
-                                <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
-                                    <div class="width10em flex_between">
-                                        <span id="tracking_number">3127000000</span>
-                                        <img class="" src="img/icons/export.png">
-                                    </div>
-                                    <span class="cont cont_zak">
-                                        <p class="institution-name">Таможенное оформление в порту</p>
-                                        <p class="work-time">(24.11.2016/26.11.2016)</p>
-                                    </span>
-                                </div>
-                                <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
-                                    <div class="width10em flex_between">
-                                        <span id="tracking_number">3127000000</span>
-                                        <img class="" src="img/icons/export.png">
-                                    </div>
-                                    <span class="cont cont_zak">
-                                        <p class="institution-name">Таможенное оформление в порту</p>
-                                        <p class="work-time">(24.11.2016/26.11.2016)</p>
-                                    </span>
-                                </div>
-                                <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
-                                    <div class="width10em flex_between">
-                                        <span id="tracking_number">3127000000</span>
-                                        <img class="" src="img/icons/export.png">
-                                    </div>
-                                    <span class="cont cont_zak">
-                                        <p class="institution-name">Таможенное оформление в порту</p>
-                                        <p class="work-time">(24.11.2016/26.11.2016)</p>
-                                    </span>
-                                </div>
-                                <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
-                                    <div class="width10em flex_between">
-                                        <span id="tracking_number">3127000000</span>
-                                        <img class="" src="img/icons/export.png">
-                                    </div>
-                                    <span class="cont cont_zak">
-                                        <p class="institution-name">Таможенное оформление в порту</p>
-                                        <p class="work-time">(24.11.2016/26.11.2016)</p>
-                                    </span>
-                                </div>
-                                <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
-                                    <div class="width10em flex_between">
-                                        <span id="tracking_number">3127000000</span>
-                                        <img class="" src="img/icons/export.png">
-                                    </div>
-                                    <span class="cont cont_zak">
-                                        <p class="institution-name">Таможенное оформление в порту</p>
-                                        <p class="work-time">(24.11.2016/26.11.2016)</p>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div id="prof_zak2" class="prof_zak2 prof_other main-menu-punkt" hidden="true" style="display: none;">
-                            <div class="prof_item main-menu-back-button" onclick="showItem('prof_zak2','prof_zak')">
+                    <div id="prof_zak" class="prof_zak prof_other main-menu-punkt" hidden="true" style="display: none;">
+                        <div class="prof_item main-menu-back-button flex_column" onclick="showItem('prof_zak','prof_main')">
+                            <div style="width: 100%">
                                 <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                                     <path fill="#1F5989" d="M7,12L12,7V10H16V14H12V17L7,12M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12Z" />
                                 </svg>
-                                <span class="main-menu-back-button-label">Заказ (Варадеро) длинное название</span>
+                                <span class="main-menu-back-button-label" style="position: absolute; top: 12px;">Отправки</span>
                             </div>
-                            <div id="scroll_zak2" class="main-menu-body">
-                                <div style="position: relative; width: 100%; height: 100%;">
-                                    <div class="prof_item">
-                                        <img class="icon" src="img/prof/grill.PNG">
-                                        <span class="cont_zak">
-                                            <p class="dish-name">Овощи на гриле</p>
-                                            <p class="dish-info">
-                                                <span class="price">125грн Х1</span>
-                                                <span class="summ-price" style="float: right;">135грн</span>
-                                            </p>
-                                        </span>
-                                    </div>
-                                    <div class="prof_item">
-                                        <img class="icon" src="img/prof/grill.PNG">
-                                        <span class="cont_zak">
-                                            <p class="dish-name">Овощи на гриле</p>
-                                            <p class="dish-info">
-                                                <span class="price">125грн Х1</span>
-                                                <span class="summ-price" style="float: right;">125грн</span>
-                                            </p>
-                                        </span>
-                                    </div>
-                                    <div class="prof_item">
-                                        <img class="icon" src="img/prof/grill.PNG">
-                                        <span class="cont_zak">
-                                            <p class="dish-name">Овощи на гриле</p>
-                                            <p class="dish-info">
-                                                <span class="price">125грн Х1</span>
-                                                <span class="summ-price" style="float: right;">125грн</span>
-                                            </p>
-                                        </span>
-                                    </div>
-                                    <div class="prof_item">
-                                        <img class="icon" src="img/prof/grill.PNG">
-                                        <span class="cont_zak">
-                                            <p class="dish-name">Овощи на гриле</p>
-                                            <p class="dish-info">
-                                                <span class="price">125грн Х1</span>
-                                                <span class="summ-price" style="float: right;">125грн</span>
-                                            </p>
-                                        </span>
-                                    </div>
-                                    <div class="prof_item">
-                                        <img class="icon" src="img/prof/grill.PNG">
-                                        <span class="cont_zak">
-                                            <p class="dish-name">Овощи на гриле</p>
-                                            <p class="dish-info">
-                                                <span class="price">125грн Х1</span>
-                                                <span class="summ-price" style="float: right;">125грн</span>
-                                            </p>
-                                        </span>
-                                    </div>
-                                    <div class="prof_item">
-                                        <img class="icon" src="img/prof/grill.PNG">
-                                        <span class="cont_zak">
-                                            <p class="dish-name">Овощи на гриле</p>
-                                            <p class="dish-info">
-                                                <span class="price">125грн Х1</span>
-                                                <span class="summ-price" style="float: right;">125грн</span>
-                                            </p>
-                                        </span>
-                                    </div>
-                                    <div class="prof_item">
-                                        <img class="icon" src="img/prof/grill.PNG">
-                                        <span class="cont_zak">
-                                            <p class="dish-name">Овощи на гриле</p>
-                                            <p class="dish-info">
-                                                <span class="price">125грн Х1</span>
-                                                <span class="summ-price" style="float: right;">125грн</span>
-                                            </p>
-                                        </span>
-                                    </div>
-                                    <div class="prof_item">
-                                        <img class="icon" src="img/prof/grill.PNG">
-                                        <span class="cont_zak">
-                                            <p class="dish-name">Овощи на гриле</p>
-                                            <p class="dish-info">
-                                                <span class="price">125грн Х1</span>
-                                                <span class="summ-price" style="float: right;">125грн</span>
-                                            </p>
-                                        </span>
-                                    </div>
-                                    <div class="prof_last_item">
-                                        <img class="icon" src="img/prof/grill.PNG">
-                                        <span class="cont_zak">
-                                            <p class="dish-name">Овощи на гриле</p>
-                                            <p class="dish-info">
-                                                <span class="price">125грн Х1</span>
-                                                <span class="summ-price" style="float: right;">125грн</span>
-                                            </p>
-                                        </span>
-                                    </div>
-                                    <div class="edit_zak">
-                                        <div class="all-summ">
-                                            ИТОГО: <span class="allSum">10000 грн.</span>
-                                        </div>
-                                        <a href="order.html" style="text-decoration: none">
-                                            <div id="bottom_mark" class="row text-center">
-                                                <span>Редактировать</span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
+                            <div class="flex_between">
+                                <span class="bold tracking_number">Tracking number</span>
+                                <span class="bold span_status">Статус</span>
                             </div>
                         </div>
-                        <div id="prof_dialog" class="prof_dialog prof_other main-menu-punkt" hidden="true" style="display: none;">
-                            <div class="prof_item main-menu-back-button" onclick="showItem('prof_dialog','prof_main')">
-                                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                                    <path fill="#1F5989" d="M7,12L12,7V10H16V14H12V17L7,12M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12Z" />
-                                </svg>
-                                <span class="main-menu-back-button-label">Сообщения</span>
+
+                        <div id="scroll_zak" class="scroll_zak main-menu-body">
+                            <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
+                                <div class="width10em flex_between">
+                                    <span id="tracking_number">3127000000</span>
+                                    <img class="" src="img/icons/export.png">
+                                </div>
+                                <span class="cont cont_zak">
+                                    <p class="institution-name">Таможенное оформление в порту</p>
+                                    <p class="work-time">(24.11.2016/26.11.2016)</p>
+                                </span>
                             </div>
-                            <div id="scroll_dialog" class="main-menu-body">
-                                <div class="prof_item align-items-vertical" onclick="showItem('prof_dialog','prof_mess')">
-                                    <img class="profIMG" src="img/prof/face2.png">
-                                    <div class="cont messages-cont">
-                                        <p class="family">Фамилия</p>
-                                        <p class="name">Имя</p>
-                                        <p class="last_mess_time">16:00</p>
-                                    </div>
-                                    <div class="last_mess">
-                                        Здесь последнее сообщение.
-                                    </div>
+                            <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
+                                <div class="width10em flex_between">
+                                    <span id="tracking_number">3328</span>
+                                    <img class="" src="img/icons/export.png">
                                 </div>
-                                <div class="prof_item align-items-vertical" onclick="showItem('prof_dialog','prof_mess')">
-                                    <img class="profIMG" src="img/prof/face2.png">
-                                    <div class="cont messages-cont">
-                                        <p class="family">Фамилия</p>
-                                        <p class="name">Имя</p>
-                                        <p class="last_mess_time">16:00</p>
-                                    </div>
-                                    <div class="last_mess">
-                                        Здесь последнее сообщение.
-                                    </div>
+                                <span class="cont cont_zak">
+                                    <p class="institution-name">Таможенное оформление в порту</p>
+                                    <p class="work-time">(24.11.2016/26.11.2016)</p>
+                                </span>
+                            </div>
+                            <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
+                                <div class="width10em flex_between">
+                                    <span id="tracking_number">3127111111</span>
+                                    <img class="" src="img/icons/export.png">
                                 </div>
-                                <div class="prof_item align-items-vertical" onclick="showItem('prof_dialog','prof_mess')">
-                                    <img class="profIMG" src="img/prof/face2.png">
-                                    <div class="cont messages-cont">
-                                        <p class="family">Фамилия</p>
-                                        <p class="name">Имя</p>
-                                        <p class="last_mess_time">16:00</p>
-                                    </div>
-                                    <div class="last_mess">
-                                        Здесь последнее сообщение.
-                                    </div>
+                                <span class="cont cont_zak">
+                                    <p class="institution-name">Таможенное оформление в порту</p>
+                                    <p class="work-time">(24.11.2016/26.11.2016)</p>
+                                </span>
+                            </div>
+                            <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
+                                <div class="width10em flex_between">
+                                    <span id="tracking_number">3127000000</span>
+                                    <img class="" src="img/icons/export.png">
                                 </div>
-                                <div class="prof_item align-items-vertical" onclick="showItem('prof_dialog','prof_mess')">
-                                    <img class="profIMG" src="img/prof/face2.png">
-                                    <div class="cont messages-cont">
-                                        <p class="family">Фамилия</p>
-                                        <p class="name">Имя</p>
-                                        <p class="last_mess_time">16:00</p>
-                                    </div>
-                                    <div class="last_mess">
-                                        Здесь последнее сообщение.
-                                    </div>
+                                <span class="cont cont_zak">
+                                    <p class="institution-name">Таможенное оформление в порту</p>
+                                    <p class="work-time">(24.11.2016/26.11.2016)</p>
+                                </span>
+                            </div>
+                            <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
+                                <div class="width10em flex_between">
+                                    <span id="tracking_number">3127000000</span>
+                                    <img class="" src="img/icons/export.png">
                                 </div>
-                                <div class="prof_item align-items-vertical" onclick="showItem('prof_dialog','prof_mess')">
-                                    <img class="profIMG" src="img/prof/face2.png">
-                                    <div class="cont messages-cont">
-                                        <p class="family">Фамилия</p>
-                                        <p class="name">Имя</p>
-                                        <p class="last_mess_time">16:00</p>
-                                    </div>
-                                    <div class="last_mess">
-                                        Здесь последнее сообщение.
-                                    </div>
+                                <span class="cont cont_zak">
+                                    <p class="institution-name">Таможенное оформление в порту</p>
+                                    <p class="work-time">(24.11.2016/26.11.2016)</p>
+                                </span>
+                            </div>
+                            <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
+                                <div class="width10em flex_between">
+                                    <span id="tracking_number">3127000000</span>
+                                    <img class="" src="img/icons/export.png">
                                 </div>
-                                <div class="prof_item align-items-vertical" onclick="showItem('prof_dialog','prof_mess')">
-                                    <img class="profIMG" src="img/prof/face2.png">
-                                    <div class="cont messages-cont">
-                                        <p class="family">Фамилия</p>
-                                        <p class="name">Имя</p>
-                                        <p class="last_mess_time">16:00</p>
-                                    </div>
-                                    <div class="last_mess">
-                                        Здесь последнее сообщение.
-                                    </div>
+                                <span class="cont cont_zak">
+                                    <p class="institution-name">Таможенное оформление в порту</p>
+                                    <p class="work-time">(24.11.2016/26.11.2016)</p>
+                                </span>
+                            </div>
+                            <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
+                                <div class="width10em flex_between">
+                                    <span id="tracking_number">3127000000</span>
+                                    <img class="" src="img/icons/export.png">
                                 </div>
-                                <div class="prof_item align-items-vertical" onclick="showItem('prof_dialog','prof_mess')">
-                                    <img class="profIMG" src="img/prof/face2.png">
-                                    <div class="cont messages-cont">
-                                        <p class="family">Фамилия</p>
-                                        <p class="name">Имя</p>
-                                        <p class="last_mess_time">16:00</p>
-                                    </div>
-                                    <div class="last_mess">
-                                        Здесь последнее сообщение.
-                                    </div>
+                                <span class="cont cont_zak">
+                                    <p class="institution-name">Таможенное оформление в порту</p>
+                                    <p class="work-time">(24.11.2016/26.11.2016)</p>
+                                </span>
+                            </div>
+                            <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
+                                <div class="width10em flex_between">
+                                    <span id="tracking_number">3127000000</span>
+                                    <img class="" src="img/icons/export.png">
                                 </div>
-                                <div class="prof_item align-items-vertical" onclick="showItem('prof_dialog','prof_mess')">
-                                    <img class="profIMG" src="img/prof/face2.png">
-                                    <div class="cont messages-cont">
-                                        <p class="family">Фамилия</p>
-                                        <p class="name">Имя</p>
-                                        <p class="last_mess_time">16:00</p>
-                                    </div>
-                                    <div class="last_mess">
-                                        Здесь последнее сообщение.
-                                    </div>
+                                <span class="cont cont_zak">
+                                    <p class="institution-name">Таможенное оформление в порту</p>
+                                    <p class="work-time">(24.11.2016/26.11.2016)</p>
+                                </span>
+                            </div>
+                            <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
+                                <div class="width10em flex_between">
+                                    <span id="tracking_number">3127000000</span>
+                                    <img class="" src="img/icons/export.png">
                                 </div>
-                                <div class="prof_last_item align-items-vertical" onclick="showItem('prof_dialog','prof_mess')">
-                                    <img class="profIMG" src="img/prof/face2.png">
-                                    <div class="cont messages-cont">
-                                        <p class="family">Фамилия</p>
-                                        <p class="name">Имя</p>
-                                        <p class="last_mess_time">16:00</p>
-                                    </div>
-                                    <div class="last_mess">
-                                        Здесь последнее сообщение.
-                                    </div>
+                                <span class="cont cont_zak">
+                                    <p class="institution-name">Таможенное оформление в порту</p>
+                                    <p class="work-time">(24.11.2016/26.11.2016)</p>
+                                </span>
+                            </div>
+                            <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
+                                <div class="width10em flex_between">
+                                    <span id="tracking_number">3127000000</span>
+                                    <img class="" src="img/icons/export.png">
                                 </div>
+                                <span class="cont cont_zak">
+                                    <p class="institution-name">Таможенное оформление в порту</p>
+                                    <p class="work-time">(24.11.2016/26.11.2016)</p>
+                                </span>
+                            </div>
+                            <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
+                                <div class="width10em flex_between">
+                                    <span id="tracking_number">3127000000</span>
+                                    <img class="" src="img/icons/export.png">
+                                </div>
+                                <span class="cont cont_zak">
+                                    <p class="institution-name">Таможенное оформление в порту</p>
+                                    <p class="work-time">(24.11.2016/26.11.2016)</p>
+                                </span>
+                            </div>
+                            <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
+                                <div class="width10em flex_between">
+                                    <span id="tracking_number">3127000000</span>
+                                    <img class="" src="img/icons/export.png">
+                                </div>
+                                <span class="cont cont_zak">
+                                    <p class="institution-name">Таможенное оформление в порту</p>
+                                    <p class="work-time">(24.11.2016/26.11.2016)</p>
+                                </span>
+                            </div>
+                            <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
+                                <div class="width10em flex_between">
+                                    <span id="tracking_number">3127000000</span>
+                                    <img class="" src="img/icons/export.png">
+                                </div>
+                                <span class="cont cont_zak">
+                                    <p class="institution-name">Таможенное оформление в порту</p>
+                                    <p class="work-time">(24.11.2016/26.11.2016)</p>
+                                </span>
+                            </div>
+                            <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
+                                <div class="width10em flex_between">
+                                    <span id="tracking_number">3127000000</span>
+                                    <img class="" src="img/icons/export.png">
+                                </div>
+                                <span class="cont cont_zak">
+                                    <p class="institution-name">Таможенное оформление в порту</p>
+                                    <p class="work-time">(24.11.2016/26.11.2016)</p>
+                                </span>
+                            </div>
+                            <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
+                                <div class="width10em flex_between">
+                                    <span id="tracking_number">3127000000</span>
+                                    <img class="" src="img/icons/export.png">
+                                </div>
+                                <span class="cont cont_zak">
+                                    <p class="institution-name">Таможенное оформление в порту</p>
+                                    <p class="work-time">(24.11.2016/26.11.2016)</p>
+                                </span>
+                            </div>
+                            <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
+                                <div class="width10em flex_between">
+                                    <span id="tracking_number">3127000000</span>
+                                    <img class="" src="img/icons/export.png">
+                                </div>
+                                <span class="cont cont_zak">
+                                    <p class="institution-name">Таможенное оформление в порту</p>
+                                    <p class="work-time">(24.11.2016/26.11.2016)</p>
+                                </span>
+                            </div>
+                            <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
+                                <div class="width10em flex_between">
+                                    <span id="tracking_number">3127000000</span>
+                                    <img class="" src="img/icons/export.png">
+                                </div>
+                                <span class="cont cont_zak">
+                                    <p class="institution-name">Таможенное оформление в порту</p>
+                                    <p class="work-time">(24.11.2016/26.11.2016)</p>
+                                </span>
+                            </div>
+                            <div class="prof_item flex_between" onclick="showOrder($(this).find('#tracking_number').text())">
+                                <div class="width10em flex_between">
+                                    <span id="tracking_number">3127000000</span>
+                                    <img class="" src="img/icons/export.png">
+                                </div>
+                                <span class="cont cont_zak">
+                                    <p class="institution-name">Таможенное оформление в порту</p>
+                                    <p class="work-time">(24.11.2016/26.11.2016)</p>
+                                </span>
                             </div>
                         </div>
-                        <div id="prof_mess" class="prof_mess prof_other main-menu-punkt" hidden="true" style="display: none;">
-                            <div class="prof_item main-menu-back-button" onclick="showItem('prof_mess','prof_dialog')">
-                                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                                    <path fill="#1F5989" d="M7,12L12,7V10H16V14H12V17L7,12M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12Z" />
-                                </svg>
-                                <span class="main-menu-back-button-label">Диалог</span>
-                            </div>
-                            <div id="scroll_mess" class="main-menu-body">
-                                <div class="prof_item align-items-vertical">
-                                    <img class="profIMG" src="img/prof/face2.png">
-                                    <div class="cont messages-cont">
-                                        <p class="family">Фамилия</p>
-                                        <p class="name">Имя</p>
-                                        <p class="last_mess_time">16:00</p>
-                                    </div>
-                                    <div class="last_mess">
-                                        Здесь какое-то сообщение.
-                                    </div>
+                    </div>
+
+                    <div id="prof_zak2" class="prof_zak2 prof_other main-menu-punkt" hidden="true" style="display: none;">
+                        <div class="prof_item main-menu-back-button" onclick="showItem('prof_zak2','prof_zak')">
+                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                <path fill="#1F5989" d="M7,12L12,7V10H16V14H12V17L7,12M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12Z" />
+                            </svg>
+                            <span class="main-menu-back-button-label">Заказ (Варадеро) длинное название</span>
+                        </div>
+                        <div id="scroll_zak2" class="main-menu-body">
+                            <div style="position: relative; width: 100%; height: 100%;">
+                                <div class="prof_item">
+                                    <img class="icon" src="img/prof/grill.PNG">
+                                    <span class="cont_zak">
+                                        <p class="dish-name">Овощи на гриле</p>
+                                        <p class="dish-info">
+                                            <span class="price">125грн Х1</span>
+                                            <span class="summ-price" style="float: right;">135грн</span>
+                                        </p>
+                                    </span>
                                 </div>
-                                <div class="prof_item align-items-vertical">
-                                    <img class="profIMG" src="img/prof/face2.png">
-                                    <div class="cont messages-cont">
-                                        <p class="family">Фамилия</p>
-                                        <p class="name">Имя</p>
-                                        <p class="last_mess_time">16:00</p>
-                                    </div>
-                                    <div class="last_mess">
-                                        Здесь какое-то сообщение.
-                                    </div>
+                                <div class="prof_item">
+                                    <img class="icon" src="img/prof/grill.PNG">
+                                    <span class="cont_zak">
+                                        <p class="dish-name">Овощи на гриле</p>
+                                        <p class="dish-info">
+                                            <span class="price">125грн Х1</span>
+                                            <span class="summ-price" style="float: right;">125грн</span>
+                                        </p>
+                                    </span>
                                 </div>
-                                <div class="prof_item align-items-vertical">
-                                    <img class="profIMG" src="img/prof/face2.png">
-                                    <div class="cont messages-cont">
-                                        <p class="family">Фамилия</p>
-                                        <p class="name">Имя</p>
-                                        <p class="last_mess_time">16:00</p>
-                                    </div>
-                                    <div class="last_mess">
-                                        Здесь какое-то сообщение.
-                                    </div>
+                                <div class="prof_item">
+                                    <img class="icon" src="img/prof/grill.PNG">
+                                    <span class="cont_zak">
+                                        <p class="dish-name">Овощи на гриле</p>
+                                        <p class="dish-info">
+                                            <span class="price">125грн Х1</span>
+                                            <span class="summ-price" style="float: right;">125грн</span>
+                                        </p>
+                                    </span>
                                 </div>
-                                <div class="prof_item align-items-vertical">
-                                    <img class="profIMG" src="img/prof/face2.png">
-                                    <div class="cont messages-cont">
-                                        <p class="family">Фамилия</p>
-                                        <p class="name">Имя</p>
-                                        <p class="last_mess_time">16:00</p>
-                                    </div>
-                                    <div class="last_mess">
-                                        Здесь какое-то сообщение.
-                                    </div>
+                                <div class="prof_item">
+                                    <img class="icon" src="img/prof/grill.PNG">
+                                    <span class="cont_zak">
+                                        <p class="dish-name">Овощи на гриле</p>
+                                        <p class="dish-info">
+                                            <span class="price">125грн Х1</span>
+                                            <span class="summ-price" style="float: right;">125грн</span>
+                                        </p>
+                                    </span>
                                 </div>
-                                <div class="prof_item align-items-vertical">
-                                    <img class="profIMG" src="img/prof/face2.png">
-                                    <div class="cont messages-cont">
-                                        <p class="family">Фамилия</p>
-                                        <p class="name">Имя</p>
-                                        <p class="last_mess_time">16:00</p>
-                                    </div>
-                                    <div class="last_mess">
-                                        Здесь какое-то сообщение.
-                                    </div>
+                                <div class="prof_item">
+                                    <img class="icon" src="img/prof/grill.PNG">
+                                    <span class="cont_zak">
+                                        <p class="dish-name">Овощи на гриле</p>
+                                        <p class="dish-info">
+                                            <span class="price">125грн Х1</span>
+                                            <span class="summ-price" style="float: right;">125грн</span>
+                                        </p>
+                                    </span>
                                 </div>
-                                <div class="prof_item align-items-vertical">
-                                    <img class="profIMG" src="img/prof/face2.png">
-                                    <div class="cont messages-cont">
-                                        <p class="family">Фамилия</p>
-                                        <p class="name">Имя</p>
-                                        <p class="last_mess_time">16:00</p>
-                                    </div>
-                                    <div class="last_mess">
-                                        Здесь какое-то сообщение.
-                                    </div>
+                                <div class="prof_item">
+                                    <img class="icon" src="img/prof/grill.PNG">
+                                    <span class="cont_zak">
+                                        <p class="dish-name">Овощи на гриле</p>
+                                        <p class="dish-info">
+                                            <span class="price">125грн Х1</span>
+                                            <span class="summ-price" style="float: right;">125грн</span>
+                                        </p>
+                                    </span>
                                 </div>
-                                <div class="prof_item align-items-vertical">
-                                    <img class="profIMG" src="img/prof/face2.png">
-                                    <div class="cont messages-cont">
-                                        <p class="family">Фамилия</p>
-                                        <p class="name">Имя</p>
-                                        <p class="last_mess_time">16:00</p>
-                                    </div>
-                                    <div class="last_mess">
-                                        Здесь какое-то сообщение.
-                                    </div>
+                                <div class="prof_item">
+                                    <img class="icon" src="img/prof/grill.PNG">
+                                    <span class="cont_zak">
+                                        <p class="dish-name">Овощи на гриле</p>
+                                        <p class="dish-info">
+                                            <span class="price">125грн Х1</span>
+                                            <span class="summ-price" style="float: right;">125грн</span>
+                                        </p>
+                                    </span>
                                 </div>
-                                <div class="prof_item align-items-vertical">
-                                    <img class="profIMG" src="img/prof/face2.png">
-                                    <div class="cont messages-cont">
-                                        <p class="family">Фамилия</p>
-                                        <p class="name">Имя</p>
-                                        <p class="last_mess_time">16:00</p>
-                                    </div>
-                                    <div class="last_mess">
-                                        Здесь какое-то сообщение.
-                                    </div>
-                                </div>
-                                <div class="prof_item align-items-vertical">
-                                    <img class="profIMG" src="img/prof/face2.png">
-                                    <div class="cont messages-cont">
-                                        <p class="family">Фамилия</p>
-                                        <p class="name">Имя</p>
-                                        <p class="last_mess_time">16:00</p>
-                                    </div>
-                                    <div class="last_mess">
-                                        Здесь какое-то сообщение.
-                                    </div>
-                                </div>
-                                <div class="prof_item align-items-vertical">
-                                    <img class="profIMG" src="img/prof/face2.png">
-                                    <div class="cont messages-cont">
-                                        <p class="family">Фамилия</p>
-                                        <p class="name">Имя</p>
-                                        <p class="last_mess_time">16:00</p>
-                                    </div>
-                                    <div class="last_mess">
-                                        Здесь какое-то сообщение.
-                                    </div>
-                                </div>
-                                <div class="prof_item align-items-vertical">
-                                    <img class="profIMG" src="img/prof/face2.png">
-                                    <div class="cont messages-cont">
-                                        <p class="family">Фамилия</p>
-                                        <p class="name">Имя</p>
-                                        <p class="last_mess_time">16:00</p>
-                                    </div>
-                                    <div class="last_mess">
-                                        Здесь какое-то сообщение.
-                                    </div>
-                                </div>
-                                <div class="prof_item align-items-vertical">
-                                    <img class="profIMG" src="img/prof/face2.png">
-                                    <div class="cont messages-cont">
-                                        <p class="family">Фамилия</p>
-                                        <p class="name">Имя</p>
-                                        <p class="last_mess_time">16:00</p>
-                                    </div>
-                                    <div class="last_mess">
-                                        Здесь какое-то сообщение.
-                                    </div>
-                                </div>
-                                <div class="prof_item align-items-vertical">
-                                    <img class="profIMG" src="img/prof/face2.png">
-                                    <div class="cont messages-cont">
-                                        <p class="family">Фамилия</p>
-                                        <p class="name">Имя</p>
-                                        <p class="last_mess_time">16:00</p>
-                                    </div>
-                                    <div class="last_mess">
-                                        Здесь какое-то сообщение.
-                                    </div>
-                                </div>
-                                <div class="prof_item align-items-vertical">
-                                    <img class="profIMG" src="img/prof/face2.png">
-                                    <div class="cont messages-cont">
-                                        <p class="family">Фамилия</p>
-                                        <p class="name">Имя</p>
-                                        <p class="last_mess_time">16:00</p>
-                                    </div>
-                                    <div class="last_mess">
-                                        Здесь какое-то сообщение.
-                                    </div>
+                                <div class="prof_item">
+                                    <img class="icon" src="img/prof/grill.PNG">
+                                    <span class="cont_zak">
+                                        <p class="dish-name">Овощи на гриле</p>
+                                        <p class="dish-info">
+                                            <span class="price">125грн Х1</span>
+                                            <span class="summ-price" style="float: right;">125грн</span>
+                                        </p>
+                                    </span>
                                 </div>
                                 <div class="prof_last_item">
-                                    <form action="" method="">
-                                        <textarea rows="3" cols="33" name="text"></textarea>
-                                        <div class="smile-and-button-block">
-                                            <div class="row row-without-margin">
-                                                <div class="col-xs-6 col-lg-6 col-without-padding">
-                                                    <span class="peoplb"><img src="img/prof/peoplb.png"></span>
-                                                    <span class="sendf"><img src="img/prof/paperclip.png"></span>
-                                                </div>
-                                                <div class="col-xs-6 col-lg-6 col-without-padding text-right">
-                                                    <span class="smiles"><img src="img/prof/smiles.png"></span>
-                                                    <span class="submit">Отправить</span>
-                                                </div>
-                                            </div>
+                                    <img class="icon" src="img/prof/grill.PNG">
+                                    <span class="cont_zak">
+                                        <p class="dish-name">Овощи на гриле</p>
+                                        <p class="dish-info">
+                                            <span class="price">125грн Х1</span>
+                                            <span class="summ-price" style="float: right;">125грн</span>
+                                        </p>
+                                    </span>
+                                </div>
+                                <div class="edit_zak">
+                                    <div class="all-summ">
+                                        ИТОГО: <span class="allSum">10000 грн.</span>
+                                    </div>
+                                    <a href="order.html" style="text-decoration: none">
+                                        <div id="bottom_mark" class="row text-center">
+                                            <span>Редактировать</span>
                                         </div>
-                                    </form>
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                        <div id="prof_alert" class="prof_alert prof_other main-menu-punkt" hidden="true" style="display: none;">
-                            <div class="prof_item main-menu-back-button" onclick="showItem('prof_alert','prof_main')">
-                                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                                    <path fill="#1F5989" d="M7,12L12,7V10H16V14H12V17L7,12M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12Z" />
-                                </svg>
-                                <span class="main-menu-back-button-label">Уведомления</span>
+                    </div>
+                    <div id="prof_dialog" class="prof_dialog prof_other main-menu-punkt" hidden="true" style="display: none;">
+                        <div class="prof_item main-menu-back-button" onclick="showItem('prof_dialog','prof_main')">
+                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                <path fill="#1F5989" d="M7,12L12,7V10H16V14H12V17L7,12M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12Z" />
+                            </svg>
+                            <span class="main-menu-back-button-label">Сообщения</span>
+                        </div>
+                        <div id="scroll_dialog" class="main-menu-body">
+                            <div class="prof_item align-items-vertical" onclick="showItem('prof_dialog','prof_mess')">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь последнее сообщение.
+                                </div>
                             </div>
-                            <div id="scroll_alert" class="main-menu-body">
-                                <div class="prof-item-notice">
-                                    <div class="alert_time" align="right">11:00</div>
-                                    <div class="row row-without-margin notice-body align-items-vertical">
-                                        <div class="col-md-2 col-sm-2 col-xs-2">
-                                            <img src="img/prof/kalendar.png">
-                                        </div>
-                                        <div class="col-md-10 col-sm-10 col-xs-10">
-                                            <div class="alert_msg">Вас пригласили на мероприятие в ресторан</div>
+                            <div class="prof_item align-items-vertical" onclick="showItem('prof_dialog','prof_mess')">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь последнее сообщение.
+                                </div>
+                            </div>
+                            <div class="prof_item align-items-vertical" onclick="showItem('prof_dialog','prof_mess')">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь последнее сообщение.
+                                </div>
+                            </div>
+                            <div class="prof_item align-items-vertical" onclick="showItem('prof_dialog','prof_mess')">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь последнее сообщение.
+                                </div>
+                            </div>
+                            <div class="prof_item align-items-vertical" onclick="showItem('prof_dialog','prof_mess')">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь последнее сообщение.
+                                </div>
+                            </div>
+                            <div class="prof_item align-items-vertical" onclick="showItem('prof_dialog','prof_mess')">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь последнее сообщение.
+                                </div>
+                            </div>
+                            <div class="prof_item align-items-vertical" onclick="showItem('prof_dialog','prof_mess')">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь последнее сообщение.
+                                </div>
+                            </div>
+                            <div class="prof_item align-items-vertical" onclick="showItem('prof_dialog','prof_mess')">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь последнее сообщение.
+                                </div>
+                            </div>
+                            <div class="prof_last_item align-items-vertical" onclick="showItem('prof_dialog','prof_mess')">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь последнее сообщение.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="prof_mess" class="prof_mess prof_other main-menu-punkt" hidden="true" style="display: none;">
+                        <div class="prof_item main-menu-back-button" onclick="showItem('prof_mess','prof_dialog')">
+                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                <path fill="#1F5989" d="M7,12L12,7V10H16V14H12V17L7,12M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12Z" />
+                            </svg>
+                            <span class="main-menu-back-button-label">Диалог</span>
+                        </div>
+                        <div id="scroll_mess" class="main-menu-body">
+                            <div class="prof_item align-items-vertical">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь какое-то сообщение.
+                                </div>
+                            </div>
+                            <div class="prof_item align-items-vertical">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь какое-то сообщение.
+                                </div>
+                            </div>
+                            <div class="prof_item align-items-vertical">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь какое-то сообщение.
+                                </div>
+                            </div>
+                            <div class="prof_item align-items-vertical">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь какое-то сообщение.
+                                </div>
+                            </div>
+                            <div class="prof_item align-items-vertical">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь какое-то сообщение.
+                                </div>
+                            </div>
+                            <div class="prof_item align-items-vertical">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь какое-то сообщение.
+                                </div>
+                            </div>
+                            <div class="prof_item align-items-vertical">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь какое-то сообщение.
+                                </div>
+                            </div>
+                            <div class="prof_item align-items-vertical">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь какое-то сообщение.
+                                </div>
+                            </div>
+                            <div class="prof_item align-items-vertical">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь какое-то сообщение.
+                                </div>
+                            </div>
+                            <div class="prof_item align-items-vertical">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь какое-то сообщение.
+                                </div>
+                            </div>
+                            <div class="prof_item align-items-vertical">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь какое-то сообщение.
+                                </div>
+                            </div>
+                            <div class="prof_item align-items-vertical">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь какое-то сообщение.
+                                </div>
+                            </div>
+                            <div class="prof_item align-items-vertical">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь какое-то сообщение.
+                                </div>
+                            </div>
+                            <div class="prof_item align-items-vertical">
+                                <img class="profIMG" src="img/prof/face2.png">
+                                <div class="cont messages-cont">
+                                    <p class="family">Фамилия</p>
+                                    <p class="name">Имя</p>
+                                    <p class="last_mess_time">16:00</p>
+                                </div>
+                                <div class="last_mess">
+                                    Здесь какое-то сообщение.
+                                </div>
+                            </div>
+                            <div class="prof_last_item">
+                                <form action="" method="">
+                                    <textarea rows="3" cols="33" name="text"></textarea>
+                                    <div class="smile-and-button-block">
+                                        <div class="row row-without-margin">
+                                            <div class="col-xs-6 col-lg-6 col-without-padding">
+                                                <span class="peoplb"><img src="img/prof/peoplb.png"></span>
+                                                <span class="sendf"><img src="img/prof/paperclip.png"></span>
+                                            </div>
+                                            <div class="col-xs-6 col-lg-6 col-without-padding text-right">
+                                                <span class="smiles"><img src="img/prof/smiles.png"></span>
+                                                <span class="submit">Отправить</span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="prof-item-notice">
-                                    <div class="alert_time" align="right">11:00</div>
-                                    <div class="row row-without-margin notice-body align-items-vertical">
-                                        <div class="col-md-2 col-sm-2 col-xs-2">
-                                            <img src="img/prof/zvonok.png">
-                                        </div>
-                                        <div class="col-md-10 col-sm-10 col-xs-10">
-                                            <div class="alert_msg">Ваш заказ успешно подтвержден.</div>
-                                        </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="prof_alert" class="prof_alert prof_other main-menu-punkt" hidden="true" style="display: none;">
+                        <div class="prof_item main-menu-back-button" onclick="showItem('prof_alert','prof_main')">
+                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                <path fill="#1F5989" d="M7,12L12,7V10H16V14H12V17L7,12M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12Z" />
+                            </svg>
+                            <span class="main-menu-back-button-label">Уведомления</span>
+                        </div>
+                        <div id="scroll_alert" class="main-menu-body">
+                            <div class="prof-item-notice">
+                                <div class="alert_time" align="right">11:00</div>
+                                <div class="row row-without-margin notice-body align-items-vertical">
+                                    <div class="col-md-2 col-sm-2 col-xs-2">
+                                        <img src="img/prof/kalendar.png">
+                                    </div>
+                                    <div class="col-md-10 col-sm-10 col-xs-10">
+                                        <div class="alert_msg">Вас пригласили на мероприятие в ресторан</div>
                                     </div>
                                 </div>
-                                <div class="prof-item-notice">
-                                    <div class="alert_time" align="right">11:00</div>
-                                    <div class="row row-without-margin notice-body align-items-vertical">
-                                        <div class="col-md-2 col-sm-2 col-xs-2">
-                                            <img src="img/prof/kniga.png">
-                                        </div>
-                                        <div class="col-md-10 col-sm-10 col-xs-10">
-                                            <div class="alert_msg">Запрос на добавление в контакты.</div>
-                                        </div>
+                            </div>
+                            <div class="prof-item-notice">
+                                <div class="alert_time" align="right">11:00</div>
+                                <div class="row row-without-margin notice-body align-items-vertical">
+                                    <div class="col-md-2 col-sm-2 col-xs-2">
+                                        <img src="img/prof/zvonok.png">
+                                    </div>
+                                    <div class="col-md-10 col-sm-10 col-xs-10">
+                                        <div class="alert_msg">Ваш заказ успешно подтвержден.</div>
                                     </div>
                                 </div>
-                                <div class="prof-item-notice">
-                                    <div class="alert_time" align="right">11:00</div>
-                                    <div class="row row-without-margin notice-body align-items-vertical">
-                                        <div class="col-md-2 col-sm-2 col-xs-2">
-                                            <img src="img/prof/kolokol.png">
-                                        </div>
-                                        <div class="col-md-10 col-sm-10 col-xs-10">
-                                            <div class="alert_msg">День рождения у Светы!</div>
-                                        </div>
+                            </div>
+                            <div class="prof-item-notice">
+                                <div class="alert_time" align="right">11:00</div>
+                                <div class="row row-without-margin notice-body align-items-vertical">
+                                    <div class="col-md-2 col-sm-2 col-xs-2">
+                                        <img src="img/prof/kniga.png">
+                                    </div>
+                                    <div class="col-md-10 col-sm-10 col-xs-10">
+                                        <div class="alert_msg">Запрос на добавление в контакты.</div>
                                     </div>
                                 </div>
-                                <div class="prof-item-notice">
-                                    <div class="alert_time" align="right">11:00</div>
-                                    <div class="row row-without-margin notice-body align-items-vertical">
-                                        <div class="col-md-2 col-sm-2 col-xs-2">
-                                            <img src="img/prof/kniga.png">
-                                        </div>
-                                        <div class="col-md-10 col-sm-10 col-xs-10">
-                                            <div class="alert_msg">Запрос на добавление в контакты.</div>
-                                        </div>
+                            </div>
+                            <div class="prof-item-notice">
+                                <div class="alert_time" align="right">11:00</div>
+                                <div class="row row-without-margin notice-body align-items-vertical">
+                                    <div class="col-md-2 col-sm-2 col-xs-2">
+                                        <img src="img/prof/kolokol.png">
+                                    </div>
+                                    <div class="col-md-10 col-sm-10 col-xs-10">
+                                        <div class="alert_msg">День рождения у Светы!</div>
                                     </div>
                                 </div>
-                                <div class="prof-item-notice">
-                                    <div class="alert_time" align="right">11:00</div>
-                                    <div class="row row-without-margin notice-body align-items-vertical">
-                                        <div class="col-md-2 col-sm-2 col-xs-2">
-                                            <img src="img/prof/kolokol.png">
-                                        </div>
-                                        <div class="col-md-10 col-sm-10 col-xs-10">
-                                            <div class="alert_msg">День рождения у Светы!</div>
-                                        </div>
+                            </div>
+                            <div class="prof-item-notice">
+                                <div class="alert_time" align="right">11:00</div>
+                                <div class="row row-without-margin notice-body align-items-vertical">
+                                    <div class="col-md-2 col-sm-2 col-xs-2">
+                                        <img src="img/prof/kniga.png">
+                                    </div>
+                                    <div class="col-md-10 col-sm-10 col-xs-10">
+                                        <div class="alert_msg">Запрос на добавление в контакты.</div>
                                     </div>
                                 </div>
-                                <div class="prof-item-notice">
-                                    <div class="alert_time" align="right">11:00</div>
-                                    <div class="row row-without-margin notice-body align-items-vertical">
-                                        <div class="col-md-2 col-sm-2 col-xs-2">
-                                            <img src="img/prof/kniga.png">
-                                        </div>
-                                        <div class="col-md-10 col-sm-10 col-xs-10">
-                                            <div class="alert_msg">Запрос на добавление в контакты.</div>
-                                        </div>
+                            </div>
+                            <div class="prof-item-notice">
+                                <div class="alert_time" align="right">11:00</div>
+                                <div class="row row-without-margin notice-body align-items-vertical">
+                                    <div class="col-md-2 col-sm-2 col-xs-2">
+                                        <img src="img/prof/kolokol.png">
+                                    </div>
+                                    <div class="col-md-10 col-sm-10 col-xs-10">
+                                        <div class="alert_msg">День рождения у Светы!</div>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="prof-item-notice">
+                                <div class="alert_time" align="right">11:00</div>
+                                <div class="row row-without-margin notice-body align-items-vertical">
+                                    <div class="col-md-2 col-sm-2 col-xs-2">
+                                        <img src="img/prof/kniga.png">
+                                    </div>
+                                    <div class="col-md-10 col-sm-10 col-xs-10">
+                                        <div class="alert_msg">Запрос на добавление в контакты.</div>
+                                    </div>
+                                </div>
+                            </div>
 
-                                <div class="prof-item-notice">
-                                    <div class="alert_time" align="right">11:00</div>
-                                    <div class="row row-without-margin notice-body align-items-vertical">
-                                        <div class="col-md-2 col-sm-2 col-xs-2">
-                                            <img src="img/prof/kniga.png">
-                                        </div>
-                                        <div class="col-md-10 col-sm-10 col-xs-10">
-                                            <div class="alert_msg">Запрос на добавление в контакты.</div>
-                                        </div>
+                            <div class="prof-item-notice">
+                                <div class="alert_time" align="right">11:00</div>
+                                <div class="row row-without-margin notice-body align-items-vertical">
+                                    <div class="col-md-2 col-sm-2 col-xs-2">
+                                        <img src="img/prof/kniga.png">
+                                    </div>
+                                    <div class="col-md-10 col-sm-10 col-xs-10">
+                                        <div class="alert_msg">Запрос на добавление в контакты.</div>
                                     </div>
                                 </div>
-                                <div class="prof-item-notice">
-                                    <div class="alert_time" align="right">11:00</div>
-                                    <div class="row row-without-margin notice-body align-items-vertical">
-                                        <div class="col-md-2 col-sm-2 col-xs-2">
-                                            <img src="img/prof/kolokol.png">
-                                        </div>
-                                        <div class="col-md-10 col-sm-10 col-xs-10">
-                                            <div class="alert_msg">День рождения у Светы!</div>
-                                        </div>
+                            </div>
+                            <div class="prof-item-notice">
+                                <div class="alert_time" align="right">11:00</div>
+                                <div class="row row-without-margin notice-body align-items-vertical">
+                                    <div class="col-md-2 col-sm-2 col-xs-2">
+                                        <img src="img/prof/kolokol.png">
+                                    </div>
+                                    <div class="col-md-10 col-sm-10 col-xs-10">
+                                        <div class="alert_msg">День рождения у Светы!</div>
                                     </div>
                                 </div>
-                                <div class="prof-item-notice">
-                                    <div class="alert_time" align="right">11:00</div>
-                                    <div class="row row-without-margin notice-body align-items-vertical">
-                                        <div class="col-md-2 col-sm-2 col-xs-2">
-                                            <img src="img/prof/kniga.png">
-                                        </div>
-                                        <div class="col-md-10 col-sm-10 col-xs-10">
-                                            <div class="alert_msg">Запрос на добавление в контакты.</div>
-                                        </div>
+                            </div>
+                            <div class="prof-item-notice">
+                                <div class="alert_time" align="right">11:00</div>
+                                <div class="row row-without-margin notice-body align-items-vertical">
+                                    <div class="col-md-2 col-sm-2 col-xs-2">
+                                        <img src="img/prof/kniga.png">
+                                    </div>
+                                    <div class="col-md-10 col-sm-10 col-xs-10">
+                                        <div class="alert_msg">Запрос на добавление в контакты.</div>
                                     </div>
                                 </div>
-                                <div class="prof-item-notice">
-                                    <div class="alert_time" align="right">11:00</div>
-                                    <div class="row row-without-margin notice-body align-items-vertical">
-                                        <div class="col-md-2 col-sm-2 col-xs-2">
-                                            <img src="img/prof/kniga.png">
-                                        </div>
-                                        <div class="col-md-10 col-sm-10 col-xs-10">
-                                            <div class="alert_msg">Запрос на добавление в контакты.</div>
-                                        </div>
+                            </div>
+                            <div class="prof-item-notice">
+                                <div class="alert_time" align="right">11:00</div>
+                                <div class="row row-without-margin notice-body align-items-vertical">
+                                    <div class="col-md-2 col-sm-2 col-xs-2">
+                                        <img src="img/prof/kniga.png">
+                                    </div>
+                                    <div class="col-md-10 col-sm-10 col-xs-10">
+                                        <div class="alert_msg">Запрос на добавление в контакты.</div>
                                     </div>
                                 </div>
-                                <div class="prof-item-notice">
-                                    <div class="alert_time" align="right">11:00</div>
-                                    <div class="row row-without-margin notice-body align-items-vertical">
-                                        <div class="col-md-2 col-sm-2 col-xs-2">
-                                            <img src="img/prof/kolokol.png">
-                                        </div>
-                                        <div class="col-md-10 col-sm-10 col-xs-10">
-                                            <div class="alert_msg">День рождения у Светы!</div>
-                                        </div>
+                            </div>
+                            <div class="prof-item-notice">
+                                <div class="alert_time" align="right">11:00</div>
+                                <div class="row row-without-margin notice-body align-items-vertical">
+                                    <div class="col-md-2 col-sm-2 col-xs-2">
+                                        <img src="img/prof/kolokol.png">
+                                    </div>
+                                    <div class="col-md-10 col-sm-10 col-xs-10">
+                                        <div class="alert_msg">День рождения у Светы!</div>
                                     </div>
                                 </div>
-                                <div class="prof-item-notice">
-                                    <div class="alert_time" align="right">11:00</div>
-                                    <div class="row row-without-margin notice-body align-items-vertical">
-                                        <div class="col-md-2 col-sm-2 col-xs-2">
-                                            <img src="img/prof/kniga.png">
-                                        </div>
-                                        <div class="col-md-10 col-sm-10 col-xs-10">
-                                            <div class="alert_msg">Запрос на добавление в контакты.</div>
-                                        </div>
+                            </div>
+                            <div class="prof-item-notice">
+                                <div class="alert_time" align="right">11:00</div>
+                                <div class="row row-without-margin notice-body align-items-vertical">
+                                    <div class="col-md-2 col-sm-2 col-xs-2">
+                                        <img src="img/prof/kniga.png">
+                                    </div>
+                                    <div class="col-md-10 col-sm-10 col-xs-10">
+                                        <div class="alert_msg">Запрос на добавление в контакты.</div>
                                     </div>
                                 </div>
-                                <div class="prof-last-item-notice">
-                                    <div class="alert_time" align="right">11:00</div>
-                                    <div class="row row-without-margin notice-body align-items-vertical">
-                                        <div class="col-md-2 col-sm-2 col-xs-2">
-                                            <img src="img/prof/kolokol.png">
-                                        </div>
-                                        <div class="col-md-10 col-sm-10 col-xs-10">
-                                            <div class="alert_msg">День рождения у Светы!</div>
-                                        </div>
+                            </div>
+                            <div class="prof-last-item-notice">
+                                <div class="alert_time" align="right">11:00</div>
+                                <div class="row row-without-margin notice-body align-items-vertical">
+                                    <div class="col-md-2 col-sm-2 col-xs-2">
+                                        <img src="img/prof/kolokol.png">
+                                    </div>
+                                    <div class="col-md-10 col-sm-10 col-xs-10">
+                                        <div class="alert_msg">День рождения у Светы!</div>
                                     </div>
                                 </div>
                             </div>
@@ -860,44 +859,45 @@
                 </div>
             </div>
         </div>
-        <div class="mobile-menu">
-            <ul>
-                <li>
-                    <a href="index.html">Главная</a>
-                </li>
-                <li>
-                    <a href="menu.html">Меню</a>
-                </li>
-                <li>
-                    <a href="order.html">Схема заведения</a>
-                </li>
-                <li>
-                    <a href="#">Новости</a>
-                </li>
-                <li>
-                    <a href="#">О ресторане</a>
-                </li>
-                <li>
-                    <a href="nav-menu-1.html">Меню 1</a>
-                </li>
-                <li>
-                    <a href="nav-menu-2.html">Меню 2</a>
-                </li>
-                <li>
-                    <a href="nav-menu-3.html">Меню 3</a>
-                </li>
-                <li>
-                    <a href="nav-menu-4.html">Меню 4</a>
-                </li>
-                <li>
-                    <a href="nav-menu-5.html">Меню 5</a>
-                </li>
-            </ul>
-            <!--<div class="menu_mob_btn_container">
-                <div onclick="MobMenuToggle()" class="menu_btn close">
-                </div>
-            </div>-->
-        </div>
+    </div>
+    <div class="mobile-menu">
+        <ul>
+            <li>
+                <a href="index.html">Главная</a>
+            </li>
+            <li>
+                <a href="menu.html">Меню</a>
+            </li>
+            <li>
+                <a href="order.html">Схема заведения</a>
+            </li>
+            <li>
+                <a href="#">Новости</a>
+            </li>
+            <li>
+                <a href="#">О ресторане</a>
+            </li>
+            <li>
+                <a href="nav-menu-1.html">Меню 1</a>
+            </li>
+            <li>
+                <a href="nav-menu-2.html">Меню 2</a>
+            </li>
+            <li>
+                <a href="nav-menu-3.html">Меню 3</a>
+            </li>
+            <li>
+                <a href="nav-menu-4.html">Меню 4</a>
+            </li>
+            <li>
+                <a href="nav-menu-5.html">Меню 5</a>
+            </li>
+        </ul>
+        <!--<div class="menu_mob_btn_container">
+            <div onclick="MobMenuToggle()" class="menu_btn close">
+            </div>
+        </div>-->
+    </div>
     <div class="content">
         <header class="wrapper">
             <!-- header 2 -->
@@ -1842,16 +1842,58 @@
             </div>
             <div class="type">
                 <label class="checkbox-inline">
-                    <input type="checkbox" value=""><span><div class="dlvr_type_icon"><img src="img/icons/export.png" /></div>- Export</span>
+                    <input type="checkbox" value=""><span>
+                        <div class="dlvr_type_icon">
+                            <!--<svg version="1.1" id="export" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.001px" height="12.996px" viewBox="0 0 12.001 16.996" enable-background="new 0 0 12.001 16.996" xml:space="preserve">                                <path fill="#226997" d="M5.596,0.145l-5.47,5.554C-0.01,5.854-0.036,6.022,0.048,6.205C0.131,6.389,0.282,6.48,0.501,6.48h3.5                                 v10.053c0,0.135,0.047,0.246,0.141,0.332c0.094,0.087,0.214,0.131,0.359,0.131h3.001c0.146,0,0.266-0.044,0.359-0.131                                 c0.094-0.086,0.141-0.197,0.141-0.332V6.48h3.5c0.209,0,0.359-0.092,0.453-0.275c0.084-0.183,0.052-0.352-0.094-0.506L6.33,0.144                                 C6.225,0.048,6.101,0,5.955,0C5.819,0,5.7,0.048,5.596,0.145z" /></svg>-->
+                            <svg version="1.1" id="export" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 width="12.001px" height="12.996px" viewBox="0 0 12.001 16.996" enable-background="new 0 0 12.001 16.996" xml:space="preserve">
+                                <path fill="#226997" d="M5.596,0.145l-5.47,5.554C-0.01,5.854-0.036,6.022,0.048,6.205C0.131,6.389,0.282,6.48,0.501,6.48h3.5
+                            	    v10.053c0,0.135,0.047,0.246,0.141,0.332c0.094,0.087,0.214,0.131,0.359,0.131h3.001c0.146,0,0.266-0.044,0.359-0.131
+                            	    c0.094-0.086,0.141-0.197,0.141-0.332V6.48h3.5c0.209,0,0.359-0.092,0.453-0.275c0.084-0.183,0.052-0.352-0.094-0.506L6.33,0.144
+                            	    C6.225,0.048,6.101,0,5.955,0C5.819,0,5.7,0.048,5.596,0.145z" />
+                            </svg>
+                        </div>- Export
+                    </span>
                 </label>
                 <label class="checkbox-inline">
-                    <input type="checkbox" value=""><span><div class="dlvr_type_icon"><img src="img/icons/import.png" /></div>- Import</span>
+                    <input type="checkbox" value=""><span>
+                        <div class="dlvr_type_icon">
+                            <!--<svg version="1.1" id="import" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.001px" height="12.996px" viewBox="0 0 12.001 16.996" enable-background="new 0 0 12.001 16.996" xml:space="preserve"><path fill="#226997" d="M6.405,16.851l5.469-5.555c0.136-0.154,0.162-0.323,0.078-0.506c-0.083-0.184-0.234-0.275-0.453-0.275H8                                 V0.463c0-0.135-0.047-0.246-0.141-0.332C7.765,0.044,7.645,0,7.5,0H4.499C4.353,0,4.233,0.044,4.139,0.131                                 C4.045,0.217,3.999,0.328,3.999,0.463v10.052h-3.5c-0.209,0-0.359,0.092-0.453,0.275c-0.084,0.183-0.052,0.352,0.094,0.506                                 l5.532,5.555c0.104,0.097,0.229,0.145,0.375,0.145C6.182,16.996,6.301,16.947,6.405,16.851z" /> </svg>-->
+                            <svg version="1.1" id="import" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 width="12.001px" height="12.996px" viewBox="0 0 12.001 16.996" enable-background="new 0 0 12.001 16.996" xml:space="preserve">
+                                <path fill="#226997" d="M6.405,16.851l5.469-5.555c0.136-0.154,0.162-0.323,0.078-0.506c-0.083-0.184-0.234-0.275-0.453-0.275H8
+                                	V0.463c0-0.135-0.047-0.246-0.141-0.332C7.765,0.044,7.645,0,7.5,0H4.499C4.353,0,4.233,0.044,4.139,0.131
+                                	C4.045,0.217,3.999,0.328,3.999,0.463v10.052h-3.5c-0.209,0-0.359,0.092-0.453,0.275c-0.084,0.183-0.052,0.352,0.094,0.506
+                                	l5.532,5.555c0.104,0.097,0.229,0.145,0.375,0.145C6.182,16.996,6.301,16.947,6.405,16.851z" />
+                            </svg>
+                        </div>- Import
+                    </span>
                 </label>
                 <label class="checkbox-inline">
-                    <input type="checkbox" value=""><span><div class="dlvr_type_icon"><img src="img/icons/transit.png" /></div>- Transit</span>
+                    <input type="checkbox" value=""><span>
+                        <div class="dlvr_type_icon">
+                            <!--<img src="img/icons/transit.png" />-->
+                            <svg version="1.1" id="transit" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 width="22.002px" height="12.996px" viewBox="0 0 22.002 16.996" enable-background="new 0 0 22.002 16.996" xml:space="preserve">
+                                <g><g><path fill="#226997" d="M11.5,10.515H8V0.463C8,0.328,7.953,0.217,7.859,0.13C7.766,0.043,7.646,0,7.5,0H4.499
+			                    C4.354,0,4.233,0.043,4.141,0.13C4.047,0.217,4,0.328,4,0.463v10.052H0.499c-0.209,0-0.359,0.092-0.453,0.275
+			                    c-0.084,0.183-0.052,0.352,0.094,0.506l5.532,5.555c0.104,0.096,0.229,0.145,0.375,0.145c0.136,0,0.255-0.049,0.359-0.145
+			                    l5.47-5.555c0.135-0.155,0.161-0.323,0.078-0.506C11.87,10.606,11.72,10.515,11.5,10.515z M21.862,5.699L16.33,0.144
+			                    C16.226,0.048,16.101,0,15.955,0c-0.136,0-0.255,0.048-0.359,0.145l-5.47,5.554c-0.135,0.155-0.161,0.323-0.078,0.506
+			                    c0.084,0.184,0.234,0.275,0.453,0.275h3.501v10.053c0,0.135,0.047,0.246,0.141,0.332c0.094,0.087,0.214,0.131,0.359,0.131h3.001
+			                    c0.146,0,0.266-0.044,0.358-0.131c0.094-0.086,0.141-0.197,0.141-0.332V6.48h3.501c0.209,0,0.359-0.092,0.453-0.275
+			                    C22.04,6.022,22.008,5.853,21.862,5.699z" /></g></g>
+                            </svg>
+                        </div>- Transit
+                    </span>
                 </label>
                 <label class="checkbox-inline">
-                    <input type="checkbox" value=""><span><div class="dlvr_type_icon"><img src="img/icons/crossboking.png" /></div>- Crossbooking</span>
+                    <input type="checkbox" value=""><span>
+                                                        <div class="dlvr_type_icon">
+                                                            <!--<svg version="1.1" id="crossbooking" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.001px" height="12.996px" viewBox="0 0 12.001 16.996" enable-background="new 0 0 12.001 16.996" xml:space="preserve"><path stroke="null" fill="#226997" d="m11.92275,12.178329c-0.084,-0.141913 -0.234,-0.212097 -0.454,-0.212097l-3.498,0l0,-6.968407l3.501,0c0.209,0 0.359,-0.070957 0.453,-0.212107c0.084,-0.14114 0.052,-0.271479 -0.094,-0.390261l-5.532,-4.284393c-0.104,-0.074039 -0.229,-0.111063 -0.375,-0.111063c-0.136,0 -0.255,0.037024 -0.359,0.111836l-5.47,4.28362c-0.135,0.119546 -0.161,0.249121 -0.078,0.390261c0.084,0.141913 0.234,0.212107 0.453,0.212107l3.501,0l0,6.968407l-3.503,0c-0.209,0 -0.359,0.070957 -0.453,0.212097c-0.084,0.14114 -0.052,0.271488 0.094,0.390261l5.532,4.284393c0.104,0.074048 0.229,0.111836 0.375,0.111836c0.136,0 0.255,-0.037787 0.359,-0.111836l5.47,-4.284393c0.135,-0.118773 0.161,-0.249121 0.078,-0.390261z" id="svg_3" /></svg>-->
+                                                            <svg version="1.1" id="crossbooking" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.002px" height="12.996px" viewBox="0 0 22.002 16.996" enable-background="new 0 0 22.002 16.996" xml:space="preserve"><g><g><path stroke="null" fill="#226997" d="m11.92275,12.178329c-0.084,-0.141913 -0.234,-0.212097 -0.454,-0.212097l-3.498,0l0,-6.968407l3.501,0c0.209,0 0.359,-0.070957 0.453,-0.212107c0.084,-0.14114 0.052,-0.271479 -0.094,-0.390261l-5.532,-4.284393c-0.104,-0.074039 -0.229,-0.111063 -0.375,-0.111063c-0.136,0 -0.255,0.037024 -0.359,0.111836l-5.47,4.28362c-0.135,0.119546 -0.161,0.249121 -0.078,0.390261c0.084,0.141913 0.234,0.212107 0.453,0.212107l3.501,0l0,6.968407l-3.503,0c-0.209,0 -0.359,0.070957 -0.453,0.212097c-0.084,0.14114 -0.052,0.271488 0.094,0.390261l5.532,4.284393c0.104,0.074048 0.229,0.111836 0.375,0.111836c0.136,0 0.255,-0.037787 0.359,-0.111836l5.47,-4.284393c0.135,-0.118773 0.161,-0.249121 0.078,-0.390261z" id="svg_3" /></g></g></svg>
+                                                        </div>- Crossbooking
+                    </span>
                 </label>
             </div>
         </div>
@@ -1879,7 +1921,16 @@
                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
                                     <div class="order_item">
                                         <div class="order_item_number_and_name">
-                                            <p class="order_item_number">3127000000<img src="img/icons/crossboking.png" /></p>
+                                            <p class="order_item_number">3127000000<svg version="1.1" id="transit" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.002px" height="12.996px" viewBox="0 0 22.002 16.996" enable-background="new 0 0 22.002 16.996" xml:space="preserve"><g><g>
+<path fill="#226997" d="M11.5,10.515H8V0.463C8,0.328,7.953,0.217,7.859,0.13C7.766,0.043,7.646,0,7.5,0H4.499
+			                    C4.354,0,4.233,0.043,4.141,0.13C4.047,0.217,4,0.328,4,0.463v10.052H0.499c-0.209,0-0.359,0.092-0.453,0.275
+			                    c-0.084,0.183-0.052,0.352,0.094,0.506l5.532,5.555c0.104,0.096,0.229,0.145,0.375,0.145c0.136,0,0.255-0.049,0.359-0.145
+			                    l5.47-5.555c0.135-0.155,0.161-0.323,0.078-0.506C11.87,10.606,11.72,10.515,11.5,10.515z M21.862,5.699L16.33,0.144
+			                    C16.226,0.048,16.101,0,15.955,0c-0.136,0-0.255,0.048-0.359,0.145l-5.47,5.554c-0.135,0.155-0.161,0.323-0.078,0.506
+			                    c0.084,0.184,0.234,0.275,0.453,0.275h3.501v10.053c0,0.135,0.047,0.246,0.141,0.332c0.094,0.087,0.214,0.131,0.359,0.131h3.001
+			                    c0.146,0,0.266-0.044,0.358-0.131c0.094-0.086,0.141-0.197,0.141-0.332V6.48h3.501c0.209,0,0.359-0.092,0.453-0.275
+			                    C22.04,6.022,22.008,5.853,21.862,5.699z" /></g></g>
+                            </svg></p>
                                             <span class="bold order_item_name p15">MSCUVS198456 / SUNE842484, SUNE842485, SUNE842484, SUNE842485</span>
                                         </div>
                                         <div>
@@ -2093,7 +2144,7 @@
                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
                                     <div class="order_item">
                                         <div class="order_item_number_and_name">
-                                            <p class="order_item_number">3328<img src="img/icons/import.png" /></p>
+                                            <p class="order_item_number">3328<svg version="1.1" id="transit" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.002px" height="12.996px" viewBox="0 0 22.002 16.996" enable-background="new 0 0 22.002 16.996" xml:space="preserve"><g><g><path fill="#226997" d="M11.5,10.515H8V0.463C8,0.328,7.953,0.217,7.859,0.13C7.766,0.043,7.646,0,7.5,0H4.499C4.354,0,4.233,0.043,4.141,0.13C4.047,0.217,4,0.328,4,0.463v10.052H0.499c-0.209,0-0.359,0.092-0.453,0.275c-0.084,0.183-0.052,0.352,0.094,0.506l5.532,5.555c0.104,0.096,0.229,0.145,0.375,0.145c0.136,0,0.255-0.049,0.359-0.145l5.47-5.555c0.135-0.155,0.161-0.323,0.078-0.506C11.87,10.606,11.72,10.515,11.5,10.515z M21.862,5.699L16.33,0.14C16.226,0.048,16.101,0,15.955,0c-0.136,0-0.255,0.048-0.359,0.145l-5.47,5.554c-0.135,0.155-0.161,0.323-0.078,0.506c0.084,0.184,0.234,0.275,0.453,0.275h3.501v10.053c0,0.135,0.047,0.246,0.141,0.332c0.094,0.087,0.214,0.131,0.359,0.131h3.001c0.146,0,0.266-0.044,0.358-0.131c0.094-0.086,0.141-0.197,0.141-0.332V6.48h3.501c0.209,0,0.359-0.092,0.453-0.275C22.04,6.022,22.008,5.853,21.862,5.699z" /></g></g></svg></p>
                                             <span class="bold order_item_name p15">MSCUVS198456 / SUNE842484, SUNE842485</span>
                                         </div>
                                         <div>
@@ -2306,7 +2357,7 @@
                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
                                     <div class="order_item">
                                         <div class="order_item_number_and_name">
-                                            <p class="order_item_number">1227<img src="img/icons/export.png" /></p>
+                                            <p class="order_item_number">1227<svg version="1.1" id="export" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.001px" height="12.996px" viewBox="0 0 12.001 16.996" enable-background="new 0 0 12.001 16.996" xml:space="preserve">                                <path fill="#226997" d="M5.596,0.145l-5.47,5.554C-0.01,5.854-0.036,6.022,0.048,6.205C0.131,6.389,0.282,6.48,0.501,6.48h3.5                                 v10.053c0,0.135,0.047,0.246,0.141,0.332c0.094,0.087,0.214,0.131,0.359,0.131h3.001c0.146,0,0.266-0.044,0.359-0.131                                 c0.094-0.086,0.141-0.197,0.141-0.332V6.48h3.5c0.209,0,0.359-0.092,0.453-0.275c0.084-0.183,0.052-0.352-0.094-0.506L6.33,0.144                                 C6.225,0.048,6.101,0,5.955,0C5.819,0,5.7,0.048,5.596,0.145z" /></svg></p>
                                             <span class="bold order_item_name p15">MSCUVS198456 / SUNE842484, SUNE842485</span>
                                         </div>
                                         <div>
@@ -2519,7 +2570,7 @@
                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
                                     <div class="order_item">
                                         <div class="order_item_number_and_name">
-                                            <p class=" order_item_number">4242<img src="img/icons/crossboking.png" /></p>
+                                            <p class=" order_item_number">4242<svg version="1.1" id="crossbooking" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.001px" height="12.996px" viewBox="0 0 12.001 16.996" enable-background="new 0 0 12.001 16.996" xml:space="preserve"><path stroke="null" fill="#226997" d="m11.92275,12.178329c-0.084,-0.141913 -0.234,-0.212097 -0.454,-0.212097l-3.498,0l0,-6.968407l3.501,0c0.209,0 0.359,-0.070957 0.453,-0.212107c0.084,-0.14114 0.052,-0.271479 -0.094,-0.390261l-5.532,-4.284393c-0.104,-0.074039 -0.229,-0.111063 -0.375,-0.111063c-0.136,0 -0.255,0.037024 -0.359,0.111836l-5.47,4.28362c-0.135,0.119546 -0.161,0.249121 -0.078,0.390261c0.084,0.141913 0.234,0.212107 0.453,0.212107l3.501,0l0,6.968407l-3.503,0c-0.209,0 -0.359,0.070957 -0.453,0.212097c-0.084,0.14114 -0.052,0.271488 0.094,0.390261l5.532,4.284393c0.104,0.074048 0.229,0.111836 0.375,0.111836c0.136,0 0.255,-0.037787 0.359,-0.111836l5.47,-4.284393c0.135,-0.118773 0.161,-0.249121 0.078,-0.390261z" id="svg_3" /></svg></p>
                                             <span class=" bold order_item_name p15">MSCUVS198456 / SUNE842484, SUNE842485</span>
                                         </div>
                                         <div>
@@ -2732,7 +2783,7 @@
                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
                                     <div class="order_item">
                                         <div class="order_item_number_and_name">
-                                            <p class=" order_item_number">5555<img src="img/icons/crossboking.png" /></p>
+                                            <p class=" order_item_number">5555<svg version="1.1" id="crossbooking" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.001px" height="12.996px" viewBox="0 0 12.001 16.996" enable-background="new 0 0 12.001 16.996" xml:space="preserve"><path stroke="null" fill="#226997" d="m11.92275,12.178329c-0.084,-0.141913 -0.234,-0.212097 -0.454,-0.212097l-3.498,0l0,-6.968407l3.501,0c0.209,0 0.359,-0.070957 0.453,-0.212107c0.084,-0.14114 0.052,-0.271479 -0.094,-0.390261l-5.532,-4.284393c-0.104,-0.074039 -0.229,-0.111063 -0.375,-0.111063c-0.136,0 -0.255,0.037024 -0.359,0.111836l-5.47,4.28362c-0.135,0.119546 -0.161,0.249121 -0.078,0.390261c0.084,0.141913 0.234,0.212107 0.453,0.212107l3.501,0l0,6.968407l-3.503,0c-0.209,0 -0.359,0.070957 -0.453,0.212097c-0.084,0.14114 -0.052,0.271488 0.094,0.390261l5.532,4.284393c0.104,0.074048 0.229,0.111836 0.375,0.111836c0.136,0 0.255,-0.037787 0.359,-0.111836l5.47,-4.284393c0.135,-0.118773 0.161,-0.249121 0.078,-0.390261z" id="svg_3" /></svg></p>
                                             <span class=" bold order_item_name p15">MSCUVS198456 / SUNE842484, SUNE842485</span>
                                         </div>
                                         <div>
@@ -2945,7 +2996,7 @@
                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">
                                     <div class="order_item">
                                         <div class="order_item_number_and_name">
-                                            <p class=" order_item_number">4444<img src="img/icons/crossboking.png" /></p>
+                                            <p class=" order_item_number">4444<svg version="1.1" id="crossbooking" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.001px" height="12.996px" viewBox="0 0 12.001 16.996" enable-background="new 0 0 12.001 16.996" xml:space="preserve"><path stroke="null" fill="#226997" d="m11.92275,12.178329c-0.084,-0.141913 -0.234,-0.212097 -0.454,-0.212097l-3.498,0l0,-6.968407l3.501,0c0.209,0 0.359,-0.070957 0.453,-0.212107c0.084,-0.14114 0.052,-0.271479 -0.094,-0.390261l-5.532,-4.284393c-0.104,-0.074039 -0.229,-0.111063 -0.375,-0.111063c-0.136,0 -0.255,0.037024 -0.359,0.111836l-5.47,4.28362c-0.135,0.119546 -0.161,0.249121 -0.078,0.390261c0.084,0.141913 0.234,0.212107 0.453,0.212107l3.501,0l0,6.968407l-3.503,0c-0.209,0 -0.359,0.070957 -0.453,0.212097c-0.084,0.14114 -0.052,0.271488 0.094,0.390261l5.532,4.284393c0.104,0.074048 0.229,0.111836 0.375,0.111836c0.136,0 0.255,-0.037787 0.359,-0.111836l5.47,-4.284393c0.135,-0.118773 0.161,-0.249121 0.078,-0.390261z" id="svg_3" /></svg></p>
                                             <span class=" bold order_item_name p15">MSCUVS198456 / SUNE842484, SUNE842485</span>
                                         </div>
                                         <div>
@@ -3159,7 +3210,7 @@
                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">
                                     <div class="order_item">
                                         <div class="order_item_number_and_name">
-                                            <p class=" order_item_number">3127<img src="img/icons/crossboking.png" /></p>
+                                            <p class=" order_item_number">3127<svg version="1.1" id="crossbooking" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.001px" height="12.996px" viewBox="0 0 12.001 16.996" enable-background="new 0 0 12.001 16.996" xml:space="preserve"><path stroke="null" fill="#226997" d="m11.92275,12.178329c-0.084,-0.141913 -0.234,-0.212097 -0.454,-0.212097l-3.498,0l0,-6.968407l3.501,0c0.209,0 0.359,-0.070957 0.453,-0.212107c0.084,-0.14114 0.052,-0.271479 -0.094,-0.390261l-5.532,-4.284393c-0.104,-0.074039 -0.229,-0.111063 -0.375,-0.111063c-0.136,0 -0.255,0.037024 -0.359,0.111836l-5.47,4.28362c-0.135,0.119546 -0.161,0.249121 -0.078,0.390261c0.084,0.141913 0.234,0.212107 0.453,0.212107l3.501,0l0,6.968407l-3.503,0c-0.209,0 -0.359,0.070957 -0.453,0.212097c-0.084,0.14114 -0.052,0.271488 0.094,0.390261l5.532,4.284393c0.104,0.074048 0.229,0.111836 0.375,0.111836c0.136,0 0.255,-0.037787 0.359,-0.111836l5.47,-4.284393c0.135,-0.118773 0.161,-0.249121 0.078,-0.390261z" id="svg_3" /></svg></p>
                                             <span class=" bold order_item_name p15">MSCUVS198456 / SUNE842484, SUNE842485</span>
                                         </div>
                                         <div>
@@ -3373,7 +3424,7 @@
                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapse8">
                                     <div class="order_item">
                                         <div class="order_item_number_and_name">
-                                            <p class=" order_item_number">3127<img src="img/icons/crossboking.png" /></p>
+                                            <p class=" order_item_number">3127<svg version="1.1" id="crossbooking" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.001px" height="12.996px" viewBox="0 0 12.001 16.996" enable-background="new 0 0 12.001 16.996" xml:space="preserve"><path stroke="null" fill="#226997" d="m11.92275,12.178329c-0.084,-0.141913 -0.234,-0.212097 -0.454,-0.212097l-3.498,0l0,-6.968407l3.501,0c0.209,0 0.359,-0.070957 0.453,-0.212107c0.084,-0.14114 0.052,-0.271479 -0.094,-0.390261l-5.532,-4.284393c-0.104,-0.074039 -0.229,-0.111063 -0.375,-0.111063c-0.136,0 -0.255,0.037024 -0.359,0.111836l-5.47,4.28362c-0.135,0.119546 -0.161,0.249121 -0.078,0.390261c0.084,0.141913 0.234,0.212107 0.453,0.212107l3.501,0l0,6.968407l-3.503,0c-0.209,0 -0.359,0.070957 -0.453,0.212097c-0.084,0.14114 -0.052,0.271488 0.094,0.390261l5.532,4.284393c0.104,0.074048 0.229,0.111836 0.375,0.111836c0.136,0 0.255,-0.037787 0.359,-0.111836l5.47,-4.284393c0.135,-0.118773 0.161,-0.249121 0.078,-0.390261z" id="svg_3" /></svg></p>
                                             <span class=" bold order_item_name p15">MSCUVS198456 / SUNE842484, SUNE842485</span>
                                         </div>
                                         <div>
@@ -3591,7 +3642,7 @@
                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapse9">
                                     <div class="order_item">
                                         <div class="order_item_number_and_name">
-                                            <p class=" order_item_number">3127111111<img src="img/icons/crossboking.png" /></p>
+                                            <p class=" order_item_number">3127111111<svg version="1.1" id="crossbooking" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.001px" height="12.996px" viewBox="0 0 12.001 16.996" enable-background="new 0 0 12.001 16.996" xml:space="preserve"><path stroke="null" fill="#226997" d="m11.92275,12.178329c-0.084,-0.141913 -0.234,-0.212097 -0.454,-0.212097l-3.498,0l0,-6.968407l3.501,0c0.209,0 0.359,-0.070957 0.453,-0.212107c0.084,-0.14114 0.052,-0.271479 -0.094,-0.390261l-5.532,-4.284393c-0.104,-0.074039 -0.229,-0.111063 -0.375,-0.111063c-0.136,0 -0.255,0.037024 -0.359,0.111836l-5.47,4.28362c-0.135,0.119546 -0.161,0.249121 -0.078,0.390261c0.084,0.141913 0.234,0.212107 0.453,0.212107l3.501,0l0,6.968407l-3.503,0c-0.209,0 -0.359,0.070957 -0.453,0.212097c-0.084,0.14114 -0.052,0.271488 0.094,0.390261l5.532,4.284393c0.104,0.074048 0.229,0.111836 0.375,0.111836c0.136,0 0.255,-0.037787 0.359,-0.111836l5.47,-4.284393c0.135,-0.118773 0.161,-0.249121 0.078,-0.390261z" id="svg_3" /></svg></p>
                                             <span class=" bold order_item_name p15">MSCUVS198456 / SUNE842484, SUNE842485</span>
                                         </div>
                                         <div>
@@ -3804,7 +3855,7 @@
                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapse10">
                                     <div class="order_item">
                                         <div class="order_item_number_and_name">
-                                            <p class=" order_item_number">3328<img src="img/icons/import.png" /></p>
+                                            <p class=" order_item_number">3328<svg version="1.1" id="import" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.001px" height="12.996px" viewBox="0 0 12.001 16.996" enable-background="new 0 0 12.001 16.996" xml:space="preserve"><path fill="#226997" d="M6.405,16.851l5.469-5.555c0.136-0.154,0.162-0.323,0.078-0.506c-0.083-0.184-0.234-0.275-0.453-0.275H8                                 V0.463c0-0.135-0.047-0.246-0.141-0.332C7.765,0.044,7.645,0,7.5,0H4.499C4.353,0,4.233,0.044,4.139,0.131                                 C4.045,0.217,3.999,0.328,3.999,0.463v10.052h-3.5c-0.209,0-0.359,0.092-0.453,0.275c-0.084,0.183-0.052,0.352,0.094,0.506                                 l5.532,5.555c0.104,0.097,0.229,0.145,0.375,0.145C6.182,16.996,6.301,16.947,6.405,16.851z" /> </svg></p>
                                             <span class=" bold order_item_name p15">MSCUVS198456 / SUNE842484, SUNE842485</span>
                                         </div>
                                         <div>
@@ -4017,7 +4068,7 @@
                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapse11">
                                     <div class="order_item">
                                         <div class="order_item_number_and_name">
-                                            <p class=" order_item_number">1227<img src="img/icons/export.png" /></p>
+                                            <p class=" order_item_number">1227<svg version="1.1" id="export" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.001px" height="12.996px" viewBox="0 0 12.001 16.996" enable-background="new 0 0 12.001 16.996" xml:space="preserve">                                <path fill="#226997" d="M5.596,0.145l-5.47,5.554C-0.01,5.854-0.036,6.022,0.048,6.205C0.131,6.389,0.282,6.48,0.501,6.48h3.5                                 v10.053c0,0.135,0.047,0.246,0.141,0.332c0.094,0.087,0.214,0.131,0.359,0.131h3.001c0.146,0,0.266-0.044,0.359-0.131                                 c0.094-0.086,0.141-0.197,0.141-0.332V6.48h3.5c0.209,0,0.359-0.092,0.453-0.275c0.084-0.183,0.052-0.352-0.094-0.506L6.33,0.144                                 C6.225,0.048,6.101,0,5.955,0C5.819,0,5.7,0.048,5.596,0.145z" /></svg></p>
                                             <span class=" bold order_item_name p15">MSCUVS198456 / SUNE842484, SUNE842485</span>
                                         </div>
                                         <div>
@@ -4230,7 +4281,7 @@
                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapse12">
                                     <div class="order_item">
                                         <div class="order_item_number_and_name">
-                                            <p class=" order_item_number">4242<img src="img/icons/crossboking.png" /></p>
+                                            <p class=" order_item_number">4242<svg version="1.1" id="crossbooking" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.001px" height="12.996px" viewBox="0 0 12.001 16.996" enable-background="new 0 0 12.001 16.996" xml:space="preserve"><path stroke="null" fill="#226997" d="m11.92275,12.178329c-0.084,-0.141913 -0.234,-0.212097 -0.454,-0.212097l-3.498,0l0,-6.968407l3.501,0c0.209,0 0.359,-0.070957 0.453,-0.212107c0.084,-0.14114 0.052,-0.271479 -0.094,-0.390261l-5.532,-4.284393c-0.104,-0.074039 -0.229,-0.111063 -0.375,-0.111063c-0.136,0 -0.255,0.037024 -0.359,0.111836l-5.47,4.28362c-0.135,0.119546 -0.161,0.249121 -0.078,0.390261c0.084,0.141913 0.234,0.212107 0.453,0.212107l3.501,0l0,6.968407l-3.503,0c-0.209,0 -0.359,0.070957 -0.453,0.212097c-0.084,0.14114 -0.052,0.271488 0.094,0.390261l5.532,4.284393c0.104,0.074048 0.229,0.111836 0.375,0.111836c0.136,0 0.255,-0.037787 0.359,-0.111836l5.47,-4.284393c0.135,-0.118773 0.161,-0.249121 0.078,-0.390261z" id="svg_3" /></svg></p>
                                             <span class=" bold order_item_name p15">MSCUVS198456 / SUNE842484, SUNE842485</span>
                                         </div>
                                         <div>
@@ -4443,7 +4494,7 @@
                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapse13">
                                     <div class="order_item">
                                         <div class="order_item_number_and_name">
-                                            <p class=" order_item_number">5555<img src="img/icons/crossboking.png" /></p>
+                                            <p class=" order_item_number">5555<svg version="1.1" id="crossbooking" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.001px" height="12.996px" viewBox="0 0 12.001 16.996" enable-background="new 0 0 12.001 16.996" xml:space="preserve"><path stroke="null" fill="#226997" d="m11.92275,12.178329c-0.084,-0.141913 -0.234,-0.212097 -0.454,-0.212097l-3.498,0l0,-6.968407l3.501,0c0.209,0 0.359,-0.070957 0.453,-0.212107c0.084,-0.14114 0.052,-0.271479 -0.094,-0.390261l-5.532,-4.284393c-0.104,-0.074039 -0.229,-0.111063 -0.375,-0.111063c-0.136,0 -0.255,0.037024 -0.359,0.111836l-5.47,4.28362c-0.135,0.119546 -0.161,0.249121 -0.078,0.390261c0.084,0.141913 0.234,0.212107 0.453,0.212107l3.501,0l0,6.968407l-3.503,0c-0.209,0 -0.359,0.070957 -0.453,0.212097c-0.084,0.14114 -0.052,0.271488 0.094,0.390261l5.532,4.284393c0.104,0.074048 0.229,0.111836 0.375,0.111836c0.136,0 0.255,-0.037787 0.359,-0.111836l5.47,-4.284393c0.135,-0.118773 0.161,-0.249121 0.078,-0.390261z" id="svg_3" /></svg></p>
                                             <span class=" bold order_item_name p15">MSCUVS198456 / SUNE842484, SUNE842485</span>
                                         </div>
                                         <div>
@@ -4660,7 +4711,7 @@
                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapse14">
                                     <div class="order_item">
                                         <div class="order_item_number_and_name">
-                                            <p class=" order_item_number">312722222<img src="img/icons/crossboking.png" /></p>
+                                            <p class=" order_item_number">312722222<svg version="1.1" id="crossbooking" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.001px" height="12.996px" viewBox="0 0 12.001 16.996" enable-background="new 0 0 12.001 16.996" xml:space="preserve"><path stroke="null" fill="#226997" d="m11.92275,12.178329c-0.084,-0.141913 -0.234,-0.212097 -0.454,-0.212097l-3.498,0l0,-6.968407l3.501,0c0.209,0 0.359,-0.070957 0.453,-0.212107c0.084,-0.14114 0.052,-0.271479 -0.094,-0.390261l-5.532,-4.284393c-0.104,-0.074039 -0.229,-0.111063 -0.375,-0.111063c-0.136,0 -0.255,0.037024 -0.359,0.111836l-5.47,4.28362c-0.135,0.119546 -0.161,0.249121 -0.078,0.390261c0.084,0.141913 0.234,0.212107 0.453,0.212107l3.501,0l0,6.968407l-3.503,0c-0.209,0 -0.359,0.070957 -0.453,0.212097c-0.084,0.14114 -0.052,0.271488 0.094,0.390261l5.532,4.284393c0.104,0.074048 0.229,0.111836 0.375,0.111836c0.136,0 0.255,-0.037787 0.359,-0.111836l5.47,-4.284393c0.135,-0.118773 0.161,-0.249121 0.078,-0.390261z" id="svg_3" /></svg></p>
                                             <span class=" bold order_item_name p15">MSCUVS198456 / SUNE842484, SUNE842485, SUNE842484, SUNE842485</span>
                                         </div>
                                         <div>
@@ -4873,7 +4924,7 @@
                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapse15">
                                     <div class="order_item">
                                         <div class="order_item_number_and_name">
-                                            <p class=" order_item_number">3328<img src="img/icons/import.png" /></p>
+                                            <p class=" order_item_number">3328<svg version="1.1" id="import" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.001px" height="12.996px" viewBox="0 0 12.001 16.996" enable-background="new 0 0 12.001 16.996" xml:space="preserve"><path fill="#226997" d="M6.405,16.851l5.469-5.555c0.136-0.154,0.162-0.323,0.078-0.506c-0.083-0.184-0.234-0.275-0.453-0.275H8                                 V0.463c0-0.135-0.047-0.246-0.141-0.332C7.765,0.044,7.645,0,7.5,0H4.499C4.353,0,4.233,0.044,4.139,0.131                                 C4.045,0.217,3.999,0.328,3.999,0.463v10.052h-3.5c-0.209,0-0.359,0.092-0.453,0.275c-0.084,0.183-0.052,0.352,0.094,0.506                                 l5.532,5.555c0.104,0.097,0.229,0.145,0.375,0.145C6.182,16.996,6.301,16.947,6.405,16.851z" /> </svg></p>
                                             <span class=" bold order_item_name p15">MSCUVS198456 / SUNE842484, SUNE842485</span>
                                         </div>
                                         <div>
@@ -5086,7 +5137,7 @@
                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapse16">
                                     <div class="order_item">
                                         <div class="order_item_number_and_name">
-                                            <p class=" order_item_number">1227<img src="img/icons/export.png" /></p>
+                                            <p class=" order_item_number">1227<svg version="1.1" id="export" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.001px" height="12.996px" viewBox="0 0 12.001 16.996" enable-background="new 0 0 12.001 16.996" xml:space="preserve">                                <path fill="#226997" d="M5.596,0.145l-5.47,5.554C-0.01,5.854-0.036,6.022,0.048,6.205C0.131,6.389,0.282,6.48,0.501,6.48h3.5                                 v10.053c0,0.135,0.047,0.246,0.141,0.332c0.094,0.087,0.214,0.131,0.359,0.131h3.001c0.146,0,0.266-0.044,0.359-0.131                                 c0.094-0.086,0.141-0.197,0.141-0.332V6.48h3.5c0.209,0,0.359-0.092,0.453-0.275c0.084-0.183,0.052-0.352-0.094-0.506L6.33,0.144                                 C6.225,0.048,6.101,0,5.955,0C5.819,0,5.7,0.048,5.596,0.145z" /></svg></p>
                                             <span class=" bold order_item_name p15">MSCUVS198456 / SUNE842484, SUNE842485</span>
                                         </div>
                                         <div>
@@ -5299,7 +5350,7 @@
                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapse17">
                                     <div class="order_item">
                                         <div class="order_item_number_and_name">
-                                            <p class=" order_item_number">4242<img src="img/icons/crossboking.png" /></p>
+                                            <p class=" order_item_number">4242<svg version="1.1" id="crossbooking" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.001px" height="12.996px" viewBox="0 0 12.001 16.996" enable-background="new 0 0 12.001 16.996" xml:space="preserve"><path stroke="null" fill="#226997" d="m11.92275,12.178329c-0.084,-0.141913 -0.234,-0.212097 -0.454,-0.212097l-3.498,0l0,-6.968407l3.501,0c0.209,0 0.359,-0.070957 0.453,-0.212107c0.084,-0.14114 0.052,-0.271479 -0.094,-0.390261l-5.532,-4.284393c-0.104,-0.074039 -0.229,-0.111063 -0.375,-0.111063c-0.136,0 -0.255,0.037024 -0.359,0.111836l-5.47,4.28362c-0.135,0.119546 -0.161,0.249121 -0.078,0.390261c0.084,0.141913 0.234,0.212107 0.453,0.212107l3.501,0l0,6.968407l-3.503,0c-0.209,0 -0.359,0.070957 -0.453,0.212097c-0.084,0.14114 -0.052,0.271488 0.094,0.390261l5.532,4.284393c0.104,0.074048 0.229,0.111836 0.375,0.111836c0.136,0 0.255,-0.037787 0.359,-0.111836l5.47,-4.284393c0.135,-0.118773 0.161,-0.249121 0.078,-0.390261z" id="svg_3" /></svg></p>
                                             <span class=" bold order_item_name p15">MSCUVS198456 / SUNE842484, SUNE842485</span>
                                         </div>
                                         <div>
@@ -5512,7 +5563,7 @@
                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapse18">
                                     <div class="order_item">
                                         <div class="order_item_number_and_name">
-                                            <p class=" order_item_number">5555<img src="img/icons/crossboking.png" /></p>
+                                            <p class=" order_item_number">5555<svg version="1.1" id="crossbooking" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.001px" height="12.996px" viewBox="0 0 12.001 16.996" enable-background="new 0 0 12.001 16.996" xml:space="preserve"><path stroke="null" fill="#226997" d="m11.92275,12.178329c-0.084,-0.141913 -0.234,-0.212097 -0.454,-0.212097l-3.498,0l0,-6.968407l3.501,0c0.209,0 0.359,-0.070957 0.453,-0.212107c0.084,-0.14114 0.052,-0.271479 -0.094,-0.390261l-5.532,-4.284393c-0.104,-0.074039 -0.229,-0.111063 -0.375,-0.111063c-0.136,0 -0.255,0.037024 -0.359,0.111836l-5.47,4.28362c-0.135,0.119546 -0.161,0.249121 -0.078,0.390261c0.084,0.141913 0.234,0.212107 0.453,0.212107l3.501,0l0,6.968407l-3.503,0c-0.209,0 -0.359,0.070957 -0.453,0.212097c-0.084,0.14114 -0.052,0.271488 0.094,0.390261l5.532,4.284393c0.104,0.074048 0.229,0.111836 0.375,0.111836c0.136,0 0.255,-0.037787 0.359,-0.111836l5.47,-4.284393c0.135,-0.118773 0.161,-0.249121 0.078,-0.390261z" id="svg_3" /></svg></p>
                                             <span class=" bold order_item_name p15">MSCUVS198456 / SUNE842484, SUNE842485</span>
                                         </div>
                                         <div>
@@ -5725,7 +5776,7 @@
                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapse19">
                                     <div class="order_item">
                                         <div class="order_item_number_and_name">
-                                            <p class=" order_item_number">5555<img src="img/icons/crossboking.png" /></p>
+                                            <p class=" order_item_number">5555<svg version="1.1" id="crossbooking" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.001px" height="12.996px" viewBox="0 0 12.001 16.996" enable-background="new 0 0 12.001 16.996" xml:space="preserve"><path stroke="null" fill="#226997" d="m11.92275,12.178329c-0.084,-0.141913 -0.234,-0.212097 -0.454,-0.212097l-3.498,0l0,-6.968407l3.501,0c0.209,0 0.359,-0.070957 0.453,-0.212107c0.084,-0.14114 0.052,-0.271479 -0.094,-0.390261l-5.532,-4.284393c-0.104,-0.074039 -0.229,-0.111063 -0.375,-0.111063c-0.136,0 -0.255,0.037024 -0.359,0.111836l-5.47,4.28362c-0.135,0.119546 -0.161,0.249121 -0.078,0.390261c0.084,0.141913 0.234,0.212107 0.453,0.212107l3.501,0l0,6.968407l-3.503,0c-0.209,0 -0.359,0.070957 -0.453,0.212097c-0.084,0.14114 -0.052,0.271488 0.094,0.390261l5.532,4.284393c0.104,0.074048 0.229,0.111836 0.375,0.111836c0.136,0 0.255,-0.037787 0.359,-0.111836l5.47,-4.284393c0.135,-0.118773 0.161,-0.249121 0.078,-0.390261z" id="svg_3" /></svg></p>
                                             <span class=" bold order_item_name p15">MSCUVS198456 / SUNE842484, SUNE842485</span>
                                         </div>
                                         <div>
@@ -5942,7 +5993,7 @@
                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapse20">
                                     <div class="order_item">
                                         <div class="order_item_number_and_name">
-                                            <p class=" order_item_number">31273333<img src="img/icons/crossboking.png" /></p>
+                                            <p class=" order_item_number">31273333<svg version="1.1" id="crossbooking" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.001px" height="12.996px" viewBox="0 0 12.001 16.996" enable-background="new 0 0 12.001 16.996" xml:space="preserve"><path stroke="null" fill="#226997" d="m11.92275,12.178329c-0.084,-0.141913 -0.234,-0.212097 -0.454,-0.212097l-3.498,0l0,-6.968407l3.501,0c0.209,0 0.359,-0.070957 0.453,-0.212107c0.084,-0.14114 0.052,-0.271479 -0.094,-0.390261l-5.532,-4.284393c-0.104,-0.074039 -0.229,-0.111063 -0.375,-0.111063c-0.136,0 -0.255,0.037024 -0.359,0.111836l-5.47,4.28362c-0.135,0.119546 -0.161,0.249121 -0.078,0.390261c0.084,0.141913 0.234,0.212107 0.453,0.212107l3.501,0l0,6.968407l-3.503,0c-0.209,0 -0.359,0.070957 -0.453,0.212097c-0.084,0.14114 -0.052,0.271488 0.094,0.390261l5.532,4.284393c0.104,0.074048 0.229,0.111836 0.375,0.111836c0.136,0 0.255,-0.037787 0.359,-0.111836l5.47,-4.284393c0.135,-0.118773 0.161,-0.249121 0.078,-0.390261z" id="svg_3" /></svg></p>
                                             <span class=" bold order_item_name p15">MSCUVS198456 / SUNE842484, SUNE842485</span>
                                         </div>
                                         <div>
@@ -6155,7 +6206,7 @@
                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapse21">
                                     <div class="order_item">
                                         <div class="order_item_number_and_name">
-                                            <p class=" order_item_number">3328<img src="img/icons/import.png" /></p>
+                                            <p class=" order_item_number">3328<svg version="1.1" id="import" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.001px" height="12.996px" viewBox="0 0 12.001 16.996" enable-background="new 0 0 12.001 16.996" xml:space="preserve"><path fill="#226997" d="M6.405,16.851l5.469-5.555c0.136-0.154,0.162-0.323,0.078-0.506c-0.083-0.184-0.234-0.275-0.453-0.275H8                                 V0.463c0-0.135-0.047-0.246-0.141-0.332C7.765,0.044,7.645,0,7.5,0H4.499C4.353,0,4.233,0.044,4.139,0.131                                 C4.045,0.217,3.999,0.328,3.999,0.463v10.052h-3.5c-0.209,0-0.359,0.092-0.453,0.275c-0.084,0.183-0.052,0.352,0.094,0.506                                 l5.532,5.555c0.104,0.097,0.229,0.145,0.375,0.145C6.182,16.996,6.301,16.947,6.405,16.851z" /> </svg></p>
                                             <span class=" bold order_item_name p15">MSCUVS198456 / SUNE842484, SUNE842485</span>
                                         </div>
                                         <div>
@@ -6368,7 +6419,7 @@
                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapse22">
                                     <div class="order_item">
                                         <div class="order_item_number_and_name">
-                                            <p class=" order_item_number">1227<img src="img/icons/export.png" /></p>
+                                            <p class=" order_item_number">1227<svg version="1.1" id="export" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.001px" height="12.996px" viewBox="0 0 12.001 16.996" enable-background="new 0 0 12.001 16.996" xml:space="preserve">                                <path fill="#226997" d="M5.596,0.145l-5.47,5.554C-0.01,5.854-0.036,6.022,0.048,6.205C0.131,6.389,0.282,6.48,0.501,6.48h3.5                                 v10.053c0,0.135,0.047,0.246,0.141,0.332c0.094,0.087,0.214,0.131,0.359,0.131h3.001c0.146,0,0.266-0.044,0.359-0.131                                 c0.094-0.086,0.141-0.197,0.141-0.332V6.48h3.5c0.209,0,0.359-0.092,0.453-0.275c0.084-0.183,0.052-0.352-0.094-0.506L6.33,0.144                                 C6.225,0.048,6.101,0,5.955,0C5.819,0,5.7,0.048,5.596,0.145z" /></svg></p>
                                             <span class=" bold order_item_name p15">MSCUVS198456 / SUNE842484, SUNE842485</span>
                                         </div>
                                         <div>

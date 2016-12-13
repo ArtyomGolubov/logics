@@ -408,3 +408,24 @@
 .checkbox input[type=checkbox], .checkbox-inline input[type=checkbox] {
     margin-left: -15px !important;
 }
+
+
+/*----------------*/
+
+/*.dlvr_type_icon svg#export,
+.dlvr_type_icon svg#import,
+.dlvr_type_icon svg#transit,
+.dlvr_type_icon svg#crossbooking {
+    margin-right: 5px;
+    position: relative;
+    top: 2px;
+}*/
+
+svg#export,
+svg#import,
+svg#transit,
+svg#crossbooking {
+    margin-right: 2px;
+    position: relative;
+    top: 2px;
+}
