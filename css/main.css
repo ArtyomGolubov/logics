@@ -1,7 +1,7 @@
-﻿@import url('colors/main-color-blue.css');
-@import url('navmenu.css');
+﻿@import url('../plugins/navmenu/navmenu.css');
+@import url('colors/root-blue.css');
+/*@import url('colors/root-orange.css');*/
 
-/*TEST*/
 
 body.white {
     background-image: url(../img/bg-body1.png);
@@ -177,7 +177,7 @@ body.transparent .content {
     margin: 20px 0px 0px 0px;
 }
 
-/* Пoдлoжкa */
+/* Пoдлoжкa для #call_me*/
 #overlay {
     z-index: 3; /* пoдлoжкa дoлжнa быть выше слoев элементoв сaйтa, нo ниже слoя мoдaльнoгo oкнa */
     position: fixed; /* всегдa перекрывaет весь сaйт */
@@ -645,7 +645,7 @@ a > .glyphicon {
 }
 
 /* обязательно указать ширину и длину взятые из свойст изображения с логотипом*/
-/* иначе не будет отцентровано */
+/* иначе не будет отцентрировано */
 .loader {
     font-size: 90px;
     text-indent: -9999em;

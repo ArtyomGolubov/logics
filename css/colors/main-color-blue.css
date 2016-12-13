@@ -27,87 +27,6 @@
     background: transparent;
 }
 
-/*.menu_5 .nav_main {
-    border-top: 3px solid #2477a3;
-}*/
-
-#menu-top {
-    /*border-color: #1c4174;*/
-    background: linear-gradient(#2477a3, #1c4174);
-}
-
-.menu_1 .nav_main {
-    box-shadow: 0 7px 8px -4px rgba(0, 0, 0, .4);
-}
-
-    .menu_1 .nav_main li,
-    .nav_main_top li,
-    .menu_1 .dropdown {
-        color: #fff;
-        border-left-color: #2477a3 !important;
-        background: linear-gradient(#2477a3, #1c4174);
-    }
-
-    .menu_2 .nav_main li,
-    .menu_2 .dropdown {
-        color: #fff;
-        border-left-color: #1d5a7b !important;
-        box-shadow: 0px 5px 6px -2px rgba(0, 0, 0, .4);
-        background: linear-gradient(#2477a3, #1c4174);
-    }
-
-    .menu_3 .nav_main li,
-    .menu_3 .dropdown {
-        color: #fff;
-        border-left-color: #1d5a7b !important;
-        box-shadow: 0px 5px 6px -2px rgba(0, 0, 0, .4);
-        background: linear-gradient(#2477a3, #1c4174);
-    }
-
-    .menu_4 .nav_main li,
-    .menu_4 .dropdown {
-        color: #fff;
-        box-shadow: 0px 5px 6px -2px rgba(0, 0, 0, .4);
-        background: linear-gradient(#2477a3, #1c4174);
-    }
-
-    .menu_5 .nav_main li,
-    .menu_5 .dropdown {
-        
-        /*box-shadow: 0px 5px 6px -2px rgba(0, 0, 0, .4);*/
-        background: transparent;
-        border-top: 3px solid #2477a3 !important;
-        border-left: none;
-    }
-
-    .menu_5 .nav_main li a {
-        color: #2477a3;
-    }
-
-        .menu_5 .nav_main li.active {
-            background: linear-gradient(#2477a3, #1c4174);
-            box-shadow: 0px 5px 6px -2px rgba(0, 0, 0, .4);
-        }
-
-            .menu_5 .nav_main li.active a {
-                color: #fff;
-            }
-
-        .nav_main li a,
-        .nav_main_top a {
-            color: #fff;
-        }
-
-.menu_1 #menu,
-.menu_2 #menu, 
-#menu-top {
-    box-shadow: 0 7px 8px -4px rgba(0, 0, 0, .4);
-}
-
-.menu_3 #menu {
-    box-shadow: none;
-}
-
 #call_me form {
     box-shadow: 5px 8px 16px 0px rgba(0,0,0,0.2);
     background: #ebedeb;
@@ -132,67 +51,7 @@
     border-bottom-color: #ebedeb !important;
 }
 
-.dropbtn, .menu_btn {
-    color: white;
-}
 
-.dropbtn span {
-    background: #fff;
-}
-
-.menu_5 .dropbtn.push,
-.menu_5 .dropbtn span{
-    background: #2477a3;
-}
-
-.menu_5 .dropbtn.push span {
-    background: #fff;
-}
-
-    .dropbtn:focus,
-    .menu_btn:focus {
-        background-color: #1c4174;
-    }
-
-    .dropbtn:active, .menu_btn:active {
-        background-color: #1c4174;
-    }
-
-.dropdown {
-    background: linear-gradient(#2477a3, #1c4174);
-}
-
-.dropdown-content {
-    background-color: #1F5989;
-    box-shadow: 0 7px 8px -4px rgba(0, 0, 0, .4);
-}
-
-    .dropdown-content a {
-        color: #fff;
-        border-bottom: 1px solid #2477a3;
-    }
-
-.mob_nav_menu_btn {
-    background-color: rgba(31, 89, 137, .95);
-}
-
-.mobile-menu {
-    background-color: rgba(31, 89, 137, .95);
-    border-top: 1px solid #fff;
-}
-
-    .mobile-menu li {
-        border-bottom: 1px solid #fff;
-    }
-
-        .mobile-menu li > a {
-            color: #fff;
-        }
-
-.nav_menu_mob_border {
-    background: linear-gradient(#2477a3, #1c4174);
-    box-shadow: 0 7px 8px -4px rgba(0, 0, 0, .4);
-}
 
 #carousel {
     background-color: #ecece0;
@@ -259,10 +118,6 @@
 
 .image80x80 {
     background: #ecece0;
-}
-
-#nav-icon1 span, #nav-icon3 span, #nav-icon4 span {
-    background: #fff;
 }
 
 svg path {

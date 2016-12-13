@@ -1,5 +1,5 @@
 ﻿.main_color {
-    color: #EB661C;
+    color: #cf4b02;
 }
 
 .secondary_color {
@@ -7,7 +7,7 @@
 }
 
 .black {
-    color: #3b3b3b;
+    color: #3e3e3e;
 }
 
 .user_block {
@@ -27,24 +27,6 @@
     background: transparent;
 }
 
-.nav_main {
-    border-color: #1c4174;
-    background: linear-gradient(#2477a3, #1c4174);
-}
-
-    .nav_main li {
-        color: #fff;
-        border-color: #4b86a5;
-    }
-
-        .nav_main li a {
-            color: #fff;
-        }
-
-#menu, #menu-top {
-    box-shadow: 0 7px 8px -4px rgba(0, 0, 0, .4);
-}
-
 #call_me form {
     box-shadow: 5px 8px 16px 0px rgba(0,0,0,0.2);
     background: #ebedeb;
@@ -52,66 +34,21 @@
 
 #call_me button {
     color: #fff;
-    background: linear-gradient(#2477a3, #1c4174);
+    background: linear-gradient(#ef7532, #cf4b02);
 }
 
     #call_me button:active {
-        background: linear-gradient(#1c4174, #2477a3);
+        background: linear-gradient(#cf4b02, #ef7532);
     }
 
 #call_me input {
-    border-color: #b5b5a3;
+    border-color: #b5b5a3 !important;
 }
 
 #call_me:before {
-    border-left-color: transparent;
-    border-right-color: transparent;
-    border-bottom-color: #ecece0;
-}
-
-.dropbtn, .menu_btn {
-    color: white;
-}
-
-    .dropbtn:focus,
-    .menu_btn:focus {
-        background-color: #1c4174;
-    }
-
-    .dropbtn:active, .menu_btn:active {
-        background-color: #1c4174;
-    }
-
-.dropdown-content {
-    background-color: #1F5989;
-    box-shadow: 0 7px 8px -4px rgba(0, 0, 0, .4);
-}
-
-    .dropdown-content a {
-        color: #f9f9f9;
-        border-bottom: 1px solid #2477a3;
-    }
-
-.mob_nav_menu_btn {
-    background-color: rgba(31, 89, 137, .95);
-}
-
-.mobile-menu {
-    background-color: rgba(31, 89, 137, .95);
-    border-top: 1px solid #fff;
-}
-
-    .mobile-menu li {
-        border-bottom: 1px solid #fff;
-    }
-
-        .mobile-menu li > a {
-            color: #fff;
-        }
-
-.nav_menu_mob_border {
-    background: linear-gradient(#2477a3, #1c4174);
-    box-shadow: 0 7px 8px -4px rgba(0, 0, 0, .4);
+    border-left-color: transparent !important;
+    border-right-color: transparent !important;
+    border-bottom-color: #ebedeb !important;
 }
 
 #carousel {
@@ -119,11 +56,11 @@
 }
 
 .capt_for_slider1 {
-    color: #1c4174;
+    color: #cf4b02;
 }
 
 #carousel li {
-    border-color: #1c4174;
+    border-color: #cf4b02;
 }
 
     #carousel li.active {
@@ -131,7 +68,7 @@
     }
 
 .dish {
-    color: #1c4174;
+    color: #cf4b02;
 }
 
     .dish .discription:hover {
@@ -139,11 +76,11 @@
     }
 
     .dish > h4 > a {
-        color: #1c4174;
+        color: #cf4b02;
     }
 
     .dish > h4 {
-        color: #1c4174;
+        color: #cf4b02;
     }
 
 .slider2_description {
@@ -152,11 +89,11 @@
 }
 
 .breadcrumb1 > li > a {
-    color: #1c4174;
+    color: #cf4b02;
 }
 
 .breadcrumb1 > li {
-    color: #1c4174 !important;
+    color: #cf4b02 !important;
 }
 
     .breadcrumb1 > li + li:before {
@@ -165,12 +102,12 @@
 
 /* ползунок */
 ::-webkit-scrollbar-thumb {
-    border-color: #e5e5e5;
-    background-color: #1F5989;
+    border-color: #ecece0;
+    background-color: #cf4b02;
 }
 
     ::-webkit-scrollbar-thumb:hover {
-        background-color: #2477a3;
+        background-color: #ef7532;
     }
 
 .image1180x500 {
@@ -181,22 +118,48 @@
     background: #ecece0;
 }
 
-#nav-icon1 span, #nav-icon3 span, #nav-icon4 span {
-    background: #fff;
-}
-
 svg path {
-    fill: #E76116;
+    fill: #cf4b02;
 }
 
 .slideshow > nav span {
-    border-color: #b1501a !important;
+    border-color: #585858  !important;
 }
 
     .slideshow > nav span:hover {
-        background-color: #b1501a;
+        background-color: #ef7532;
     }
 
     .slideshow > nav span.current {
-        background-color: #E76116;
+        background-color: #cf4b02;
     }
+
+.slideshow h2,
+.slideshow .description {
+    color: #505050;
+}
+
+    .slideshow h2 span {
+        color: #cf4b02;
+    }
+
+.dish .discription,
+.footer_phone,
+.footer_email,
+.opening_hours title,
+.time .text,
+.callback .header_text div,
+#call_me form,
+.footer_delivery p,
+.footer_delivery .time .text {
+    color: #3e3e3e;
+}
+
+footer h3,
+.time .number,
+#callback,
+.slide-header {
+    color: #cf4b02;
+}
+
+/*cf4b02*/
