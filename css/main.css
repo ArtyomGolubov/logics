@@ -2,6 +2,9 @@
 @import url('colors/root-blue.css');
 /*@import url('colors/root-orange.css');*/
 
+body {
+    overflow-x: hidden;
+}
 
 body.white {
     background-image: url(../img/bg-body1.png);
@@ -851,7 +854,7 @@ a > .glyphicon {
 .image1180x500 {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     width: 1180px;
     height: 500px;
 }

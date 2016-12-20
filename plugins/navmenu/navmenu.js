@@ -120,7 +120,7 @@ function setMenuItemsWidth() {
     // минимальнодопустимая ширина пунктов меню
     var minWidthLi = 180;
 
-    var widthBody = parseInt($('.content').css('width')) - 0; // "0" - выглядит лучше, "50" - адекватно считает при изменении ширины экрана
+    var widthBody = parseInt($('.content').css('width')) - 50; // "0" - выглядит лучше, "50" - адекватно считает при изменении ширины экрана
     //console.log('widthBody', widthBody);
 
     var countLi = $('#menu li').length;
