@@ -880,3 +880,38 @@ a > .glyphicon {
     height: 79px;
 }
 
+/* TO TOP new */
+#go-top {
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+    bottom: 20px;
+    z-index: 600;
+    display: none;
+}
+
+#go-top a {
+    text-decoration: none;
+    border: 0 none;
+    display: block;
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border-radius: 4px;
+    text-align: center;
+    text-transform: uppercase;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+#go-top a i {
+    font-size: 1.6rem;
+    line-height: inherit;
+    color: #3a4141 !important;
+}
+

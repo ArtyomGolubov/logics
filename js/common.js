@@ -103,13 +103,13 @@ $(function () {
         }
     });
 
-    //Обработка нажатия на кнопку "Вверх"
-    $("#toTop").click(function () {
-        //Необходимо прокрутить в начало страницы
-        var curPos = $(document).scrollTop();
-        var scrollTime = curPos / 1.73;
-        $("body,html").animate({ "scrollTop": 0 }, scrollTime);
-    });
+    ////Обработка нажатия на кнопку "Вверх"
+    //$("#toTop").click(function () {
+    //    //Необходимо прокрутить в начало страницы
+    //    var curPos = $(document).scrollTop();
+    //    var scrollTime = curPos / 1.73;
+    //    $("body,html").animate({ "scrollTop": 0 }, scrollTime);
+    //});
 });
 
 // для  radiobutton на странице отправок и для чекбоксов .type
@@ -145,4 +145,50 @@ function ChangeDeliveryType() {
     var checkedItem = $('input[name=delivery_type]:checked');
     $('.order>#' + checkedItem.attr('id')).show();
 }
+
+// TO TOP new
+// Часть для плавного скроллинга при нажатии кнопки "вверх".
+(function ($) {
+    console.log('function ($)');
+
+    /*---------------------------------------------------- */
+    /* Smooth Scrolling
+    ------------------------------------------------------ */
+    $('.smoothscroll').on('click', function (e) {
+        e.preventDefault();
+
+        var target = this.hash,
+            $target = $(target);
+
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top - 80
+        }, 800, 'swing', function () {
+            window.location.hash = target;
+        });
+    });
+
+
+    /*----------------------------------------------------- */
+    /* Back to top
+   ------------------------------------------------------- */
+    var pxShow = 300; // height on which the button will show
+    var fadeInTime = 400; // how slow/fast you want the button to show
+    var fadeOutTime = 400; // how slow/fast you want the button to hide
+    var scrollSpeed = 300; // how slow/fast you want the button to scroll to top. can be a value, 'slow', 'normal' or 'fast'
+
+    // Show or hide the sticky footer button
+    jQuery(window).scroll(function () {
+
+        if (!($("#header-search").hasClass('is-visible'))) {
+
+            if (jQuery(window).scrollTop() >= pxShow) {
+                jQuery("#go-top").fadeIn(fadeInTime);
+            } else {
+                jQuery("#go-top").fadeOut(fadeOutTime);
+            }
+
+        }
+
+    });
+})(jQuery);
 
