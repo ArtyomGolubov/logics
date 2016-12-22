@@ -162,4 +162,345 @@ footer h3,
     color: #cf4b02;
 }
 
-/*cf4b02*/
+/* USER BLOCK (Profile) */
+
+#prof {
+    color: #989696;
+}
+
+.prof_icon.active {
+    background-color: white;
+}
+
+.prof_info {
+    border-bottom: 1px solid #c9cfd3;
+    border-left: 1px solid #c9cfd3;
+    border-right: 1px solid #c9cfd3;
+    background-color: rgba(255,255,255,1);
+    box-shadow: 0 7px 8px -4px rgba(0, 0, 0, .4);
+}
+
+.prof-item-notice {
+    border-bottom: 1px solid #f5f5f5;
+}
+
+    #scroll_alert > div > div.alert_time {
+        color: #ed742f;
+    }
+
+.switch_content {
+    background-color: rgba(255,255,255,1);
+}
+
+#prof_info .prof_item {
+    border-bottom: 1px solid #f5f5f5;
+    background-color: white;
+}
+
+#prof_info .prof_last_item {
+    border-bottom: 1px solid #f5f5f5;
+    background-color: white;
+}
+
+#bottom_mark {
+    background-color: #ed742f;
+    color: #fff;
+}
+
+.click, #prof_icon {
+    color: #cf4b02;
+}
+
+#prof_icon.active {
+    border: 1px solid #e6e6e6;
+    background-color: #fff;
+}
+
+@media only screen and (min-width : 769px) {
+    body.transparent #prof_icon {
+        background-color: transparent;
+        border: 1px solid #c9cfd3;
+    }
+
+    body.white #prof_icon {
+        background-color: transparent;
+        border: 1px solid #c9cfd3;
+    }
+}
+
+.prof_main_item {
+    color: #a2a2a2;
+}
+
+/*.prof_icon {
+    border: 1px solid #e6e6e6;
+    background-color: #fff;
+}*/
+
+.prof-main-menu-block > div {
+    color: #cf4b02;
+}
+
+    .cont > .institution-name {
+        color: #3e3e3e;
+    }
+
+    .cont > .work-time {
+        color: #757575 !important;
+    }
+
+.cont > .family, .cont > .name {
+    color: #a2a2a2;
+}
+
+.cont > .last_mess_time {
+    color: #b6b6b6;
+}
+
+.cont_zak > .dish-name {
+    color: #3e3e3e;
+}
+
+.cont_zak > .dish-info {
+    font-size: 12px;
+}
+
+    .cont_zak > .dish-info > .price {
+        color: #b6b6b6;
+    }
+
+    .cont_zak > .dish-info > .summ-price {
+        color: #969696;
+    }
+
+#prof_info .all-summ {
+    border-top: 1px solid #d2d2d2;
+    color: #9c9c9c;
+    border-bottom: 1px solid #f5f5f5;
+    background-color: white;
+}
+
+.last_mess_time {
+    color: #ef7532 !important;
+}
+
+.last_mess {
+    color: #737373 !important;
+}
+
+#prof_info .prof_item,
+.alert_msg {
+    color: #3e3e3e;
+}
+
+.smiles, .submit {
+    background: linear-gradient(#ef7532, #cf4b02);
+    color: #ffffff !important;
+}
+
+.smiles:active, .submit:active {
+    background: linear-gradient(#cf4b02, #ef7532);
+}
+
+.peoplb, .sendf {
+    background: linear-gradient(#E9E7E7, #c1bbbb);
+}
+
+.peoplb:active, .sendf:active {
+    background: linear-gradient(#c1bbbb, #E9E7E7);
+}
+
+#prof_mess textarea,
+#prof_mess textarea:active {
+    border: 1px solid #e6e6e6;
+}
+
+.main-menu-back-button {
+    background-color: white;
+    color: #5f5e5e;
+}
+
+.main-menu-back-button-label {
+    color: #ed742f;
+}
+
+@media only screen and (max-width : 768px) {
+    .prof_icon > span {
+        color: #fff;
+    }
+}
+
+.prof_icon.active>span{
+    color: #cf4b02;
+}
+
+#prof_info .prof_last_item,
+#prof_info .all-summ,
+.prof_info,
+.prof_icon.active,
+.switch_content,
+.prof_last_item textarea, 
+.main-menu-back-button-label,
+.prof-main-menu-block>div,
+.main-menu-back-button {
+    background-color: #fff !important;
+    color: #cf4b02;
+}
+
+.work-time,.prof_item .price,
+.prof_item .summ-price,
+#scroll_zak2 .allSum, 
+#scroll_zak2 p.dish-info>span.price,
+.prof_last_item .summ-price{
+    color: #ed742f !important;
+}
+
+#prof_zak .tracking_number,
+.user_block a {
+    color: #cf4b02;
+}
+
+/* END USER BLOCK (Profile) */
+
+/* ORDER BLOCK */
+
+body {
+}
+.order .panel-heading {
+    background-color: #f0e3d6;
+}
+
+.order_touchspin .btn-default {
+    background: linear-gradient(#f89b2e, #e8701b);
+    color: #fff;
+}
+
+    .order_touchspin .btn-default:active {
+        background: linear-gradient(#e8701b, #f89b2e);
+        color: #fff;
+    }
+
+.basket {
+    background: linear-gradient(#e6e9eb, #7c7f83);
+}
+
+.basket:active {
+    background: linear-gradient(#7c7f83, #e6e9eb);
+}
+
+.watch {
+    background: linear-gradient(#ef7532, #cf4b02);
+}
+
+.watch:active {
+    background: linear-gradient(#cf4b02, #ef7532);
+}
+
+.add_files_btn {
+    background: linear-gradient(#ef7532, #cf4b02);
+    color: #fff;
+}
+
+.add_files_btn:active {
+    background: linear-gradient(#cf4b02, #ef7532);
+}
+
+.add_files_btn:hover {
+    color: #fff;
+}
+
+.order .panel {
+    border-bottom-color: #f6ccb4 !important;
+}
+
+.order .selectpicker {
+    border-color: #eeeee3;
+    outline-color: #512c15;
+}
+
+.order .selectpicker>option {
+    border-color: #eeeee3;
+    outline-color: #512c15;
+}
+
+.order_spot, .order_item_count {
+    color: #cf4b02;
+}
+
+.result {
+    background-color: #eeeee3;
+}
+
+.cansel_btn {
+    background: linear-gradient(#e8e8e8, #cacaca);
+ }
+
+.cansel_btn:active {
+    background: linear-gradient(#cacaca, #e8e8e8);
+ }
+
+.confirm_btn {
+   background: linear-gradient(#f89b2e, #e8701b);
+   color: #fff;
+}
+
+.confirm_btn:active {
+   background: linear-gradient(#e8701b, #f89b2e);
+   color: #fff;
+}
+
+.confirm_btn:hover, .confirm_btn:focus {
+    color: #fff;
+}
+
+#orders_title .btn-group label,
+#orders_title .btn-group-vertical label
+ {
+    background: transparent;
+    color: #3e3e3e;
+}
+
+#orders_title .btn-primary {
+    border-color: #cf4b02;
+}
+
+#orders_title .btn-group label.active,
+#orders_title .btn-group-vertical label.active {
+    background: linear-gradient(#ef7532, #cf4b02);
+    color: #fff;
+}
+
+.inner_order .discription  {
+    color: #000;
+}
+
+.vertical_line {
+    border-left:4px solid #cf4b02;
+    background: transparent;
+}
+
+.vertical_line .table {
+    background: #fff;
+}
+
+#orders_title h4,
+.order_item_number_title,
+.order_item_name,
+.order_item_count,
+.order_spot,
+.order_item_status,
+.order_item_number
+{
+    color: #3e3e3e;
+}
+
+.order h4,
+.order h5,
+.add_files_title 
+{
+    color: #cf4b02;
+}
+
+/* END ORDER BLOCK */
+
+
